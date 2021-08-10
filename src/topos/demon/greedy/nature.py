@@ -1,0 +1,2 @@
+class GreedyNature:
+    epsilon: int

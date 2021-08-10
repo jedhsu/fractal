@@ -1,0 +1,7 @@
+"""
+
+    *Variables*
+
+  Variables are parameters.
+
+"""

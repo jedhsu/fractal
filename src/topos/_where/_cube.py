@@ -1,0 +1,4 @@
+class Where(
+    Globe,
+):
+    pass
