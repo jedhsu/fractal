@@ -108,7 +108,7 @@ Top-level data model that contains the world and the mind, including the `Traini
 ## Remarks
 
 - The folders `_op` contain the interfaces of a struct. This is a personal style preference for modularity.
-- The underlines of a filename mean it is an associated type, rather than privacy.
+- The `_prefix` naming scheme of a file indicates association, rather than privacy.
 
 ## Acknowledgments
 
