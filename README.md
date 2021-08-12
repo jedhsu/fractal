@@ -38,7 +38,7 @@ Grammatical tense is used to indicate a particular semantics of an object.
 
 - `Operation` is a concept. These hold the parameters, the associated types, of an object.
 - `Operator` is a type.
-- `Operating` is a function.
+- `Operating` is a function holding computation steps, as well as the event loop representing the "present time".
 - `Operate` is an async function that returns an await, as asynchronous functions abstract time from computation.
 - `Operated` is a value instantiated by the type Operator.
 
@@ -85,7 +85,7 @@ Demons will be classified into the following types, to represent policies on how
 - `Greedy`: Epsilon-greedy.
 - `Focused`: Min-max algorithm.
 - `Shrewd`: Monte Carlo tree search.
-- `Alpha`: The Alpha-zero demon algorithm. (Not sure if this is is the right abstraction layer yet)
+- `Alpha`: The Alpha-zero algorithm. (Not sure if this is is the right abstraction layer yet)
 
 `Glimpsing` will run the event loop of tree search.
 
