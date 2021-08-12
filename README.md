@@ -24,7 +24,7 @@ An environment state is a `Fractum`. It consists of
 - a `Place` describing its position in some generic spacetime,
 - a `Spectrum`, a probability distribution describing its near-future placement.
 
-##### TODO
+###### TODO
 
 - Read quantum mechanics to see if rigorously compares.
 
@@ -62,6 +62,8 @@ The `Brain` is the underlying neural network.
 - `Cortex`, which inherit from torch's `nn.Sequential` to represent a related section of the brain.
 - `Layer`, which inherit from torch's `nn.Module`.
 
+###### Remarks
+
 This section might get moved out later. It feels relatively independent, as it is a library
 on top of torch's features.
 
@@ -85,12 +87,16 @@ Demons will be classified into the following types, to represent policies on how
 - `Greedy`: Epsilon-greedy.
 - `Focused`: Min-max algorithm.
 - `Shrewd`: Monte Carlo tree search.
-- `Alpha`: The Alpha-zero algorithm. (Not sure if this is is the right abstraction layer yet)
+- `Alpha`: The Alpha-zero algorithm.
 
 `Glimpsing` will run the event loop of tree search.
 
 `Interpreting` will run the event loop of constructing `Vision`s, updates of world state and evolutions of the mind based on glimpse.
 
+###### TODO 
+
+- Is Alpha-zero algo in right abstraction layer?
+- 
 ### Daemon
 
 Top-level data structure of the mind that handles batchifying and event management.
