@@ -1,7 +1,8 @@
 ## Fractal
 
-`fractal` is a developing spec for a reinforcement learning framework. It is written with
-a creative flavor of computational trinitarianism based on some deeper intuitions.
+`fractal` is a developing spec for a reinforcement learning framework.
+
+It is written with a creative flavor of computational trinitarianism based on some [deeper intuitions](https://github.com/jedhsu/think/blob/main/towards-a-physical-theory-of-consciousness.md).
 
 My strategy to get this going is to architect its features around the well-known implementation of AlphaZero.
 
@@ -34,11 +35,11 @@ The world runs the event loop of `Realizing`. This is the event loop that observ
 
 Grammatical tense is used to indicate a particular semantics of an object.
 
-* Operation is a concept. These hold the parameters, the associated types, of an object.
-* Operator is a type.
-* Operating is a function.
-* Operate is an async function that returns an await, as asynchronous functions abstract time from computation.
-* Operated is a value instantiated by the type Operator.
+* `Operation` is a concept. These hold the parameters, the associated types, of an object.
+* `Operator` is a type.
+* `Operating` is a function.
+* `Operate` is an async function that returns an await, as asynchronous functions abstract time from computation.
+* `Operated` is a value instantiated by the type Operator.
 
 Summary metrics use past tense like `Awakened`, to appropriately describe its temporal state.
 
@@ -105,4 +106,4 @@ Top-level data model that contains the world and the mind, including the `Traini
 
 ## Acknowledgments
 
-Thanks to Jonathan Laurent's https://github.com/jonathan-laurent/AlphaZero.jl, which I'm using substantially as a reference.
+Thanks to Jonathan Laurent's [AlphaZero.jl](https://github.com/jonathan-laurent/AlphaZero.jl), which I'm using substantially as a reference.
