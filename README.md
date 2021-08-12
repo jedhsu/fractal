@@ -96,10 +96,10 @@ Demons will be classified into the following types, to represent policies on how
 ###### TODO 
 
 - Is Alpha-zero algo in right abstraction layer?
-- 
+
 ### Daemon
 
-Top-level data structure of the mind that handles batchifying and event management.
+Handles batchifying.
 
 ## Fractal
 
