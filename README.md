@@ -1,6 +1,6 @@
 ## Fractal
 
-`fractal` is a developing spec for a reinforcement learning library. It is written with
+`fractal` is a developing spec for a reinforcement learning framework. It is written with
 a creative flavor of computational trinitarianism based on some deeper intuitions.
 
 My strategy to get this going is to architect its features around the well-known implementation of AlphaZero.
