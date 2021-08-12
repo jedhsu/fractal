@@ -1,4 +1,5 @@
 """
+
     Report.SelfPlay
 
 Report generated after the self-play phase of an iteration.

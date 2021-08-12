@@ -1,4 +1,5 @@
 """
+
     launch_server(f; num_workers, batch_size)
 
 Launch an inference requests server.
@@ -100,4 +101,3 @@ query = oracle.preprocess(state)
   return answer
 end
 
-end

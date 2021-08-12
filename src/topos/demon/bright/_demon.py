@@ -5,13 +5,15 @@
 """
 
 from typing import TypeVar
-from typing import Ooptional
+from typing import Optional
 
 from typing import Datatype
 
+from dataclasses import dataclass
+
 T = TypeVar("T")
 
-
+@dataclass
 class BrightDemon(Datatype[T], Demon,):
     mcts: T
     niters: int

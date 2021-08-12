@@ -15,36 +15,6 @@ Return the hyperparameters of a network.
 function hyperparams end
 
 """
-    game_spec(::AbstractNetwork)
-
-Return the game specification that was passed to the network's constructor.
-"""
-function game_spec end
-
-"""
-    to_gpu(::AbstractNetwork)
-
-Return a copy of the given network that has been transferred to the GPU
-if one is available. Otherwise, return the given network untouched.
-"""
-function to_gpu end
-
-"""
-    to_cpu(::AbstractNetwork)
-
-Return a copy of the given network that has been transferred to the CPU
-or return the given network untouched if it is already on CPU.
-"""
-function to_cpu end
-
-"""
-    on_gpu(::AbstractNetwork) :: Bool
-
-Test whether or not a network is located on GPU.
-"""
-function on_gpu end
-
-"""
     set_test_mode!(mode=true)
 
 Put a network in test mode or in training mode.

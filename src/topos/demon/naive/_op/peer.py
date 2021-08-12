@@ -9,12 +9,7 @@ class Peer(NaiveDemon):
         actions = Spacetime.available_actions(game)
         n = len(actions)
         spectrum = ones(n) / len(actions)
-        return Vision(actions, spectrum)
-
-
-from dataclasses import dataclass
-
-
-@dataclass
-class RandomOracle:
-    rules: GameRules
+        return Place(
+            actions,
+            spectrum,
+        )

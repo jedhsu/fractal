@@ -6,7 +6,10 @@
 
 """
 
+from dataclasses import dataclass
 
+
+@dataclass
 class Dawn:
     batch_id: Int
     evaluation: Evaluation

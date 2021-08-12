@@ -34,6 +34,13 @@ end
 
 
 """
+    game_spec(::AbstractNetwork)
+
+Return the game specification that was passed to the network's constructor.
+"""
+function game_spec end
+
+"""
     forward_normalized(network::AbstractNetwork, states, actions_mask)
 
 Evaluate a batch of vectorized states. This function is a wrapper

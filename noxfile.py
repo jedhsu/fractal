@@ -228,7 +228,6 @@ def typeguard(
     python=[
         "3.9",
         "3.8",
-        "3.7",
     ]
 )
 def tests(

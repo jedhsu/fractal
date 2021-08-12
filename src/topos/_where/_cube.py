@@ -1,4 +1,0 @@
-class Where(
-    Globe,
-):
-    pass
