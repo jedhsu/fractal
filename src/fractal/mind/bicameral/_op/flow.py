@@ -12,10 +12,10 @@ class Flow(
 ):
     def flow(
         self,
-        spacetime: Spacetime,
-        epoch: Epoch,
+        world: World,
+        epoch: int,
     ):
-        if Flow.is_it_dawn(game):
+        if world.is_it_dawn(game):
             return self.white.flow(
                 spacetime,
                 epoch,

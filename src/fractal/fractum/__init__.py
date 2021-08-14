@@ -10,8 +10,6 @@
   getting a bit too abstract for the scope of this project.
 
 """
-
 from .fractum import Fractum
-
 from .quantum import Quantum
 from .spectrum import Spectrum

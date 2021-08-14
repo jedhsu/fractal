@@ -1,9 +1,7 @@
 """
 
 
-    *Topos*
-
-  A topos contains all the models of a mind, including:
+    *Fractal*
 
   * Mind, the agent.
   * World, the environment.
@@ -22,7 +20,7 @@ u64 = int
 
 
 @dataclass
-class Topos:
+class Fractal:
     # Store (nonterminal) state statistics assuming the white player is to play
     tree: dict[Placing, Place]
 

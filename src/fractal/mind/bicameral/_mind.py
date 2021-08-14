@@ -11,6 +11,8 @@ from ..unicameral import UnicameralMind
 
 
 @dataclass
-class BicameralMind(Mind):
-    white: UniCameralMind
+class BicameralMind(
+    Mind,
+):
+    white: UnicameralMind
     black: UnicameralMind

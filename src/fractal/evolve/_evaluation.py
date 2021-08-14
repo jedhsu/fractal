@@ -4,6 +4,8 @@
 
 """
 
+from dataclasses import dataclass
+
 
 @dataclass
 class Evaluation(Fractum):

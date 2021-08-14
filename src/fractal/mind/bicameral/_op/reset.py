@@ -11,5 +11,5 @@ class Reset(
     BicameralMind,
 ):
     def reset(self):
-        reset(self.white)
-        reset(self.black)
+        self.white.reset()
+        self.black.reset()

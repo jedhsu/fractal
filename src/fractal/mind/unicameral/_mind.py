@@ -1,2 +1,11 @@
-class UnicameralMind:
+"""
 
+    *Unicameral Mind*
+
+"""
+
+
+class UnicameralMind(
+    Mind,
+):
+    pass

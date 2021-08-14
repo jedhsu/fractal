@@ -5,7 +5,6 @@
    Metrics generated after interpreted a vision.
 
 """
-
 from dataclasses import dataclass
 
 

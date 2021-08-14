@@ -8,13 +8,15 @@
 
 from dataclasses import dataclass
 
+float = f64
+
 
 @dataclass
 class Evolved:
-    time_convert: Float64
-    time_loss: Float64
-    time_train: Float64
-    time_eval: Float64
+    time_convert: f64
+    time_loss: f64
+    time_train: f64
+    time_eval: f64
 
     initial_status: LearningStatus
     losses: Vector[f32]

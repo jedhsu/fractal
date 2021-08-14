@@ -7,10 +7,9 @@
   Extends fractum with glimpsing information.
 
 """
+from dataclasses import dataclass
 
 from fractal.fractum import Fractum
-
-from dataclasses import dataclass
 
 f64 = float
 Heat = int

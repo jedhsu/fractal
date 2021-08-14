@@ -5,9 +5,7 @@
   Return the mean absolute value of the regularized parameters of a network.
 
 """
-
 from .._brain import Brain
-
 from .parameters import Parameters
 
 

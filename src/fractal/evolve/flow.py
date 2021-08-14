@@ -1,25 +1,23 @@
 """
 
-    *Params*
+    *Flow*
 
-  Training hyperparameters.
-
-  # [TODO] figure out where this best goes
+  This is training.
 
 """
 
 from dataclasses import dataclass
 
 @dataclass
-class Nature:
+class Flow:
     recall: Recall = None
     evolution: Evolution
     ponder: Ponder
     war: War
-    num_iters: Int
+    num_iters: int
 
-    use_symmetries: Bool = false
-    ternary_rewards: Bool = false
+    use_symmetries: bool = False
+    ternary_rewards: bool = False
     mem_buffer_size: PLSchedule{Int}
 
 """

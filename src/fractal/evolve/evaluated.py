@@ -1,6 +1,6 @@
-
 """
-    Report.Evaluation
+
+    *Evaluated*
 
 The outcome of evaluating a player against a baseline player.
 
@@ -9,7 +9,7 @@ The outcome of evaluating a player against a baseline player.
 from dataclsses import dataclass
 
 @dataclass
-class Evaluation:
+class Evaluated:
     name: str
     average_energy: f64
     redundancy: f64

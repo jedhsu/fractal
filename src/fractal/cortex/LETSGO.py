@@ -24,4 +24,3 @@ from_singletons(x) = reshape(x, size(x)[1:end-1])
 Perform full garbage collection and empty the GPU memory pool.
 """
 function gc end
-

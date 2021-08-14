@@ -9,7 +9,6 @@
   and an iteration counter.
 
 """
-
 from dataclasses import dataclass
 
 
