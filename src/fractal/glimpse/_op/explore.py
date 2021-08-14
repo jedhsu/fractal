@@ -6,6 +6,7 @@
 
 """
 
+
 class Explore(Glimpse):
     @staticmethod
     def explore(vision: Vision, game, number_of_glimpses: int):

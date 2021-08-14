@@ -1,4 +1,11 @@
-class Memory(
+"""
+
+    *Recall*
+
+"""
+
+
+class Recall(
     Gestalt,
     State,
 ):

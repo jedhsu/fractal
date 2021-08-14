@@ -11,9 +11,9 @@ from dataclasses import dataclass
 
 @dataclass
 class Interpreted:
-    num_won: Int
-    num_draw: Int
-    num_lost: Int
+    num_won: int
+    num_draw: int
+    num_lost: int
 
 
 # function TernaryOutcomeStatistics(rewards::AbstractVector{<:Number})

@@ -1,3 +1,6 @@
+from math import approx
+
+
 class Initialize(State):
     @classmethod
     def initialize(
@@ -23,9 +26,9 @@ class Initialize(State):
         spectrum: Spectrum,
         energy: float,
     ):
-        if isone(energy):
+        if energy == approx(1):
             return spectrum
-        elif iszero(energy):
+        elif energy == approx(0):
             res = zeros(
                 eltype(spectrum),
                 length(spectrum),

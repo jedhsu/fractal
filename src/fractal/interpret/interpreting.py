@@ -8,6 +8,8 @@
 
 from dataclasses import dataclass
 
+u64 = int
+
 
 @dataclass
 class Interpreting:

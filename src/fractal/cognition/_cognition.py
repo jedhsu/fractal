@@ -1,6 +1,6 @@
 """
 
-    *Daemon*
+    *Cognition*
 
   Type for an AlphZero environment.
 

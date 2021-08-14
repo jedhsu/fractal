@@ -13,6 +13,19 @@ class Evaluate(Brain,):
         P, V, _ = convert_output_tuple(nn, forward_normalized(nn, Xnet, Anet))
         return [(P[A[:,i],i], V[1,i]) for i in eachindex(batch)]
 
+
+
+# # Evaluate a single neural network for a one-player game (params::ArenaParams)
+# def evaluate_network(physics: Physics, unicortex: Unicortex, speech: Speech, handler,):
+#     make_oracles = nnet.copy(net, on_gpu=params.sim.use_gpu, test_mode=true,)
+
+#     simulator = Simulator(make_oracles, record_trace)
+#     simulator.MctsPlayer(gspec, oracle, params.mcts)
+
+#     samples = simulate()
+#     simulator, gspec, params.sim,
+#     game_simulated=(() -> Handlers.checkpoint_game_played(handler))
+#     return rewards_and_redundancy(samples, gamma=params.mcts.gamma,)
 """
 
 Take a list of states as input and return a list of `(P, V)` pairs as defined in the

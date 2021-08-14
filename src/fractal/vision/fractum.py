@@ -8,7 +8,7 @@
 
 """
 
-from fractum.spectrum import Spectrum
+from fractal.fractum import Fractum
 
 from dataclasses import dataclass
 

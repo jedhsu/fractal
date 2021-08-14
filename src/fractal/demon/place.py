@@ -14,7 +14,7 @@ class Place(
     Quantum,
     Cube,
 ):
-    depth: State
+    position: Position
     policy: Vector[f64]
     energy: Heat
     until_end: int

@@ -7,9 +7,10 @@
 """
 
 
-class Physics:
+class Nature:
     pass
 
-mutable struct Spec{E, H} <: AbstractGameSpec
-  env :: Env{E, H}
-end
+
+# mutable struct Spec{E, H} <: AbstractGameSpec
+#   env :: Env{E, H}
+# end

@@ -1,5 +1,8 @@
+from dataclasses import dataclass
+
+
 @dataclass
-class PlacementAnalysis:
+class PlacementAnalysis(Placement):
     vec: Vector[ActionStats]
     expected_value: float  # Value estimate given by the oracle
 

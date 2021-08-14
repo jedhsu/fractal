@@ -13,6 +13,32 @@ An example handler object is `Session`.
 All callback functions take a handler object `h` as their first argument
 and sometimes a second argment `r` that consists in a report.
 
+| `training_finished(h)`      | called once at the end of training             |
+"""
+class Events:
+  import ..Report
+
+  def iteration_started(h)      return end
+  def self_play_started(h)      return end
+  def game_played(h)            return end
+  def self_play_finished(h, r)  return end
+  def memory_analyzed(h, r)     return end
+  def learning_started(h)       return end
+
+  def updates_started(h)        return end
+  def updates_finished(h, r)    return end
+
+  def checkpoint_started(h)     return end
+  def checkpoint_game_played(h) return end
+  def checkpoint_finished(h, r) return end
+
+  def learning_finished(h, r)   return end
+  def iteration_finished(h, r)  return end
+  def training_finished(h)      return end
+
+end
+
+"""
 | Callback                    | Comment                                        |
 |:----------------------------|:-----------------------------------------------|
 | `iteration_started(h)`      | called at the beggining of an iteration        |
@@ -28,25 +54,4 @@ and sometimes a second argment `r` that consists in a report.
 | `checkpoint_finished(h, r)` | sends report: [`Report.Checkpoint`](@ref)      |
 | `learning_finished(h, r)`   | sends report: [`Report.Learning`](@ref)        |
 | `iteration_finished(h, r)`  | sends report: [`Report.Iteration`](@ref)       |
-| `training_finished(h)`      | called once at the end of training             |
 """
-module Handlers
-
-  import ..Report
-
-  function iteration_started(h)      return end
-  function self_play_started(h)      return end
-  function game_played(h)            return end
-  function self_play_finished(h, r)  return end
-  function memory_analyzed(h, r)     return end
-  function learning_started(h)       return end
-  function updates_started(h)        return end
-  function updates_finished(h, r)    return end
-  function checkpoint_started(h)     return end
-  function checkpoint_game_played(h) return end
-  function checkpoint_finished(h, r) return end
-  function learning_finished(h, r)   return end
-  function iteration_finished(h, r)  return end
-  function training_finished(h)      return end
-
-end

@@ -13,7 +13,7 @@ Simulate a game by an [`AbstractPlayer`](@ref).
   is _flipped_ randomly at every turn with probability ``p``,
   using [`GI.apply_random_symmetry!`](@ref).
 """
-function play_game(gspec, player; flip_probability=0.)
+function play_game(world: World, mind: Mind, flip_probability=0.)
   game = GI.init(gspec)
   trace = Trace(GI.current_state(game))
   while true
@@ -21,7 +21,7 @@ function play_game(gspec, player; flip_probability=0.)
       return trace
     end
     if !iszero(flip_probability) && rand() < flip_probability
-      GI.apply_random_symmetry!(game)
+      world.apply_random_symmetry()
     end
     actions, π_target = think(player, game)
     τ = player_temperature(player, game, length(trace))

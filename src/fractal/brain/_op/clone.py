@@ -12,6 +12,7 @@ from .._brain import Brain
 
 
 class Clone(
+    Gpu,
     Brain,
 ):
     def clone(
