@@ -2,13 +2,14 @@
 
     *Cognition*
 
-  Type for an AlphZero environment.
+  Environment of the mind.
 
   The environment features the current neural network, the best neural network
   seen so far that is used for data generation, a memory buffer
   and an iteration counter.
 
 """
+
 from dataclasses import dataclass
 
 

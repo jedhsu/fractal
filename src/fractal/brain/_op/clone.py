@@ -9,6 +9,7 @@
 from copy import deepcopy
 
 from .._brain import Brain
+from .gpu import Gpu
 
 
 class Clone(

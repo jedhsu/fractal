@@ -1,7 +1,9 @@
-class Estimate:
+class Estimate(
+    World,
+):
     def estimate_focused_world_nature(self):
         p = world.nature
-        return isnothing(world.nature.arena is None) or world.self_play.mcts
+        return self.nature.arena is None or world.self_play.mcts
 
     def guess_is_speed(self):
         p = env.params

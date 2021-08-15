@@ -5,7 +5,7 @@
 """
 
 
-class Generalize(Gestalt):
+class Generalize(Recall):
     def generalize(
         self,
         sample,

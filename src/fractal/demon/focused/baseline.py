@@ -1,5 +1,4 @@
 
-
 """
     Benchmark.MinMaxTS(;depth, τ=0.) <: Benchmark.Player
 
@@ -13,9 +12,6 @@ end
 
 name(p::MinMaxTS) = "MinMax (depth $(p.depth))"
 
-function instantiate(p::MinMaxTS, ::AbstractGameSpec, nn)
+def instantiate(p::MinMaxTS, ::AbstractGameSpec, nn)
   return MinMax.Player(
     depth=p.depth, amplify_rewards=p.amplify_rewards, τ=p.τ)
-end
-
-end

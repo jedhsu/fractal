@@ -2,7 +2,7 @@
 
     *Flow*
 
-  This is training.
+  Training, represented by flow of time.
 
 """
 

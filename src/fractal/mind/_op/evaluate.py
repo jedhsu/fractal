@@ -2,6 +2,7 @@
     Single <: Evaluation
 
   Evaluating a single player in a one-player game.
+
 """
 
 

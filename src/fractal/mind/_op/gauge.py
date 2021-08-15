@@ -1,10 +1,8 @@
-
-
 """
 
     *Gauge*
 
-  Evaluating a demon by pitting it against a baseline player in a two-player game.
+  Evaluating by pitting it against a baseline player in a two-player game.
 
 """
 

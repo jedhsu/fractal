@@ -9,20 +9,18 @@
 from dataclasses import dataclass
 
 @dataclass
-class Reframe
+class Reframe:
     moments
     params
-    train :: Bool
-    activation
+    train: bool
+    activation: bool
 
-function BatchNorm(nchans::Int, activation=identity; momentum,)
-  moments = Knet.bnmoments(momentum=momentum)
-  params = Knet.bnparams(Float32, nchans) |> Knet.param
-  BatchNorm(moments, params, true, activation)
-end
+def BatchNorm(nchans::Int, activation=identity; momentum,)
+    moments = Knet.bnmoments(momentum=momentum)
+    params = Knet.bnparams(Float32, nchans) |> Knet.param
+    BatchNorm(moments, params, true, activation)
 
-function (l::BatchNorm)(x)
-  y = Knet.batchnorm(x, l.moments, l.params, training=l.train)
-  return l.activation.(y)
-end
+def (l::BatchNorm)(x)
+    y = Knet.batchnorm(x, l.moments, l.params, training=l.train)
+    return l.activation.(y)
 

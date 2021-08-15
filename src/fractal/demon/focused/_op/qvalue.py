@@ -1,7 +1,15 @@
-from .. import GlobalInterpreter
+"""
+
+    *Q-Value*
+
+  Compute q-value.
+
+"""
+
+from .._demon import FocusedDemon
 
 
-class Qvalue(Daemon):
+class Qvalue(Demon):
     def qvalue(
         self,
         cortex: Cortex,
@@ -9,8 +17,8 @@ class Qvalue(Daemon):
         place: Place,
         depth: int,
     ):
-        assert not GlobalInterpreter.game_terminated(game)
-        next = GlobalInterpreter.clone(world)
+        assert not game.is_over()
+        next = world.clone()
         GlobalInterpreter.flow(
             next,
             place,

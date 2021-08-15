@@ -10,7 +10,7 @@ class Validate(Parameters,):
     pass
 
 
-def check_params(gspec: AbstractGameSpec, p: Params,)
+def check_params(gspec: AbstractGameSpec, p: Params,):
     errors = String[]
     warns = String[]
 

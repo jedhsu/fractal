@@ -2,8 +2,6 @@
 
     *Place*
 
-  A state of the mind.
+  A state.
 
 """
-
-class  

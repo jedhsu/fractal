@@ -1,7 +1,3 @@
-######
-###### Merging two players into one
-######
-
 # """
 #    TwoPlayers <: AbstractPlayer
 

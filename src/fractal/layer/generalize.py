@@ -6,4 +6,6 @@
 
 """
 
+
 class Generalize:
+    pass

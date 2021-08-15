@@ -6,11 +6,11 @@
 
 from dataclasses import dataclass
 
-from mind.cortex import Cortex
+from fractal.brain import Brain
 
 @dataclass
 class Evolving:
-    cortex: Cortex
+    brain: Brain
     placements: Vector[TrainingSample]
     data: NamedTuple # (W, X, A, P, V) tuple obtained after converting `samples`
     Wmean: float

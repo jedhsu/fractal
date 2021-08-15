@@ -1,6 +1,6 @@
 """
 
-    *Evolution - Learning*
+    *Evolution*
 
   Parameters governing the learning phase of a training iteration, where
   the neural network is updated to fit the data in the memory buffer.

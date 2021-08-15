@@ -8,7 +8,7 @@ class Recall:
     @classmethod
     def recalling(
         cls,
-        cortex: Cortex,
+        brain: Brain,
         evolve: Evolve,
         analysis: Analysis,
     ):
