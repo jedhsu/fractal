@@ -1,10 +1,16 @@
-
-
 """
-    MCTS.reset!(env)
+Glimpsing - Reset
+=================
 
 Empty the MCTS tree.
+
 """
-function reset!(env)
-  empty!(env.tree)
-  #GC.gc(true)
+
+from ..glimpsing import Glimpsing
+
+
+class Reset(
+    Glimpsing,
+):
+    def reset(self):
+        self.tree = dict()

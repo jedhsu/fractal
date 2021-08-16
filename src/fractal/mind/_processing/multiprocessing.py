@@ -1,6 +1,8 @@
 """
+Multiprocessing
+===============
 
-    *Vision*
+Parameters for parallel simulation.
 
 """
 
@@ -9,7 +11,7 @@ from typing import Optional
 
 
 @dataclass
-class Vision:
+class Multiprocessing:
     is_many_games: int
     is_many_workers: int
     is_batch_size: int

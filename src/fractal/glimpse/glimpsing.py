@@ -1,6 +1,8 @@
 """
+Glimpsing
+=========
 
-    *Glimpsing*
+Environment for MCTS.
 
 """
 
@@ -11,26 +13,23 @@ Create and initialize an MCTS environment with a given `oracle`.
 of parameter ``α``.
 """
 
-class Glimpsing:
-  # Store (nonterminal) state statistics assuming the white player is to play
-  tree :: dict[State, StateInfo]
 
-  # External oracle to evaluate positions
-  demon: MetaDemon
+class Glimpsing(
+    Glimpse,
+):
+    # Store (nonterminal) state statistics assuming the white player is to play
+    tree: dict[State, StateInfo]
 
-  # Parameters
-  decay: f64 # Discount factor
-  cpuct: f64
-  noise_ϵ: f64
-  noise_α: f64
-  prior_temperature: f64
+    # External oracle to evaluate positions
+    demon: MetaDemon
 
-  # Performance statistics
-  total_simulations: u64
-  total_nodes_traversed: u64
+    # Performance statistics
+    total_simulations: u64
+    total_nodes_traversed: u64
 
-  # Game specification
-  physics: Spacetime.Physics
+    # Game specification
+    physics: Spacetime.Physics
+
 
 """
 ## Keyword Arguments

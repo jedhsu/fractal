@@ -1,11 +1,22 @@
-class Update:
-    def update_placement_analysis(
-        topos,
-        analysis,
-        action_id,
-        burn: Burn,
+"""
+Glimpsing - Update
+=================
+
+"""
+
+from ..glimpsing import Glimpsing
+
+
+class Update(
+    Glimpsing,
+):
+    def update_world_state(
+        self,
+        worldstate: WorldState,
+        action: Action,
+        energy: Energy,
     ):
-        stats = topos.tree[state].stats
+        stats = worldstate.tree[state].stats
         astats = stats[action_id]
         stats[action_id] = PlacementAnalysis(
             astats.P,
