@@ -13,8 +13,8 @@ from .quantum import Quantum
 
 
 class Spectrum(
-    Simplex[Cube, Globe],
     Mapping[float, Quantum],
+    set[QuantumProbability],
     metaclass=ABCMeta,
 ):
     pass

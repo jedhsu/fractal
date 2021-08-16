@@ -1,8 +1,9 @@
 """
+Fractum
+=======
 
-    *Fractum*
-
-  A fractum is a quantum and a spectrum.
+A fractum is a quantum enlightened with a spectrum,
+knowledge of where it is going.
 
 """
 
@@ -14,9 +15,9 @@ from ._ident import FractumIdent
 
 @dataclass
 class Fractum(
+    Quantum,
     metaclass=ABCMeta,
 ):
-    ident: tuple[int, ...]
     position: tuple[int, ...]
     quantum: Quantum
     spectrum: Spectrum

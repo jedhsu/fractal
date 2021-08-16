@@ -1,11 +1,37 @@
 """
-    Single <: Evaluation
+Evaluate
+========
 
-  Evaluating a single player in a one-player game.
+Evaluate a single neural network for a one-player game.
 
 """
 
+from fractal.world import Nature
+from fractal.brain import Brain
+from fractal import Fractal
 
-class Evaluate:
-    player: Player
-    evolution: Evolution
+from .._mind import Mind
+
+
+class Evaluate(
+    Mind,
+):
+    @classmethod
+    def evaluating(
+        cls,
+        nature: Nature,
+        brain: Brain,
+        evaluation: Evaluation,
+        handler: AtDusk,
+    ):
+        brains = brain.copy(
+            on_gpu=Fractal.Mind.Imagination.use_gpu,
+            test_mode=true,
+        )
+        # simulator = Simulator(make_oracles, record_trace) do oracle
+        # simulator.MctsPlayer(gspec, oracle, params.mcts)
+
+        # samples = simulate()
+        # simulator, gspec, params.sim,
+        # game_simulated=(() -> Handlers.checkpoint_game_played(handler))
+        # return rewards_and_redundancy(samples, gamma=params.mcts.gamma,)

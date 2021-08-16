@@ -19,21 +19,35 @@ class Events:
   import ..Report
 
   def iteration_started(h)      return end
+    AtBigBang
+
   def self_play_started(h)      return end
+    AtReflecting
   def game_played(h)            return end
+    AtGlimpsedReflection
   def self_play_finished(h, r)  return end
+    AtReflected
   def memory_analyzed(h, r)     return end
+    AtAnalyzing
   def learning_started(h)       return end
+    AtEvolving
 
   def updates_started(h)        return end
+    AtRewiring
   def updates_finished(h, r)    return end
+    AtRewired
 
+    AtDawn(
   def checkpoint_started(h)     return end
+    AtDueling
   def checkpoint_game_played(h) return end
+    AtDusk
   def checkpoint_finished(h, r) return end
-
+    AtDueled
   def learning_finished(h, r)   return end
+    AtEvolved
   def iteration_finished(h, r)  return end
+    AtBigCrunch
   def training_finished(h)      return end
 
 end

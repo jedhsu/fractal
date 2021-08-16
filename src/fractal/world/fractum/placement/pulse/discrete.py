@@ -1,5 +1,5 @@
-
 """
+
     *Coarsely*
 
 Type for step function schedules.

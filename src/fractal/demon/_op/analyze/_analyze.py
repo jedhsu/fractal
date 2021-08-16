@@ -1,0 +1,4 @@
+class Analyze(
+    Demon,
+):
+    pass
