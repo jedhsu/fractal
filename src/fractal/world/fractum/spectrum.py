@@ -2,7 +2,7 @@
 
     *Spectrum*
 
-  A distribution of quantums.
+  A probability distribution of quantum placements.
 
 """
 

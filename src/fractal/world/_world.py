@@ -1,8 +1,18 @@
+"""
+
+    *Abstract World*
+
+"""
+
 from .nature import Nature
 
+from .nature import AbstractNature
+from .state import WorldState
 
-class World:
-    nature: Nature
+
+class AbstractWorld:
+    nature: AbstractNature
+    state: WorldState
 
 
 # function Env(

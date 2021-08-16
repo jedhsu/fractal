@@ -6,6 +6,8 @@ It is written with a creative flavor of computational trinitarianism based on so
 
 My strategy to get this going is to architect its features around the well-known implementation of AlphaZero.
 
+Goal at first is to use Python for clarity without caring about speed.
+
 ## World
 
 The `World` encapsulates the environment.

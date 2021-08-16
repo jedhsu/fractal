@@ -14,6 +14,8 @@ from operator import div
 
 from ..void import Void
 
+from math import log
+
 
 class Calculate(
     Void,
