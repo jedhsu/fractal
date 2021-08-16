@@ -1,8 +1,8 @@
 """
+Evolved
+=======
 
-    *I have Evolved*
-
-  Report generated at the end of the learning phase of an iteration.
+Report generated at the end of the learning phase of an iteration.
 
 """
 

@@ -6,6 +6,8 @@ Glimpsing - Update
 
 from ..glimpsing import Glimpsing
 
+from fractal.world import WorldState
+
 
 class Update(
     Glimpsing,

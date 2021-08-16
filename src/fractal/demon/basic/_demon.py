@@ -1,6 +1,8 @@
 """
+Basic Demon
+===========
 
-    *Focused Demon*
+Min-max tree search algorithm.
 
 """
 
@@ -19,7 +21,6 @@ amplify(r) = iszero(r) ? r : Inf * sign(r)
 
 function minmax(player, game, actions, depth)
   return argmax([qvalue(player, game, a, player.depth) for a in actions])
-end
 
 """
     MinMax.Player <: AbstractPlayer

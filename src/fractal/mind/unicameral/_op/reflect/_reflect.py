@@ -16,7 +16,7 @@ from .._mind import UnicameralMind
 class Reflect(
     UnicameralMind,
 ):
-    def ponder(
+    def reflect(
         self,
         nature: Nature,
         speech: Speech,

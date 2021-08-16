@@ -12,15 +12,6 @@
 from dataclasses import dataclass
 
 
-@dataclass
-class BattleLaws(
-    Laws,
-):
-    focuslaws: FocusingDaemonLaws
-    simulation_parameters: SimulationParameters
-    update_threshold: float
-
-
 """
 # Explanation (two-player games)
 

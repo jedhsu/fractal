@@ -10,10 +10,10 @@
 
 from dataclasses import dataclass
 
-
+class Optimize:
 def losses(
-    topos: Topos,
-    weighted_mean: int,
+    brain: Brain,
+    regularization: Regularization,
     evolution: Evolution,
     transition: Transition,
 ):

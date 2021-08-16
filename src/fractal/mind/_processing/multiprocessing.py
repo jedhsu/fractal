@@ -12,9 +12,9 @@ from typing import Optional
 
 @dataclass
 class Multiprocessing:
-    is_many_games: int
-    is_many_workers: int
-    is_batch_size: int
+    num_games: int
+    num_workers: int
+    batch_size: int
 
     shall_use_gpu: bool = False
     shall_fill_batches: bool = True
