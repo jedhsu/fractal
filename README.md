@@ -33,7 +33,7 @@ and/or stochastic.
 
 Quantum actions are divided into two types:
 - a `QuantumMotion` is a change of position in space.
-- a `QuantumChange` is a change of some internal discrete state
+- a `QuantumTransition` is a transition of some internal discrete state.
 
 The set of `QuantumAction`s is the set of probabilistic actions that the quantum can experience at the current time-step.
 ###### TODO
