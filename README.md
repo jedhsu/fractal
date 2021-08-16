@@ -2,7 +2,7 @@
 
 `fractal` is a developing spec for a reinforcement learning framework.
 
-It is written to emphasize with a creative flavor that emphasizes a physical perspective. This is motivated by an interest in computational trinitarianism, as well as some [intuitive ideas](https://github.com/jedhsu/think/blob/main/towards-a-physical-theory-of-consciousness.md).
+It is written with a creative flavor that emphasizes a physical perspective. This is motivated by an interest in computational trinitarianism, as well as some [intuitive ideas](https://github.com/jedhsu/think/blob/main/towards-a-physical-theory-of-consciousness.md).
 
 My strategy to get this going is to architect its features around the well-known implementation of AlphaZero.
 
@@ -33,9 +33,11 @@ and/or stochastic.
 
 Quantum actions are divided into two types:
 - a `QuantumMotion` is a change of position in space.
-- a `QuantumChange` is a change of some internal discrete state #[TODO] this could be more clearly named.
+- a `QuantumChange` is a change of some internal discrete state
 
 The set of `QuantumAction`s is the set of probabilistic actions that the quantum can experience at the current time-step.
+###### TODO
+This could be more clearly named.
 
 ##### A few examples
 Tic-Tac-Toe
@@ -64,25 +66,23 @@ An environment state
 
 * In basic strategy games such as Tic-Tac-Toe, the actions
 
-###### TODO
-
-- Study quantum mechanics to see if it compares.
-
 ### Realizing
 
 The world runs the event loop of `Realizing`. This is the event loop that observes new information as the game takes place.
 
 #### Remarks on Grammatical Tense
 
-Grammatical tense is used to indicate a particular semantics of an object.
+Grammatical tense is used to indicate a particular semantics of structs.
 
-- `Operation` is a concept. These hold the parameters, the associated types, of an object.
-- `Operator` is a type.
-- `Operating` is a function holding computation steps, as well as the event loop representing the "present time".
-- `Operate` is an async function that returns an await, as asynchronous functions abstract time from computation.
-- `Operated` is a value instantiated by the type Operator.
+- `Operation` represents a concept. These objects contain parameters (immutables).
+- `Operating` is an event loop representing streaming data holding mutable state.
+- `Operated` is a result, mostly used for reporting.
 
-Summary metrics use past tense like `Awakened`, to appropriately describe its temporal state.
+For example, the `Evolving` type
+* derives its parameters of `Evolution`
+* calls `evolve()` in order to run a step
+  * which mutates the variables of `Evolving` as an effect
+  * and returns an instance of `Evolved` as a result summarizing what happened.
 
 ## Mind
 
