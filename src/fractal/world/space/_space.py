@@ -14,7 +14,7 @@ from typing import Collection
 from typing import Mapping
 from typing import Sequence
 
-from ...fractum.quantum import Position
+from ..fractum.quantum import Position
 
 from itertools import product
 

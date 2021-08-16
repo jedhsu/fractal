@@ -1,13 +1,15 @@
 """
-
-    *Step Ident*
+Timestep Ident
+==============
 
 """
 
 from typing import Sequence
 
 
-class StepIdent(tuple[int, ...]):
+class TimestepIdent(
+    tuple[int, ...],
+):
     def __init__(
         self,
         ident: Sequence[int],

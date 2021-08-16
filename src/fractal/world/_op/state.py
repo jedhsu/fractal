@@ -1,29 +1,43 @@
 """
 
-    *World*
-
-  Get world state.
+    *State*
 
 """
 
-from abc import abstractmethod
 
-from .._world import World
+from .._nature import Nature
 
 
-class State(
-    World,
+class Get(
+    Nature,
 ):
-    @abstractmethod
-    def read_state(self):
+    def state_type(self):
         """
-        Read a state from stdin.
-        """
-        pass
+        Return the state type associated to a game.
 
-    @abstractmethod
-    def print_state(self):
+        State objects must be persistent or appear as such as they are stored into
+        the MCTS tree without copying. They also have to be comparable and hashable.
+
         """
-        Write a state to stdout.
+        return type(current_state(init(game_spec)))
+
+    def state_dim(self):
         """
-        pass
+
+          *state-dimensions*
+
+        Return a tuple that indicates the shape of a vectorized state representation.
+
+        """
+        state = current_state(init(game_spec))
+        return size(vectorize_state(game_spec, state))
+
+    def state_memsize(self):
+        """
+        Return the memory footprint occupied by a state of the given game.
+
+        The computation is based on a random initial state, assuming that all states have an
+        identical footprint.
+        """
+        state = current_state(init(game_spec))
+        return Base.summarysize(state)

@@ -8,7 +8,7 @@ Collects all world states visited during a lifetime.
 
 from dataclasses import dataclass
 
-from typing import Energy
+from typing import Sequence
 
 
 @dataclass

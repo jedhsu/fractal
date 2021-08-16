@@ -1,9 +1,9 @@
 """
+Evolution
+=========
 
-    *Evolution*
-
-  Parameters governing the learning phase of a training iteration, where
-  the neural network is updated to fit the data in the memory buffer.
+Parameters governing the learning phase of a training iteration, where
+the neural network is updated to fit the data in the memory buffer.
 
 """
 
@@ -28,10 +28,6 @@ class Evolution:
     count_checkpoints: int
 
 
-class Default:
-    pass
-
-
 """
   The neural network goes through `num_checkpoints` series of `n` updates using
   batches of size `batch_size` drawn from memory, where `n` is defined as follows:
@@ -44,9 +40,10 @@ with `ntotal` the total number of batches in memory. Between each series,
 the current network is evaluated against the best network so far
 (see [`ArenaParams`](@ref)).
 
-+ `nonvalidity_penalty` is the multiplicative constant of a loss term that
-   corresponds to the average probability weight that the network puts on
-   invalid actions.
+    `nonvalidity_penalty`
+      the multiplicative constant of a loss term that corresponds to the average probability weight
+      that the network puts on invalid actions.
+
 + `batch_size` is the batch size used for gradient descent.
 + `loss_computation_batch_size` is the batch size that is used to compute
   the loss between each epochs.

@@ -6,18 +6,35 @@ Parameters for MCTS.
 
 """
 
-f64 = float
 
 from dataclasses import dataclass
 
+f64 = float
+
 
 @dataclass
-class Glimpse(
-    Demon,
-):
-    # Parameters
-    decay: f64  # Discount factor
-    cpuct: f64
+class Glimpse:
+    decay: f64 = 1.0
+    upper_confidence_threshold: f64 = 1.0
     epsilon_noise: f64
     alpha_noise: f64
     prior_health: f64
+
+
+"""
+
+    `decay`
+      the reward discount factor
+
+    `upper_confidence_threshold`
+      exploration constant in the UCT formula
+
+    `epsilon_noise`
+    `alpha_noise`
+      parameters for the dirichlet exploration noise
+
+    `prior_health`
+      temperature to apply to the oracle's output to get
+      the prior probability vector used by MCTS.
+
+"""

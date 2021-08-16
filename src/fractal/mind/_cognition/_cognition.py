@@ -2,6 +2,8 @@
 
     *Cognition*
 
+  # [TODO] cognition-ing?
+
   Environment of the mind.
 
   The environment features the current neural network, the best neural network
@@ -15,11 +17,11 @@ from dataclasses import dataclass
 
 @dataclass
 class Cognition:
-    nature: WorldNature
+    nature: Nature
     params: Parameters
-    current_brain: Brain
-    smartest_brain: Brain
-    recall: Recall
+    brain: Brain
+    wisest_brain: Brain
+    processing: Processing
     age: int
 
 

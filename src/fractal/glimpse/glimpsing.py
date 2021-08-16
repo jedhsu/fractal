@@ -32,14 +32,6 @@ class Glimpsing(
 
 
 """
-## Keyword Arguments
-
-  - `gamma=1.`: the reward discount factor
-  - `cpuct=1.`: exploration constant in the UCT formula
-  - `noise_ϵ=0., noise_α=1.`: parameters for the dirichlet exploration noise
-     (see below)
-  - `prior_temperature=1.`: temperature to apply to the oracle's output
-     to get the prior probability vector used by MCTS.
 
 ## Dirichlet Noise
 
