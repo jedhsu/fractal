@@ -75,7 +75,7 @@ The world runs the event loop of `Realizing`. This is the event loop that observ
 Grammatical tense is used to indicate a particular semantics of structs.
 
 - `Operation` represents a concept. These objects contain parameters (immutables).
-- `Operating` represents an event loop, and contains streaming data holding mutable state.
+- `Operating` contains streaming data holding mutable state.
 - `Operated` is a result, mostly used for reporting.
 
 For example, the `Evolving` type
