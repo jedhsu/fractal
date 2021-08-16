@@ -1,7 +1,0 @@
-"""
-
-    *Synthesize*
-
-  A convolutional layer.
-
-"""

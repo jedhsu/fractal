@@ -1,7 +1,0 @@
-"""
-
-    *Analyze*
-
-  This is activation.
- 
-"""

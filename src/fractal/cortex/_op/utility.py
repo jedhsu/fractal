@@ -1,4 +1,0 @@
-class Utility(
-    Brain,
-):
-    pass
