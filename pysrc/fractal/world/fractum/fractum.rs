@@ -1,11 +1,5 @@
-"""
-Fractum
-=======
-
-A fractum is a quantum enlightened with a spectrum,
-knowledge of where it is going.
-
-"""
+//! A fractum is a quantum enlightened with a spectrum,
+//! knowledge of where it is going.
 
 from abc import ABCMeta
 from dataclasses import dataclass

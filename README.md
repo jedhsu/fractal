@@ -1,6 +1,6 @@
 ## Fractal
 
-`fractal` is a developing spec for a reinforcement learning framework.
+`fractal` is a developing spec for a reinforcement learning framework. Currently early prototyping.
 
 It is written with a creative flavor that emphasizes a physical perspective. This is motivated by an interest in computational trinitarianism, as well as some [intuitive ideas](https://github.com/jedhsu/think/blob/main/towards-a-physical-theory-of-consciousness.md).
 

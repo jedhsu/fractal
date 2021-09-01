@@ -1,10 +1,4 @@
-"""
-
-    *Spectrum*
-
-  A probability distribution of quantum placements.
-
-"""
+//!  A probability distribution of quantum placements.
 
 from abc import ABCMeta
 from typing import Mapping
