@@ -15,7 +15,7 @@ pub struct Excite(
     @staticmethod
     fn excite(
         spectrum: Spectrum,
-        energy: float,
+        energy: f64,
     ):
         if energy == approx(1):
             return spectrum

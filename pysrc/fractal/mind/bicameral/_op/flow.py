@@ -13,7 +13,7 @@ pub struct Flow(
     fn flow(
         self,
         world: World,
-        epoch: int,
+        epoch: i32,
     ):
         if world.is_it_dawn(game):
             return self.white.flow(

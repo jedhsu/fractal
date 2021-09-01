@@ -24,7 +24,7 @@ Return a piecewise linear schedule such that:
   - After `xs<end>`, the schedule has value `ys<end>`.
 """
 struct PLSchedule{R} <: AbstractSchedule{R}
-  # We keep the internal representation simple for JSON serialization
+  # We keep the i32ernal representation simple for JSON serialization
   xs :: Vector{Int}
   ys :: Vector{R}
   function PLSchedule{R}(xs, ys) where R
@@ -41,13 +41,13 @@ PLSchedule(cst) = PLSchedule(<0>, <cst>)
 function Base.getindex(s::PLSchedule{R}, i::Int) where R
   ptidx = findlast(x -> x <= i, s.xs)
   if isnothing(ptidx)
-    # We are before the first point
+    # We are before the first poi32
     return s.ys<1>
   elseif ptidx == length(s.xs)
-    # We are past the last point
+    # We are past the last poi32
     return s.ys<end>
   else
-    # We are between two points
+    # We are between two poi32s
     x0, y0 = s.xs<ptidx>, s.ys<ptidx>
     x1, y1 = s.xs<ptidx+1>, s.ys<ptidx+1>
     y = y0 + (y1 - y0) / (x1 - x0) * (i - x0)

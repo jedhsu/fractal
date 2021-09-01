@@ -15,10 +15,10 @@ from ..glimpsing import Glimpsing
 pub struct Interpret(
     Glimpsing,
 ):
-    fn interpret(
+    fn i32erpret(
         self,
         flow: Flowing,
-        eta: float,
+        eta: f64,
         root: bool = True,
     ) -> Qvalue:
         state = flowing.state()
@@ -51,7 +51,7 @@ pub struct Interpret(
 
         shall_cortex_change = wr != flow.at_dawn()
 
-        qnext = self.interpret(
+        qnext = self.i32erpret(
             flow,
             eta,
             root=False,

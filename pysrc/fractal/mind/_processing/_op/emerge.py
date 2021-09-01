@@ -13,7 +13,7 @@ pub struct Emerge:
     ):
         fn awaken(
             self,
-            size: int,
+            size: i32,
             experience=<>,
         ):
             State = Flow.state_type(spacetime)

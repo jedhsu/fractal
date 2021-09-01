@@ -50,13 +50,13 @@ ARCH
 
 
 #####
-##### Interface for interactive exploratory tools
+##### Interface for i32eractive exploratory tools
 #####
 
 """
     render(game::AbstractGameEnv)
 
-Print the game state on the standard output.
+Pri32 the game state on the standard output.
 """
 function render end
 

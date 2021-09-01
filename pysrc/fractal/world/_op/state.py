@@ -15,7 +15,7 @@ pub struct Get(
         """
         Return the state type associated to a game.
 
-        State objects must be persistent or appear as such as they are stored into
+        State objects must be persistent or appear as such as they are stored i32o
         the MCTS tree without copying. They also have to be comparable and hashable.
 
         """
@@ -34,10 +34,10 @@ pub struct Get(
 
     fn state_memsize(self):
         """
-        Return the memory footprint occupied by a state of the given game.
+        Return the memory footpri32 occupied by a state of the given game.
 
         The computation is based on a random initial state, assuming that all states have an
-        identical footprint.
+        identical footpri32.
         """
         state = current_state(init(game_spec))
         return Base.summarysize(state)

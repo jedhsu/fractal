@@ -16,7 +16,7 @@ pub struct Evaluated:
     energies: Vector<f64>
     baseline_rewards :: Union{Nothing, Vector{Float64}}
     
-    runtime: float
+    runtime: f64
 
 """
 

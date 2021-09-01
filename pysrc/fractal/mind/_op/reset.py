@@ -2,7 +2,7 @@
 
     *Go*
 
-  Reset the internal memory of a player (e.g. the MCTS tree).
+  Reset the i32ernal memory of a player (e.g. the MCTS tree).
   The fnault implementation does nothing.
 
 """

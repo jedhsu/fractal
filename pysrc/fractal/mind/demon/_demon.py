@@ -4,7 +4,7 @@
 
   The managers of the brain with a policy and foresight.
 
-  They have the power to interpret fractums.
+  They have the power to i32erpret fractums.
 
 """
 
@@ -19,9 +19,9 @@ pub struct Demon(
     Fractum,
     metapub struct=ABCMeta,
 ):
-    depth: int
-    age: float
-    gamma: float
+    depth: i32
+    age: f64
+    gamma: f64
     shall_amplify: bool
 
 

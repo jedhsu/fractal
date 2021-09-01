@@ -1,2 +1,2 @@
 pub struct GreedyNature:
-    epsilon: int
+    epsilon: i32

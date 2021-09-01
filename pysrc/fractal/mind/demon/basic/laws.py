@@ -15,7 +15,7 @@ from datapub structes import datapub struct
 """
 # Explanation (two-player games)
 
-* The two competing networks are instantiated into two MCTS players
+* The two competing networks are instantiated i32o two MCTS players
   of parameter `mcts` and then play `sim.num_games` games.
 * The evaluated network replaces the current best one if its
   average collected reward is greater or equal than `update_threshold`.

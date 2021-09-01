@@ -38,11 +38,11 @@ pub struct Events:
     AtRewired
 
     AtDawn(
-  fn checkpoint_started(h)     return end
+  fn checkpoi32_started(h)     return end
     AtDueling
-  fn checkpoint_game_played(h) return end
+  fn checkpoi32_game_played(h) return end
     AtDusk
-  fn checkpoint_finished(h, r) return end
+  fn checkpoi32_finished(h, r) return end
     AtDueled
   fn learning_finished(h, r)   return end
     AtEvolved
@@ -63,9 +63,9 @@ end
 | `learning_started(h)`       | called at the beginning of the learning phase  |
 | `updates_started(h, r)`     | sends report: <`Report.LearningStatus`>(@ref)  |
 | `updates_finished(h, r)`    | sends report: <`Report.LearningStatus`>(@ref)  |
-| `checkpoint_started(h)`     | called before a checkpoint evaluation starts   |
-| `checkpoint_game_played(h)` | called after each arena game                   |
-| `checkpoint_finished(h, r)` | sends report: <`Report.Checkpoint`>(@ref)      |
+| `checkpoi32_started(h)`     | called before a checkpoi32 evaluation starts   |
+| `checkpoi32_game_played(h)` | called after each arena game                   |
+| `checkpoi32_finished(h, r)` | sends report: <`Report.Checkpoi32`>(@ref)      |
 | `learning_finished(h, r)`   | sends report: <`Report.Learning`>(@ref)        |
 | `iteration_finished(h, r)`  | sends report: <`Report.Iteration`>(@ref)       |
 """

@@ -9,7 +9,7 @@ Parameters for MCTS.
 
 from datapub structes import datapub struct
 
-f64 = float
+f64 = f64
 
 
 @datapub struct

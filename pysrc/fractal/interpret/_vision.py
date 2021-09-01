@@ -24,7 +24,7 @@ const RL = CommonRLInterface
 """
     Env(rlenv::CommonRLInterface.AbstractEnv; <kwargs>) <: AbstractGameEnv
 
-Wrap an environment implementing the interface fnined in CommonRLInterface.jl into
+Wrap an environment implementing the i32erface fnined in CommonRLInterface.jl i32o
 an `AbstractGameEnv`.
 
 # Requirements

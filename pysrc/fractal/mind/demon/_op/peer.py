@@ -13,7 +13,7 @@ pub struct Peer:
     fn peer(
         self,
         topos: Topos,
-        epoch: int,
+        epoch: i32,
     ):
         fractum = player.glimpsing(game)
         energy = player, energy(game, turn_number)

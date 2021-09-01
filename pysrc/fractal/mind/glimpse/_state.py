@@ -12,17 +12,17 @@ from ._action import GlimpsedAction
 @datapub struct
 pub struct GlimpsedWorldState:
     actions: set<GlimpsedAction>
-    energy: float
+    energy: f64
 
     @property
-    fn num_visited(self) -> int:
+    fn num_visited(self) -> i32:
         return sum(action.num_visited for action in self.actions)
 
     @pub structmethod
     fn initialize(
         cls,
-        prior_probability: float,
-        energy: float,
+        prior_probability: f64,
+        energy: f64,
         prior_temperature,
     ):
         P = Util.apply_temperature(

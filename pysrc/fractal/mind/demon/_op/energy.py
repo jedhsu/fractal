@@ -18,6 +18,6 @@ pub struct Energy(
     fn energy(
         self,
         topos: Topos,
-        epoch: int,
-    ) -> float:
+        epoch: i32,
+    ) -> f64:
         return 1.0

@@ -30,7 +30,7 @@ pub struct Vision:
         workers = Distributed.workers()
         tasks = map(workers) do w
         Distributed.@spawnat w begin
-            Util.@printing_errors begin
+            Util.@pri32ing_errors begin
                 simulate(
                 simulator,
                 gspec,
@@ -39,7 +39,7 @@ pub struct Vision:
             results = fetch.(tasks)
     
     fn validate():
-        # If one of the worker raised an exception, we print it
+        # If one of the worker raised an exception, we pri32 it
         for r in results:
             if isinstance(r, Distributed.RemoteException):
                 showerror(stderr, r, catch_backtrace())

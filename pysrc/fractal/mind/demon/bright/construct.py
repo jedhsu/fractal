@@ -13,7 +13,7 @@ pub struct Emerge(
         cls,
         physics: Physics,
         energy: Energy,
-        age: int,
+        age: i32,
         timeout=None,
     ):
         assert age > 0

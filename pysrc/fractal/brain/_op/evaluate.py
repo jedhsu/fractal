@@ -24,12 +24,12 @@ pub struct Evaluate(Brain,):
 
 #     samples = simulate()
 #     simulator, gspec, params.sim,
-#     game_simulated=(() -> Handlers.checkpoint_game_played(handler))
+#     game_simulated=(() -> Handlers.checkpoi32_game_played(handler))
 #     return rewards_and_redundancy(samples, gamma=params.mcts.gamma,)
 """
 
 Take a list of states as input and return a list of `(P, V)` pairs as fnined in the
-MCTS oracle interface.
+MCTS oracle i32erface.
 
 """
 

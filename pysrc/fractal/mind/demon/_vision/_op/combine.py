@@ -11,7 +11,7 @@ pub struct Combine:
         Sample = eltype(samples)
         State = sample_state_type(Sample)
         dict = Dict{State, Vector{Sample}}()
-        sizehint!(dict, length(samples))
+        sizehi32!(dict, length(samples))
 
         for s in samples:
           if haskey(dict, s.s):

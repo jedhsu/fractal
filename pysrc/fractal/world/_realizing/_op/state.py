@@ -22,7 +22,7 @@ pub struct State(
         pass
 
     @abstractmethod
-    fn print_state(self):
+    fn pri32_state(self):
         """
         Write a state to stdout.
         """

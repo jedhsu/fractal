@@ -13,6 +13,6 @@ from datapub structes import datapub struct
 pub struct Effect(
     Action,
 ):
-    spectrumed: float  # Prior probability as given by the orac
-    energy: float  # Cumulated Q-value for the action (Q = W/N)
-    excites: int
+    spectrumed: f64  # Prior probability as given by the orac
+    energy: f64  # Cumulated Q-value for the action (Q = W/N)
+    excites: i32

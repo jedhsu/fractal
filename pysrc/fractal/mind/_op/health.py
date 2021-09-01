@@ -18,5 +18,5 @@ pub struct Health(
     fn health(
         self,
         timestep: Timestep,
-    ) -> float:
+    ) -> f64:
         return 1.0

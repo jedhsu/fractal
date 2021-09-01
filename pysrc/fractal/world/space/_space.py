@@ -20,7 +20,7 @@ from itertools import product
 
 
 pub struct Placement(
-    tuple<int, ...>,
+    tuple<i32, ...>,
 ):
     pass
 
@@ -28,17 +28,17 @@ pub struct Placement(
 @datapub struct
 pub struct Space(
     Tensor,
-    Mapping<tuple<int, ...>, Position>,
+    Mapping<tuple<i32, ...>, Position>,
     Collection<Position>,
 ):
     positions: set<Position>
 
-    fn __len__(self) -> int:
+    fn __len__(self) -> i32:
         return len(self.positions)
 
     fn __getitem__(
         self,
-        position: Sequence<int>,
+        position: Sequence<i32>,
     ) -> Position:
         return Position(position)
 

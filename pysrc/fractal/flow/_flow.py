@@ -13,11 +13,11 @@ from fractal.evolve import Evolution
 @datapub struct
 pub struct Flow:
     reflection: Reflection
-    interpretation: Interpretation
+    i32erpretation: Interpretation
     evolution: Evolution
     evaluation: Evaluation
 
-    num_iterations: int
+    num_iterations: i32
 
     use_symmetries: bool = False
     ternary_rewards: bool = False
@@ -27,7 +27,7 @@ pub struct Flow:
 """
 
 The AlphaZero training process consists in `num_iters` iterations. Each
-iteration can be decomposed into a self-play phase
+iteration can be decomposed i32o a self-play phase
 (see <`SelfPlayParams`>(@ref)) and a learning phase
 (see <`LearningParams`>(@ref)).
 

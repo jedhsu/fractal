@@ -15,13 +15,13 @@ from ._space import Space
 
 @datapub struct
 pub struct Position(
-    tuple<int, ...>,
+    tuple<i32, ...>,
 ):
     space: Space
 
     fn __new__(
         cls,
-        ident: Sequence<int>,
+        ident: Sequence<i32>,
     ):
         if ident in cls.space:
             return cls.space<ident>
@@ -29,7 +29,7 @@ pub struct Position(
 
     fn __init__(
         self,
-        ident: Sequence<int>,
+        ident: Sequence<i32>,
     ):
         super().__new__(
             tuple,

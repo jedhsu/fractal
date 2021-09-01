@@ -15,10 +15,10 @@ from .._cognition import Cognition
 
 @datapub struct
 pub struct Awakened:
-    number_parameters: int
-    number_regularized_parameters: int
+    number_parameters: i32
+    number_regularized_parameters: i32
     demon: Demon
-    memory_footprint_per_node: int
+    memory_footpri32_per_node: i32
 
 
 pub struct Awaken(Cognition):

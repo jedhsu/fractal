@@ -21,7 +21,7 @@ pub struct QuantumStateMeta:
 
 
 pub struct QuantumState(
-    int,
+    i32,
     metapub struct=QuantumStateMeta,
 ):
     pass

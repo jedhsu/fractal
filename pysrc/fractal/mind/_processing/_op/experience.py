@@ -24,6 +24,6 @@ pub struct Experience(
             spectra = recall.spectra<i>
             is_bright = GlobalInterpreter.white_playing(GlobalInterpreter.init(mem.gspec, s))
             z = wp ? wr : -wr
-            t = float(n - i + 1)
+            t = f64(n - i + 1)
             push!(mem.buf, TrainingSample(s, π, z, t, 1),)
         self.cur_batch_size += n

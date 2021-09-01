@@ -35,7 +35,7 @@ pub struct Reflect(
         simulator, gspec, params.sim,
 
         fn game_simulated():
-            return Handlers.checkpoint_game_played(handler)
+            return Handlers.checkpoi32_game_played(handler)
 
         return rewards_and_redundancy(
             samples,

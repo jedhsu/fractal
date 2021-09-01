@@ -18,7 +18,7 @@ fn AlphaDemon(
     env: Environment,
     mcts_params: MonteCarloTreeSearchParameters,
     gpu: Optional = None,
-    timeout: float = 2.0,
+    timeout: f64 = 2.0,
 ):
     if not mcts_params:
         mcts_params = MonteCarloTreeSearchParameters.guess(environment)

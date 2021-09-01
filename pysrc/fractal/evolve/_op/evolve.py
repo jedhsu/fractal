@@ -18,7 +18,7 @@ pub struct Evolve:
 #     ap = env.params.arena
 #     lp = env.params.learning
 
-#     checkpoints = Report.Checkpoint<>
+#     checkpoi32s = Report.Checkpoi32<>
 #     losses = Float32<>
 
 #     tlossteval, ttrain = 0., 0., 0.
@@ -35,20 +35,20 @@ pub struct Evolve:
 #     status = init_status
 #     Handlers.learning_started(handler)
 
-#   # Compute the number of batches between each checkpoint
+#   # Compute the number of batches between each checkpoi32
 
-#     fn compute_batches_between_checkpoint():
-#         nbatches = lp.max_batches_per_checkpoint
-#         if !iszero(lp.min_checkpoints_per_epoch):
+#     fn compute_batches_between_checkpoi32():
+#         nbatches = lp.max_batches_per_checkpoi32
+#         if !iszero(lp.min_checkpoi32s_per_epoch):
 #             ntotal = num_batches_total(trainer)
-#             nbatches = min(nbatches, ntotal ÷ lp.min_checkpoints_per_epoch)
+#             nbatches = min(nbatches, ntotal ÷ lp.min_checkpoi32s_per_epoch)
     
 #     fn loop_state_variables():
 #   # Loop state variables
 #         best_evalr = isnothing(ap) ? nothing : ap.update_threshold
 #         nn_replaced = false
 
-#   # for k in 1:lp.num_checkpoints
+#   # for k in 1:lp.num_checkpoi32s
 #     Handlers.updates_started(handler, status)
 #     fn evolving_for_batch():
 #         dlosses, dttrain = evolving.batch_updates(batches))
@@ -60,14 +60,14 @@ pub struct Evolve:
 #     append!(losses, dlosses)
     
     
-#     fn checkpoint_eval():
-#     # Run a checkpoint evaluation if the arena parameter is provided
+#     fn checkpoi32_eval():
+#     # Run a checkpoi32 evaluation if the arena parameter is provided
 #     if ap is None:
 #         env.curnn = get_trained_network(trainer)
 #         env.bestnn = copy(env.curnn)
 #         nn_replaced = true
 #     else:
-#         Handlers.checkpoint_started(handler)
+#         Handlers.checkpoi32_started(handler)
 #         env.curnn = get_trained_network(trainer)
 #         eval_report =
 #         compare_networks(env.gspec, env.curnn, env.bestnn, ap, handler)
@@ -82,14 +82,14 @@ pub struct Evolve:
 #             cortex.neocortex = topos.current_cortex
 #             best_evalr = eval_report.avgr
 
-#       checkpoint_report = Report.Checkpoint(k * nbatches, eval_report, status, success)
-#       push!(checkpoints, checkpoint_report)
-#       Handlers.checkpoint_finished(handler, checkpoint_report,)
+#       checkpoi32_report = Report.Checkpoi32(k * nbatches, eval_report, status, success)
+#       push!(checkpoi32s, checkpoi32_report)
+#       Handlers.checkpoi32_finished(handler, checkpoi32_report,)
 
 
 # #   report = Report.Learning(
 # #     tconvert, tloss, ttrain, teval,
-# #     init_status, losses, checkpoints, nn_replaced)
+# #     init_status, losses, checkpoi32s, nn_replaced)
 # #   Handlers.learning_finished(handler, report)
 # #   return report
 # # end

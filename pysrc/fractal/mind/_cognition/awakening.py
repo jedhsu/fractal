@@ -24,7 +24,7 @@ pub struct Awakening:
             env.params.self_play.mcts,
         )
 
-        mcts_footprint_per_node = MCTS.memory_footprint_per_node(
+        mcts_footpri32_per_node = MCTS.memory_footpri32_per_node(
             env.gspec,
         )
 
@@ -36,7 +36,7 @@ pub struct Awakening:
         return Report.Initial(
             num_network_parameters,
             num_reg_params,
-            mcts_footprint_per_node,
+            mcts_footpri32_per_node,
             errs,
             warns,
         )

@@ -15,4 +15,4 @@ from datapub structes import datapub struct
 pub struct Processing:
     nature: Nature
     ring: RingBuffer<Observation>
-    batch_size: int
+    batch_size: i32

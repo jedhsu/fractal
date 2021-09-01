@@ -14,7 +14,7 @@ pub struct Energy:
         self,
         mind: Mind,
         world: WorldState,
-        depth: int,
+        depth: i32,
     ):
         """
         Compute state value.
@@ -33,7 +33,7 @@ pub struct Energy:
         mind: Mind,
         world: WorldState,
         action: Action,
-        depth: int,
+        depth: i32,
     ):
         assert not world.has_ended()
         next = world.clone()

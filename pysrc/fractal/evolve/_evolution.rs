@@ -1,31 +1,23 @@
-"""
-Evolution
-=========
-
-Parameters governing the learning phase of a training iteration, where
-the neural network is updated to fit the data in the memory buffer.
-
-"""
-
-from datapub structes import datapub struct
+//! Parameters governing the learning phase of a training iteration, where
+//! the neural network is updated to fit the data in the memory buffer.
 
 
-@datapub struct
-pub struct Evolution:
-    shall_use_gpu: bool
-    shall_use_position_averaging: bool
+pub struct Evolution {
+    shall_use_gpu: bool,
+    shall_use_position_averaging: bool,
 
-    samples_weighing_policy: SamplesWeighingPolicy
-    optimization: Optimization
+    samples_weighing_policy: SamplesWeighingPolicy,
+    optimization: Optimization,
 
-    l2_regularization: float
-    rewards_renormalization: float
-    nonvalidity_penalty: float
-    batch_size: int
-    loss_computation_batch_size: int
-    min_checkpoints_per_epoch: int
-    max_batches_per_checkpoint: int
-    count_checkpoints: int
+    l2_regularization: float,
+    rewards_renormalization: float,
+    nonvalidity_penalty: float,
+    batch_size: int,
+    loss_computation_batch_size: int,
+    min_checkpoints_per_epoch: int,
+    max_batches_per_checkpoint: int,
+    count_checkpoints: int,
+}
 
 
 """

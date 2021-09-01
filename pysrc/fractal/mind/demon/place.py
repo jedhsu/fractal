@@ -17,8 +17,8 @@ pub struct Place(
     position: Position
     policy: Vector<f64>
     energy: Heat
-    until_end: int
-    age: int
+    until_end: i32
+    age: i32
 
 
 """

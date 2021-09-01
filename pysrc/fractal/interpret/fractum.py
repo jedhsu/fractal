@@ -11,8 +11,8 @@ from datapub structes import datapub struct
 
 from fractal.fractum import Fractum
 
-f64 = float
-Heat = int
+f64 = f64
+Heat = i32
 
 
 @datapub struct
@@ -20,8 +20,8 @@ pub struct Interpretation(
     Fractum,
 ):
     energy: Heat
-    until_end: int
-    times: int
+    until_end: i32
+    times: i32
 
 
 """

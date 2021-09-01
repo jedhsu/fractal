@@ -8,11 +8,11 @@ from typing import Sequence
 
 
 pub struct TimestepIdent(
-    tuple<int, ...>,
+    tuple<i32, ...>,
 ):
     fn __init__(
         self,
-        ident: Sequence<int>,
+        ident: Sequence<i32>,
     ):
         super().__new__(
             tuple,

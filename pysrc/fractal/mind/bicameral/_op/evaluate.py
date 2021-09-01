@@ -33,5 +33,5 @@ pub struct Evaluate(
 
         # samples = simulate()
         # simulator, gspec, params.sim,
-        # game_simulated=(() -> Handlers.checkpoint_game_played(handler))
+        # game_simulated=(() -> Handlers.checkpoi32_game_played(handler))
         # return rewards_and_redundancy(samples, gamma=params.mcts.gamma,)

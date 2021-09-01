@@ -13,8 +13,8 @@ from .optimized import Optimized
 pub struct Evolved(
     Optimized,
 ):
-    demon_entropy: float
-    brain_entropy: float
+    demon_entropy: f64
+    brain_entropy: f64
 
 
 fn evolution_status(

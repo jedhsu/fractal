@@ -16,8 +16,8 @@ T = TypeVar("T")
 @datapub struct
 pub struct BrightDemon(Datatype<T>, Demon,):
     mcts: T
-    niters: int
-    timeout: Optional<int>
+    niters: i32
+    timeout: Optional<i32>
     time: Time<f64>
 
 
