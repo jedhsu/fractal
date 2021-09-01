@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Analysis*
 
   Analysis of a state.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 
@@ -17,5 +17,5 @@ pub struct PlaceAnalysis(Place):
     distribution: set<PlacementAnalysis>
     expected_value: f64
 
-    fn total(self):
+    fn total(&self):
         return sum(s.N for s in b.stats)

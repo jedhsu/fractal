@@ -1,15 +1,11 @@
-"""
+//! *Reset*
 
-    *Reset*
+pub trait Wipe {
+    fn wipe(&self);
+}
 
-"""
-
-from .._mind import BicameralMind
-
-
-pub struct Reset(
-    BicameralMind,
-):
-    fn reset(self):
-        self.white.reset()
-        self.black.reset()
+impl Wipe for BicameralMind {
+    fn wipe(&self) {
+        &self.white.reset() & self.black.reset()
+    }
+}

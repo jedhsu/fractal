@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Mind Stream*
 
-"""
+\\\!
 
 
 fn mind_stream() -> Iterator<Batch>:

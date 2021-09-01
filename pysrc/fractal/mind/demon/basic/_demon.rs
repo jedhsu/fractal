@@ -1,19 +1,19 @@
-"""
+\\\!
 Basic Demon
 ===========
 
 Min-max tree search algorithm.
 
-"""
+\\\!
 
 
-"""
+\\\!
 
 A simple implementation of the minmax tree search algorithm, to be used as
 a baseline against AlphaZero. Heuristic board values are provided by the
 <`GameInterface.heuristic_value`>(@ref) function.
 
-"""
+\\\!
 
 
 
@@ -22,7 +22,7 @@ amplify(r) = iszero(r) ? r : Inf * sign(r)
 function minmax(player, game, actions, depth)
   return argmax(<qvalue(player, game, a, player.depth) for a in actions>)
 
-"""
+\\\!
     MinMax.Player <: AbstractPlayer
 
 A stochastic minmax player, to be used as a baseline.
@@ -50,4 +50,4 @@ Otherwise,
 
 If the `amplify_rewards` option is set to true, every received positive reward
 is converted to ``∞`` and every negative reward is converted to ``-∞``.
-"""
+\\\!

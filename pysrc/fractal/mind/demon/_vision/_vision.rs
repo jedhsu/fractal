@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Vision*
 
-  A demon's view of its fractal itself.
+  A demon's view of its fractal it&self.
 
-"""
+\\\!
 
 from fractal import Fractum
 

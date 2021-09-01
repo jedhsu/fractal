@@ -1,10 +1,10 @@
-"""
+\\\!
 Glimpse
 =======
 
 Parameters for MCTS.
 
-"""
+\\\!
 
 
 from datapub structes import datapub struct
@@ -21,7 +21,7 @@ pub struct Glimpse:
     prior_health: f64
 
 
-"""
+\\\!
 
     `decay`
       the reward discount factor
@@ -37,4 +37,4 @@ pub struct Glimpse:
       temperature to apply to the oracle's output to get
       the prior probability vector used by MCTS.
 
-"""
+\\\!

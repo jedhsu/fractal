@@ -1,10 +1,10 @@
-"""
+\\\!
 Multiprocessing
 ===============
 
 Parameters for parallel simulation.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 from typing import Optional

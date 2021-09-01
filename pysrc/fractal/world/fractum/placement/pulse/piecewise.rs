@@ -1,11 +1,11 @@
-"""
+\\\!
 
     *when coarsely,
     *     smoothly...*
 
-"""
+\\\!
 
-"""
+\\\!
     PLSchedule{R} <: AbstractSchedule{R}
 
 Type for piecewise linear schedules.
@@ -22,7 +22,7 @@ Return a piecewise linear schedule such that:
   - For all `i`, `(xs<i>, ys<i>)` belongs to the schedule's graph.
   - Before `xs<1>`, the schedule has value `ys<1>`.
   - After `xs<end>`, the schedule has value `ys<end>`.
-"""
+\\\!
 struct PLSchedule{R} <: AbstractSchedule{R}
   # We keep the i32ernal representation simple for JSON serialization
   xs :: Vector{Int}

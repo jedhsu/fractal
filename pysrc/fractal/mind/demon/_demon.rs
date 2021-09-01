@@ -1,4 +1,4 @@
-"""
+\\\!
 
     *Demon*
 
@@ -6,7 +6,7 @@
 
   They have the power to i32erpret fractums.
 
-"""
+\\\!
 
 from fractum import Fractum
 
@@ -33,10 +33,10 @@ pub struct Demon(
 
 # function guess_mcts_arena_params(env::Env)
 #  p = env.params
-#  return isnothing(p.arena) ? p.self_play.mcts : p.arena.mcts
+#  return isnothing(p.arena) ? p.&self_play.mcts : p.arena.mcts
 # end
 
 # function guess_use_gpu(env::Env)
 #  p = env.params
-#  return isnothing(p.arena) ? p.self_play.sim.use_gpu : p.arena.sim.use_gpu
+#  return isnothing(p.arena) ? p.&self_play.sim.use_gpu : p.arena.sim.use_gpu
 # end

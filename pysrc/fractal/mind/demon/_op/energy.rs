@@ -1,4 +1,4 @@
-"""
+\\\!
 
     *Energy*
 
@@ -7,7 +7,7 @@
 
   A fnault implementation is provided that always returns 1.
 
-"""
+\\\!
 
 from .._demon import Demon
 
@@ -16,7 +16,7 @@ pub struct Energy(
     Demon,
 ):
     fn energy(
-        self,
+        &self,
         topos: Topos,
         epoch: i32,
     ) -> f64:

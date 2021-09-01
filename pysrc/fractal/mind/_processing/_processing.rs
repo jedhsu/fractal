@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Processing*
 
   Memory buffer.
 
-"""
+\\\!
 
 from fractal.world import Nature
 

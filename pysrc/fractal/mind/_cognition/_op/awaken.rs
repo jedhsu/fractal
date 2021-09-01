@@ -1,11 +1,11 @@
-"""
+\\\!
 
     *Awaken*
 
   Return a report summarizing the configuration of agent before training starts,
   as an object of type <`Report.Initial`>(@ref).
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 
@@ -22,13 +22,13 @@ pub struct Awakened:
 
 
 pub struct Awaken(Cognition):
-    fn awakened(self):
+    fn awakened(&self):
         return Awakened(
-            self.current_brain.number_parameters(),
-            self.smartest_brain.number_regularized_parameters(),
+            &self.current_brain.number_parameters(),
+            &self.smartest_brain.number_regularized_parameters(),
             Demon(
-                self.nature,
-                self.current_brain,
-                self.parameters.self_play.mcts,
+                &self.nature,
+                &self.current_brain,
+                &self.parameters.&self_play.mcts,
             ),
         )

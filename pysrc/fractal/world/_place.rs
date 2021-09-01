@@ -1,4 +1,4 @@
-"""
+\\\!
 World Place
 
 ===========
@@ -9,7 +9,7 @@ Contains set of states.
 
 Ultimate goal is to allow this to be parametrizable by algo.
 
-"""
+\\\!
 
 from abc import ABCMeta
 

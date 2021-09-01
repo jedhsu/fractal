@@ -1,14 +1,14 @@
 
-"""
+\\\!
     simulate_distributed(::Simulator, ::AbstractGameSpec, ::SimParams; <kwargs>)
 
 Identical to <`simulate`>(@ref) but splits the work across all available distributed
 workers, whose number is given by `Distributed.nworkers()`.
-"""
+\\\!
 
 pub struct Vision:
     fn glimpse(
-        self,
+        &self,
         spacetime: Spacetime,
         game_simulated
     ):
@@ -16,7 +16,7 @@ pub struct Vision:
         distribute()
         validate()
 
-    fn spawn(self): 
+    fn spawn(&self): 
         # Spawning a task to keep count of completed simulations
         chan = Distributed.RemoteChannel(()->Channel{Nothing}(1))
         Util.@tspawn_mainfor i in 1:p.num_games

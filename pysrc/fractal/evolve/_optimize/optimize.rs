@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Dynamics*
 
-"""
+\\\!
 
 # Surprisingly, Flux does not like the following code (scalar operations):
 # mse_wmean(ŷ, y, w) = sum((ŷ .- y).^2 .* w) / sum(w)

@@ -1,4 +1,4 @@
-"""
+\\\!
 
     *At*
 
@@ -7,7 +7,7 @@
   
   `getindex(s::AbstractSchedule, i::Int)` operator.
 
-"""
+\\\!
 
 
 pub struct At:

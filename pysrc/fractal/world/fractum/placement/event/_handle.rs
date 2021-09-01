@@ -3,7 +3,7 @@
 ##### Training handlers
 #####
 
-"""
+\\\!
     Handlers
 
 Namespace for the callback functions that are used during training.
@@ -14,18 +14,18 @@ All callback functions take a handler object `h` as their first argument
 and sometimes a second argment `r` that consists in a report.
 
 | `training_finished(h)`      | called once at the end of training             |
-"""
+\\\!
 pub struct Events:
   import ..Report
 
   fn iteration_started(h)      return end
     AtBigBang
 
-  fn self_play_started(h)      return end
+  fn &self_play_started(h)      return end
     AtReflecting
   fn game_played(h)            return end
     AtGlimpsedReflection
-  fn self_play_finished(h, r)  return end
+  fn &self_play_finished(h, r)  return end
     AtReflected
   fn memory_analyzed(h, r)     return end
     AtAnalyzing
@@ -52,13 +52,13 @@ pub struct Events:
 
 end
 
-"""
+\\\!
 | Callback                    | Comment                                        |
 |:----------------------------|:-----------------------------------------------|
 | `iteration_started(h)`      | called at the beggining of an iteration        |
-| `self_play_started(h)`      | called once per iter before self play starts   |
-| `game_played(h)`            | called after each game of self play            |
-| `self_play_finished(h, r)`  | sends report: <`Report.SelfPlay`>(@ref)        |
+| `&self_play_started(h)`      | called once per iter before &self play starts   |
+| `game_played(h)`            | called after each game of &self play            |
+| `&self_play_finished(h, r)`  | sends report: <`Report.SelfPlay`>(@ref)        |
 | `memory_analyzed(h, r)`     | sends report: <`Report.Memory`>(@ref)          |
 | `learning_started(h)`       | called at the beginning of the learning phase  |
 | `updates_started(h, r)`     | sends report: <`Report.LearningStatus`>(@ref)  |
@@ -68,4 +68,4 @@ end
 | `checkpoi32_finished(h, r)` | sends report: <`Report.Checkpoi32`>(@ref)      |
 | `learning_finished(h, r)`   | sends report: <`Report.Learning`>(@ref)        |
 | `iteration_finished(h, r)`  | sends report: <`Report.Iteration`>(@ref)       |
-"""
+\\\!

@@ -1,8 +1,8 @@
-"""
+\\\!
 Glimpsing - Update
 =================
 
-"""
+\\\!
 
 from ..glimpsing import Glimpsing
 
@@ -13,7 +13,7 @@ pub struct Update(
     Glimpsing,
 ):
     fn update_world_state(
-        self,
+        &self,
         worldstate: WorldState,
         action: Action,
         energy: Energy,

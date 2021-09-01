@@ -1,4 +1,4 @@
-"""
+\\\!
 Compute
 =======
 
@@ -6,19 +6,19 @@ Compute
 * temperature (state value)
 * energy (action value)
 
-"""
+\\\!
 
 
 pub struct Energy:
     fn temperature(
-        self,
+        &self,
         mind: Mind,
         world: WorldState,
         depth: i32,
     ):
-        """
+        \\\!
         Compute state value.
-        """
+        \\\!
 
         if GlobalInterpreter.game_terminated(game):
             return 0.0
@@ -29,7 +29,7 @@ pub struct Energy:
             return max(qs)
 
     fn energy(
-        self,
+        &self,
         mind: Mind,
         world: WorldState,
         action: Action,

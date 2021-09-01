@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Placement*
 
   A possible placement of a quantum.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 from typing import Optional

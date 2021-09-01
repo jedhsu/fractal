@@ -1,10 +1,10 @@
 pub trait Experience {
-    fn experience(&self);
+    fn experience(&&self);
 }
 
 impl Experience for Processing {
     fn experience(
-        &self,
+        &&self,
         recall: Recall,
         decay: DecayFactor,
     ) {
@@ -20,6 +20,6 @@ impl Experience for Processing {
             t = f64(n - i + 1);
             push!(mem.buf, TrainingSample(s, π, z, t, 1),);
         }
-        self.cur_batch_size += n;
+        &self.cur_batch_size += n;
     }
 }

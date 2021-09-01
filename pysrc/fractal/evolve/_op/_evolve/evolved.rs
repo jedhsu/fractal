@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Evolved*
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 

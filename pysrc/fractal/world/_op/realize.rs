@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Realize*
 
   Update world state.
 
-"""
+\\\!
 
 from .._world import World
 

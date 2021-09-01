@@ -1,5 +1,5 @@
 pub struct Push(
     Processing,
 ):
-    fn push(self):
+    fn push(&self):
         pass

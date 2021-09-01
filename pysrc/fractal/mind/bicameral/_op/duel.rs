@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Dueled*
 
   The outcome of a duel in the bicameral mind.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 from typing import Optional
@@ -22,7 +22,7 @@ pub struct Dueled:
     time: f64
 
 
-"""
+\\\!
 # Two-player Games
 
 - `rewards` is the sequence of rewards collected by the evaluated player
@@ -42,7 +42,7 @@ pub struct Dueled:
    evaluation, not counting the initial position. If this number is too high,
    you may want to increase the move selection temperature.
 - `time` is the computing time spent running the evaluation, in seconds
-"""
+\\\!
 
 
 pub struct Debate:

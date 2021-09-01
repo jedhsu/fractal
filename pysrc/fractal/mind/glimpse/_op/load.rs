@@ -1,14 +1,14 @@
-"""
+\\\!
 Glimpsing - Load
 ================
 
 Return an estimate of the memory footpri32 of the MCTS tree (in bytes).
-"""
+\\\!
 
 from ...glimpsing import Glimpsing
 
 pub struct Load(Glimpsing,):
-    fn cognitive_load(self):
+    fn cognitive_load(&self):
       return memory_footpri32_per_node(env.gspec) * length(env.tree)
 
     # Possibly very slow for large trees
@@ -17,10 +17,10 @@ pub struct Load(Glimpsing,):
     end
 
 
-    """
+    \\\!
     Return an estimate of the memory footpri32 of a single MCTS node
     for the given game (in bytes).
-    """
+    \\\!
     @staticmethod
     fn memory_footpri32_per_node(nature: Nature,):
         # The hashtable is at most twice the number of stored elements

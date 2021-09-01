@@ -1,15 +1,15 @@
-"""
+\\\!
 
     *Awaken*
 
   Return a report summarizing the configuration of agent before training starts,
   as an object of type <`Report.Initial`>(@ref).
 
-"""
+\\\!
 
 
 pub struct Awakening:
-    fn initial_report(self):
+    fn initial_report(&self):
         num_network_parameters = Network.num_parameters(
             env.curnn,
         )
@@ -21,7 +21,7 @@ pub struct Awakening:
         player = MctsPlayer(
             env.gspec,
             env.curnn,
-            env.params.self_play.mcts,
+            env.params.&self_play.mcts,
         )
 
         mcts_footpri32_per_node = MCTS.memory_footpri32_per_node(

@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Calculate*
 
-"""
+\\\!
 
 from funcy import flow
 
@@ -30,7 +30,7 @@ pub struct Calculate(
         return ret
 
     fn mean_entropy(
-        self,
+        &self,
         w,
     ):
         return -sum(policy * log(demon + eps(eltype(policy))) * w) / sum(w)

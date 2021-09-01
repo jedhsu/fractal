@@ -1,4 +1,4 @@
-"""
+\\\!
 
     *Coarsely*
 
@@ -10,7 +10,7 @@ Type for step function schedules.
 
 Return a schedule that has initial value `start`. For all `i`, the schedule
 takes value `values<i>` at step `change_at<i>`.
-"""
+\\\!
 
 pub struct Coarsely(Flow):
     start: R
@@ -32,12 +32,12 @@ function Base.getindex(s::StepSchedule, i::Int)
    return s.ys<idx>
 end
 
-"""
+\\\!
     CyclicSchedule(base, mid, term; n, xmid=0.45, xback=0.90)
 
 Return the <`PLSchedule`>(@ref) that is typically used for cyclic
 learning rate scheduling.
-"""
+\\\!
 function CyclicSchedule(base, mid, term; n, xmid=0.45, xback=0.90)
   nmid  = floor(Int, xmid * n)
   nback = floor(Int, xback * n)

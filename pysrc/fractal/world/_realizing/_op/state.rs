@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *World*
 
   Get world state.
 
-"""
+\\\!
 
 from abc import abstractmethod
 
@@ -15,15 +15,15 @@ pub struct State(
     World,
 ):
     @abstractmethod
-    fn read_state(self):
-        """
+    fn read_state(&self):
+        \\\!
         Read a state from stdin.
-        """
+        \\\!
         pass
 
     @abstractmethod
-    fn pri32_state(self):
-        """
+    fn pri32_state(&self):
+        \\\!
         Write a state to stdout.
-        """
+        \\\!
         pass

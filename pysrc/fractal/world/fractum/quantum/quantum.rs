@@ -12,12 +12,12 @@ pub struct Quantum {
 }
 
 impl Hash for Quantum {
-    fn hash<H: Hasher<(&self) -> u64:
+    fn hash<H: Hasher<(&&self) -> u64:
         return hash {
             (
-                self.__class__,
-                self.position,
-                self.state,
+                &self.__class__,
+                &self.position,
+                &self.state,
             )
         }
 }
@@ -26,4 +26,3 @@ impl Hash for Quantum {
 //     Hashable,
 //     metaclass=ABCMeta,
 // ):
-

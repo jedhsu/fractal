@@ -1,8 +1,8 @@
-"""
+\\\!
 Imagine
 =======
 
-"""
+\\\!
 
 from typing import Callable
 
@@ -16,22 +16,22 @@ pub struct Imagine(
     Imagining,
 ):
     fn imagine(
-        self,
+        &self,
         world: World,
         multiprocessing: Multiprocessing,
         on_imagined: Callable,
     ):
-        """
+        \\\!
         This is simulate.
-        """
+        \\\!
 
     fn imagine_parallely(
-        self,
+        &self,
         world: World,
         multiprocessing: Multiprocessing,
         on_imagined: Callable,
     ):
-        """
+        \\\!
         This is distributed simulate.
-        """
+        \\\!
         pass

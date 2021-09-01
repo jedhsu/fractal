@@ -1,14 +1,14 @@
-"""
+\\\!
 
     *Observeds*
 
-"""
+\\\!
 
 # pub struct Observeds:
 #     sample_weights: np.
 #     world_representations:
 
-"""
+\\\!
 # A samples collection is represented on the learning side as a (W, X, A, P, V)
 # named-tuple. Each component is a `Float32` tensor whose last dimension corresponds
 # to the sample index. Writing `n` the number of samples and `a` the total
@@ -20,4 +20,4 @@
 # - V (size 1×n) contains the recorded values
 # Note that the weight of a sample is computed as an increasing
 # function of its `n` field.
-"""
+\\\!

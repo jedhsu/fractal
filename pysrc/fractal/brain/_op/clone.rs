@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Clone*
 
   A clone function that also handles CPU/GPU transfers.
 
-"""
+\\\!
 
 from copy import deepcopy
 
@@ -17,11 +17,11 @@ pub struct Clone(
     Brain,
 ):
     fn clone(
-        self,
+        &self,
         on_gpu: bool,
         test_mode: bool,
     ):
-        network = deepcopy(self)
+        network = deepcopy(&self)
         if network.on_gpu():
             network.move_to_gpu()
         else:

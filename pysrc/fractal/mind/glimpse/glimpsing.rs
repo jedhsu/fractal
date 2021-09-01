@@ -1,17 +1,17 @@
-"""
+\\\!
 Glimpsing
 =========
 
 Environment for MCTS.
 
-"""
+\\\!
 
-"""
+\\\!
     MCTS.Env(game_spec::AbstractGameSpec, oracle; <keyword args>)
 
 Create and initialize an MCTS environment with a given `oracle`.
 of parameter ``α``.
-"""
+\\\!
 
 
 pub struct Glimpsing(
@@ -31,7 +31,7 @@ pub struct Glimpsing(
     physics: Spacetime.Physics
 
 
-"""
+\\\!
 
 ## Dirichlet Noise
 
@@ -47,4 +47,4 @@ node during MCTS exploration: instead of considering the policy ``p`` output
 by the neural network in the UCT formula, one uses ``(1-ϵ)p + ϵη`` where ``η``
 is drawn once per call to <`MCTS.explore!`>(@ref) from a Dirichlet distribution
 
-"""
+\\\!

@@ -20,7 +20,7 @@ pub struct Evolution {
 }
 
 
-"""
+\\\!
   The neural network goes through `num_checkpoints` series of `n` updates using
   batches of size `batch_size` drawn from memory, where `n` is fnined as follows:
 
@@ -60,4 +60,4 @@ In the original AlphaGo Zero paper:
   ``(1000 × 2048) / 10^7  ≈ 0.2``.
 + It is unclear how many checkpoints are taken or how many training steps
   are performed in total.
-"""
+\\\!

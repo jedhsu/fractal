@@ -29,10 +29,10 @@ pub struct Cognition {
 // #   gspec, params, curnn, bestnn, memory, itc)
 // # end
 
-// """
+// \\\!
 // # Constructor
 
 //     Env(game_spec, params, curnn, bestnn=copy(curnn), experience=[], itc=0)
 
 // Construct a new AlphaZero environment:
-// """
+// \\\!

@@ -7,4 +7,3 @@ pub struct Thinking {
     demons: Vec<Demon>,
     thermodynamics: Vec<Energy>,
 }
-

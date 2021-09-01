@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Evaluated*
 
 The outcome of evaluating a player against a baseline player.
 
-"""
+\\\!
 
 from dataclsses import datapub struct
 
@@ -18,7 +18,7 @@ pub struct Evaluated:
     
     runtime: f64
 
-"""
+\\\!
 
 # Two-player Games
 
@@ -40,4 +40,4 @@ pub struct Evaluated:
    you may want to increase the move selection temperature.
 - `time` is the computing time spent running the evaluation, in seconds
 
-"""
+\\\!

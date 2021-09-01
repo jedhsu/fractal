@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Bright Demon*
 
-"""
+\\\!
 
 from typing import TypeVar
 from typing import Optional
@@ -21,7 +21,7 @@ pub struct BrightDemon(Datatype<T>, Demon,):
     time: Time<f64>
 
 
-"""
+\\\!
     MctsPlayer{MctsEnv} <: AbstractPlayer
 
 A player that selects actions using MCTS.
@@ -43,16 +43,16 @@ The temperature parameter `τ` can be either a real number or a
                params::MctsParams; timeout=nothing)
 
 Construct an MCTS player from an oracle and an <`MctsParams`>(@ref) structure.
-"""
+\\\!
 
 
-"""
+\\\!
     Benchmark.MctsRollouts(params) <: Benchmark.Player
 
 Pure MCTS baseline that uses rollouts to evaluate new positions.
 
 Argument `params` has type <`MctsParams`>(@ref).
-"""
+\\\!
 
 pub struct MctsRollouts(Cortex,):
     nature = FocusedNature

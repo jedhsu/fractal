@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Placement*
 
   A placement describes a probability distribution on a future place.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 

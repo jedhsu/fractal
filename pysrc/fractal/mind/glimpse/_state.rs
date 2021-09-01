@@ -1,8 +1,8 @@
-"""
+\\\!
 Glimpsed World State
 ====================
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 
@@ -15,8 +15,8 @@ pub struct GlimpsedWorldState:
     energy: f64
 
     @property
-    fn num_visited(self) -> i32:
-        return sum(action.num_visited for action in self.actions)
+    fn num_visited(&self) -> i32:
+        return sum(action.num_visited for action in &self.actions)
 
     @pub structmethod
     fn initialize(

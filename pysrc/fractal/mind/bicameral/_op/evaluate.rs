@@ -1,17 +1,4 @@
-"""
-Evaluate
-========
-
-Evaluate a single neural network for a one-player game.
-
-"""
-
-from fractal.world import Nature
-from fractal.brain import Brain
-from fractal import Fractal
-
-from .._mind import Mind
-
+//! Evaluate a single neural network for a one-player game.
 
 pub struct Evaluate(
     Mind,

@@ -12,4 +12,3 @@ impl Evolving {
     # end |> Util.cycle_iterator |> Iterators.Stateful
     return new(network, samples, params, data, Wmean, Hp, batches_stream,)
     }
-

@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Effect*
 
   The effect of an action, as analyzed by the demon.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 

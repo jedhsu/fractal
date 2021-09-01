@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Gauge*
 
   Evaluating by pitting it against a baseline player in a two-player game.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 

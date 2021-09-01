@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Reflect*
 
   Self-play.
 
-"""
+\\\!
 
 from fractal.world.nature import Nature
 
@@ -17,14 +17,14 @@ pub struct Reflect(
     UnicameralMind,
 ):
     fn reflect(
-        self,
+        &self,
         nature: Nature,
         speech: Speech,
         handler,
     ):
-        make_oracles = self.brain.copy(
+        make_oracles = &self.brain.copy(
             net,
-            on_gpu=self.params.sim.use_gpu,
+            on_gpu=&self.params.sim.use_gpu,
             test_mode=true,
         )
 
@@ -48,14 +48,14 @@ pub struct Reflect(
 #         mind: Mind,
 #         handler,
 #     ):
-#         params = env.params.self_play
-#         Handlers.self_play_started(handler)
+#         params = env.params.&self_play
+#         Handlers.&self_play_started(handler)
 #         make_oracle = Network.copy(
 #             env.bestnn,
 #             on_gpu=params.sim.use_gpu,
 #             test_mode=true,
 #         )
-#         simulator = Simulator(make_oracle, self_play_measurements)
+#         simulator = Simulator(make_oracle, &self_play_measurements)
 #         return MctsPlayer(
 #             env.gspec,
 #             simulator.oracle,

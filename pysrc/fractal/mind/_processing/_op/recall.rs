@@ -1,9 +1,9 @@
-"""
+\\\!
 
     *Recall* (::MemoryBuffer) :: Vector{<:TrainingSample}
 
   Return all samples in the memory buffer.
-"""
+\\\!
 
 # get_experience(mem::MemoryBuffer) = mem.buf<:>
 

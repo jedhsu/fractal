@@ -1,10 +1,10 @@
-"""
+\\\!
 Evolve
 ======
 
 The learning step.
 
-"""
+\\\!
 
 from .evolved import Evolved
 
@@ -15,7 +15,7 @@ pub struct Evolve(
     Evolving,
 ):
     fn evolve(
-        self,
+        &self,
         observed: Iterator<Observed>,
     ) -> Evolved:
         W, X, A, P, V = samples

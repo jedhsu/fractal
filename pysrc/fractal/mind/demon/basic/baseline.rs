@@ -1,8 +1,8 @@
-# """
+# \\\!
 #     Benchmark.MinMaxTS(;depth, τ=0.) <: Benchmark.Player
 
 # Minmax baseline, which relies on <`MinMax.Player`>(@ref).
-# """
+# \\\!
 # @kwfn struct MinMaxTS <: Player
 #   depth :: Int
 #   amplify_rewards :: Bool

@@ -5,7 +5,7 @@ impl Emerge:
         Placement,
     ):
         fn awaken(
-            self,
+            &self,
             size: i32,
             experience=<>,
         ):

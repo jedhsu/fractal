@@ -1,5 +1,5 @@
 
-"""
+\\\!
 A generic, standalone implementation of Monte Carlo Tree Search.
 It can be used on any game that implements `GameInterface`
 and with any external oracle.
@@ -15,7 +15,7 @@ a pair `(P, V)` where:
 
   - `P` is a probability vector on `GI.available_actions(GI.init(gspec, state))`
   - `V` is a scalar estimating the value or win probability for white.
-"""
+\\\!
 
 module MCTS
 
@@ -27,13 +27,13 @@ using ..AlphaZero: GI, Util
 ##### Standard Oracles
 #####
 
-"""
+\\\!
     MCTS.RolloutOracle(game_spec::AbstractGameSpec, γ=1.) <: Function
 
 This oracle estimates the value of a position by simulating a random game
 from it (a rollout). Moreover, it puts a uniform prior on available actions.
 Therefore, it can be used to implement the "vanilla" MCTS algorithm.
-"""
+\\\!
 
 pub struct ShrewdDemon(Physics):
     gspec :: GameSpec
@@ -63,7 +63,7 @@ end
 ##### AlphaZero Parameters
 #####
 
-"""
+\\\!
 Parameters of an MCTS player.
 
 | Parameter              | Type                         | Default             |
@@ -106,7 +106,7 @@ In the original AlphaGo Zero paper:
   the ``α`` parameter to ``0.03``, which is consistent with the heuristic
   of using ``α = 10/n`` with ``n`` the maximum number of possibles moves,
   which is ``19 × 19 + 1 = 362`` in the case of Go.
-"""
+\\\!
 @kwfn struct MctsParams
   gamma :: Float64 = 1.
   cpuct :: Float64 = 1.
@@ -117,10 +117,10 @@ In the original AlphaGo Zero paper:
   prior_temperature :: Float64 = 1.
 end
 
-"""
+\\\!
     SamplesWeighingPolicy
 
-During self-play, early board positions are possibly encountered many
+During &self-play, early board positions are possibly encountered many
 times across several games. The corresponding samples can be merged
 together and given a weight ``W`` that is a nondecreasing function of the
 number ``n`` of merged samples:
@@ -128,5 +128,5 @@ number ``n`` of merged samples:
   - `CONSTANT_WEIGHT`: ``W(n) = 1``
   - `LOG_WEIGHT`: ``W(n) = \\log_2(n) + 1``
   - `LINEAR_WEIGHT`: ``W(n) = n``
-"""
+\\\!
 @enum SamplesWeighingPolicy CONSTANT_WEIGHT LOG_WEIGHT LINEAR_WEIGHT

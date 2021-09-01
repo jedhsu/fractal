@@ -1,20 +1,13 @@
-"""
+pub trait Action {
+    fn action_string(&&self) -> &str;
+    fn parse_action(&&self) -> Action;
+}
 
-    *Action*
+impl Action for World {
+    /// Return a human-readable string representing provided action.
+    fn action_string(&&self) {}
 
-"""
-
-
-pub struct Action(
-    World,
-):
-    fn action_string(self):
-        """
-        Return a human-readable string representing provided action.
-        """
-
-    fn parse_action(self):
-        """
-        Return the action described by string `str` or `nothing` if `str` does not
-        denote a valid action.
-        """
+    /// Return the action described by string `str` or `nothing` if `str` does not
+    /// denote a valid action.
+    fn parse_action(&&self) {}
+}

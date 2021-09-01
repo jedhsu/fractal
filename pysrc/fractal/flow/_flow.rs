@@ -1,5 +1,5 @@
 //! The AlphaZero training process consists in `num_iters` iterations. Each
-//! iteration can be decomposed i32o a self-play phase
+//! iteration can be decomposed i32o a &self-play phase
 //! (see <`SelfPlayParams`>(@ref)) and a learning phase
 //! (see <`LearningParams`>(@ref)).
 //!
@@ -21,12 +21,12 @@ pub struct Flow {
     ternary_rewards: bool, // falsse
     /// `mem_buffer_size` size schedule of the memory buffer, in terms of number of samples.
     /// It is typical to start with a small memory buffer that is grown
-    /// progressively so as to wash out the initial low-quality self-play data
+    /// progressively so as to wash out the initial low-quality &self-play data
     /// more quickly.,
     mem_buffer_size: PLSchedule<i32>,
 }
 
-// """
+// \\\!
 
 //     `memory_analysis`
 //       parameters for the memory analysis step that is performed at each iteration
@@ -35,12 +35,11 @@ pub struct Flow {
 // # AlphaGo Zero Parameters
 
 // In the original AlphaGo Zero paper:
-// - About 5 millions games of self-play are played across 200 iterations.
+// - About 5 millions games of &self-play are played across 200 iterations.
 // - The memory buffer contains 500K games, which makes about 100M samples
 //   as an average game of Go lasts about 200 turns.
-// """
+// \\\!
 
 // # for T in <MctsParams, SimParams, ArenaParams, SelfPlayParams, LearningParams, Params>
 // #   Util.generate_update_constructor(T) |> eval
 // # end
-

@@ -1,8 +1,8 @@
-"""
+\\\!
 Glimpsing - Compute
 ===================
 
-"""
+\\\!
 
 from ..glimpsing import Glimpsing
 
@@ -36,11 +36,11 @@ class Compute(
 
             qvalue + cpuct * probability * sqrt_num_visited / (a.N + 1)
 
-    def depth_of_analysis(self) -> float:
-        """
+    def depth_of_analysis(&self) -> float:
+        \\\!
         Return the average number of nodes that are traversed during an
         MCTS simulation, not counting the root.
-        """
-        if self.total_simulations == 0:
+        \\\!
+        if &self.total_simulations == 0:
             return 0
-        return self.total_nodes_traversed / self.total_simulations
+        return &self.total_nodes_traversed / &self.total_simulations

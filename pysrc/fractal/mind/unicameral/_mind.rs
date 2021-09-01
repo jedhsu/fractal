@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Unicameral Mind*
 
-"""
+\\\!
 
 
 pub struct UnicameralMind(

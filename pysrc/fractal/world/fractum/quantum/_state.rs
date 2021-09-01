@@ -1,4 +1,4 @@
-"""
+\\\!
 Quantum State
 =============
 
@@ -7,7 +7,7 @@ An enum of possible discrete states for a quantum.
 # <TODO> dont like Python enum, any way around?
 # <TODO> make ordering a pub structification
 
-"""
+\\\!
 
 from abc import ABCMeta
 
@@ -16,7 +16,7 @@ pub struct QuantumStateMeta:
     fn __new__(cls, attr):
         pass
 
-    fn __getattribute__(self, attr: str):
+    fn __getattribute__(&self, attr: str):
         return QuantumState(attr)
 
 

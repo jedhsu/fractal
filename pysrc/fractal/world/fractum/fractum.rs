@@ -16,5 +16,5 @@ class Fractum(
     quantum: Quantum
     spectrum: Spectrum
 
-    def __hash__(self) -> int:
-        return hash(self.ident)
+    def __hash__(&self) -> int:
+        return hash(&self.ident)

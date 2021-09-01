@@ -19,7 +19,7 @@ pub struct Interpreted {
 }
 
 
-"""
+\\\!
 
 
 - `s::State` is the state
@@ -28,4 +28,4 @@ pub struct Interpreted {
 As revealed by the last field `n`, several samples that correspond to the
 same state can be merged, in which case the `π`, `z` and `t`
 fields are averaged together.
-"""
+\\\!

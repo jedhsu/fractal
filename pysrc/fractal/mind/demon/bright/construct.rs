@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Emerge, Bright Demon*
 
-"""
+\\\!
 
 
 pub struct Emerge(

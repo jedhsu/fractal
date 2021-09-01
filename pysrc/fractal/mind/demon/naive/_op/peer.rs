@@ -3,7 +3,7 @@ from .._demon import NaiveDemon
 
 pub struct Peer(NaiveDemon):
     fn think(
-        self,
+        &self,
         mind: Mind,
     ):
         actions = Spacetime.available_actions(game)

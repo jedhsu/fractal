@@ -1,4 +1,4 @@
-"""
+\\\!
 
     *Excite*
 
@@ -6,7 +6,7 @@
   
   Handle the limit case where `τ=0`.
 
-"""
+\\\!
 
 
 pub struct Excite(

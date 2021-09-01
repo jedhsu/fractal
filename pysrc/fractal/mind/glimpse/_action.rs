@@ -1,8 +1,8 @@
-"""
+\\\!
 Glimpsed Action
 ===============
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 

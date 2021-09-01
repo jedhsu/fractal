@@ -1,8 +1,8 @@
-"""
+\\\!
 Timestep Ident
 ==============
 
-"""
+\\\!
 
 from typing import Sequence
 
@@ -11,7 +11,7 @@ pub struct TimestepIdent(
     tuple<i32, ...>,
 ):
     fn __init__(
-        self,
+        &self,
         ident: Sequence<i32>,
     ):
         super().__new__(

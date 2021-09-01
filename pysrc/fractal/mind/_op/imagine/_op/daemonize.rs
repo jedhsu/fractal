@@ -1,7 +1,7 @@
-"""
+\\\!
 Daemonize
 =========
 
 Batchification.
 
-"""
+\\\!

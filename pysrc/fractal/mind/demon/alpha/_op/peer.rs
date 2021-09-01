@@ -1,7 +1,7 @@
 from mind.demon.vision import Vision
 
 pub struct Peer:
-    fn peer(self, world: World,):
+    fn peer(&self, world: World,):
         actions = GlobalInterpreter.available_actions(world)
         n = length(actions)
         qs = <qvalue(p, game, a, p.depth) for a in actions>

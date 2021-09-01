@@ -1,15 +1,15 @@
-"""
+\\\!
 
     *Emerge*
 
-"""
+\\\!
 
 
 pub struct Emerge(
     FocusedDemon,
 ):
     fn emerge(
-        self,
+        &self,
         physics: Physics,
     ):
         gamma = 1.0

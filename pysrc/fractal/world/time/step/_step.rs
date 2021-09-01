@@ -1,10 +1,10 @@
-"""
+\\\!
 
     *Timestep*
 
   An atomic unit of time.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 
@@ -18,10 +18,10 @@ pub struct Timestep(
 ):
     ident: TimestepIdent
 
-    fn __hash__(self):
+    fn __hash__(&self):
         return hash(
             (
-                self.__pub struct__,
-                self.ident,
+                &self.__pub struct__,
+                &self.ident,
             )
         )

@@ -13,7 +13,7 @@
 pub struct Glimpsed(
     Evolved,
 ):
-    fn evolve(self):
+    fn evolve(&self):
         status = Evolved(tr)
         num_samples = sum(e.n for e in tr.samples)
         num_boards = length(merge_by_state(tr.samples))

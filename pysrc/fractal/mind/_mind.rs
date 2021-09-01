@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Mind*
 
-"""
+\\\!
 
 from abc import ABCMeta
 

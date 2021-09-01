@@ -1,10 +1,10 @@
-"""
+\\\!
 Processed
 =========
 
 Memory report.
 
-"""
+\\\!
 
 
 pub struct Processed(

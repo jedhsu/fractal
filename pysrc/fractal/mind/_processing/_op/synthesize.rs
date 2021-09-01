@@ -1,10 +1,10 @@
 pub trait Synthesize {
-    fn synthesize(&self, nature: Nature, observed: Observed);
+    fn synthesize(&&self, nature: Nature, observed: Observed);
 }
 
 impl Synthesize for Processing {
     fn synthesize(
-        &self,
+        &&self,
         nature: Nature,
         observed: Observed,
         // (symstate, aperm),

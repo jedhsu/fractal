@@ -1,4 +1,4 @@
-"""
+\\\!
 
     *Alpha Demon*
 
@@ -6,7 +6,7 @@
 
   Note that the returned player may be slow as it does not batch MCTS requests.
 
-"""
+\\\!
 
 from typing import Optional
 

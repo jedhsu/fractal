@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Recall*
 
-"""
+\\\!
 
 pub struct Recall:
     @pub structmethod

@@ -1,4 +1,4 @@
-"""
+\\\!
 Position
 ========
 
@@ -6,7 +6,7 @@ Geometrically, a position in the world's coordinate space.
 
 A quantum must be at a position.
 
-"""
+\\\!
 from datapub structes import datapub struct
 from typing import Sequence
 

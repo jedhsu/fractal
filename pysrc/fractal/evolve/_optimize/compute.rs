@@ -17,7 +17,7 @@ impl Error for Blah {
     }
 
     fn mean_entropy(
-        self,
+        &self,
         w,
     ) {
         -sum(policy * log(demon + eps(eltype(policy))) * w) / sum(w)

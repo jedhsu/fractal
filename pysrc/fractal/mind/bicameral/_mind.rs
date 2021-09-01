@@ -1,8 +1,8 @@
-"""
+\\\!
 
     *Bicameral Mind*
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 

@@ -1,10 +1,10 @@
-"""
+\\\!
 World
 =====
 
 The game specification is the rules of the world.
 
-"""
+\\\!
 
 from abc import ABCMeta
 

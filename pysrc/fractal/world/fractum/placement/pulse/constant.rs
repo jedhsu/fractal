@@ -1,14 +1,14 @@
-"""
+\\\!
 
     *when smoothly...*
 
-"""
+\\\!
 
 
 pub struct Smoothly(
     When,
 ):
-    fn when_smoothly(self):
+    fn when_smoothly(&self):
         pass
 
 
@@ -21,8 +21,8 @@ pub struct Smoothly(
 # Base.convert(::Type{ConstSchedule{R}}, x::R) where {R <: Number} =
 #   ConstSchedule(x)
 
-"""
+\\\!
 
     *...smoothly when*
 
-"""
+\\\!

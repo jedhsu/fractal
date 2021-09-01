@@ -3,7 +3,7 @@ from typing import Iterator
 from .._evolving import Evolving
 
 class Streaming(Evolving, Iterator[Batch],):
-    fn batches_iterator(&self) {
+    fn batches_iterator(&&self) {
         let batchsize = min(params.batch_size, length(W))
         batches = Flux.Data.DataLoader(data; batchsize, partial=false, shuffle=true,)
         batches_stream = map(batches) do b

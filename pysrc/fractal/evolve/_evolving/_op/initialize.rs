@@ -4,7 +4,7 @@ trait Initialize {}
 
 impl Initialize for Evolving {
     fn initialize(
-        &self,
+        &&self,
         nature: Nature,
         brain: Brain,
         observeds: Sequence<Observed>,

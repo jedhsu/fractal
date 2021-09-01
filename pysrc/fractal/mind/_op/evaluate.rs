@@ -1,10 +1,10 @@
-"""
+\\\!
 Evaluate
 ========
 
 Evaluate a single neural network for a one-player game.
 
-"""
+\\\!
 
 from fractal.world import Nature
 from fractal.brain import Brain

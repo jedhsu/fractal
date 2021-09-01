@@ -1,10 +1,10 @@
-"""
+\\\!
 Interpretation
 ==============
 
 Memory analysis parameters.
 
-"""
+\\\!
 
 from datapub structes import datapub struct
 
