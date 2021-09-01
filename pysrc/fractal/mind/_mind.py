@@ -7,7 +7,7 @@
 from abc import ABCMeta
 
 
-class Mind(
-    metaclass=ABCMeta,
+pub struct Mind(
+    metapub struct=ABCMeta,
 ):
     pass

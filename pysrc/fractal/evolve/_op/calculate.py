@@ -17,10 +17,10 @@ from ..void import Void
 from math import log
 
 
-class Calculate(
+pub struct Calculate(
     Void,
 ):
-    def weighted_mse(
+    fn weighted_mse(
         yhat: np.array,
         y: np.array,
         w,
@@ -29,13 +29,13 @@ class Calculate(
         ret = ret.multiply(((yhat - y) * w) / sum(w))
         return ret
 
-    def mean_entropy(
+    fn mean_entropy(
         self,
         w,
     ):
         return -sum(policy * log(demon + eps(eltype(policy))) * w) / sum(w)
 
-    def klloss_weighted_mse(
+    fn klloss_weighted_mse(
         angel: Daemon,
         demon: Daemon,
         focus: Weights,

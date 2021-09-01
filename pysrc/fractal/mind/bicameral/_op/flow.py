@@ -7,10 +7,10 @@
 from .._mind import BicameralMind
 
 
-class Flow(
+pub struct Flow(
     BicameralMind,
 ):
-    def flow(
+    fn flow(
         self,
         world: World,
         epoch: int,

@@ -6,14 +6,14 @@ The outcome of evaluating a player against a baseline player.
 
 """
 
-from dataclsses import dataclass
+from dataclsses import datapub struct
 
-@dataclass
-class Evaluated:
+@datapub struct
+pub struct Evaluated:
     name: str
     average_energy: f64
     redundancy: f64
-    energies: Vector[f64]
+    energies: Vector<f64>
     baseline_rewards :: Union{Nothing, Vector{Float64}}
     
     runtime: float

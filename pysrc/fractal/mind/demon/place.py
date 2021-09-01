@@ -6,16 +6,16 @@
 
 from fractum.spectrum import Spectrum
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Place(
+@datapub struct
+pub struct Place(
     Quantum,
     Cube,
 ):
     position: Position
-    policy: Vector[f64]
+    policy: Vector<f64>
     energy: Heat
     until_end: int
     age: int

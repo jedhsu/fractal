@@ -9,8 +9,8 @@ Get all possible actions for a realizing world.
 from ..realizing import Realizing
 
 
-class Actions(
+pub struct Actions(
     Realizing,
 ):
-    def available_actions(self):
+    fn available_actions(self):
         pass

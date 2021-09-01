@@ -5,10 +5,10 @@
 """
 
 
-class Get(
+pub struct Get(
     NaiveDemon,
 ):
-    def get_state(self, state):
+    fn get_state(self, state):
         g = state.init(r.gspec)
         n = length(
             GlobalInterpreter.available_actions(g),

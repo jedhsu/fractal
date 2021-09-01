@@ -4,11 +4,11 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Glimpse(
+@datapub struct
+pub struct Glimpse(
     Placement,
     Interpretation,
     Energy,

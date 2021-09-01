@@ -6,16 +6,16 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from .placement import PlacementAnalysis
 from .place import Place
 
 
-@dataclass
-class PlaceAnalysis(Place):
-    distribution: set[PlacementAnalysis]
+@datapub struct
+pub struct PlaceAnalysis(Place):
+    distribution: set<PlacementAnalysis>
     expected_value: float
 
-    def total(self):
+    fn total(self):
         return sum(s.N for s in b.stats)

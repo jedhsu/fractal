@@ -4,19 +4,19 @@
 Evaluate the neural network as an MCTS oracle on a batch of states at once.
 
 """
-class Evaluate(Brain,):
-    def evaluate_batch(self, batch,):
+pub struct Evaluate(Brain,):
+    fn evaluate_batch(self, batch,):
         gspec = game_spec(nn)
         X = Flux.batch((GI.vectorize_state(gspec, b) for b in batch))
         A = Flux.batch((GI.actions_mask(GI.init(gspec, b)) for b in batch))
         Xnet, Anet = convert_input_tuple(nn, (X, Float32.(A)))
         P, V, _ = convert_output_tuple(nn, forward_normalized(nn, Xnet, Anet))
-        return [(P[A[:,i],i], V[1,i]) for i in eachindex(batch)]
+        return <(P<A<:,i>,i>, V<1,i>) for i in eachindex(batch)>
 
 
 
 # # Evaluate a single neural network for a one-player game (params::ArenaParams)
-# def evaluate_network(physics: Physics, unicortex: Unicortex, speech: Speech, handler,):
+# fn evaluate_network(physics: Physics, unicortex: Unicortex, speech: Speech, handler,):
 #     make_oracles = nnet.copy(net, on_gpu=params.sim.use_gpu, test_mode=true,)
 
 #     simulator = Simulator(make_oracles, record_trace)
@@ -28,7 +28,7 @@ class Evaluate(Brain,):
 #     return rewards_and_redundancy(samples, gamma=params.mcts.gamma,)
 """
 
-Take a list of states as input and return a list of `(P, V)` pairs as defined in the
+Take a list of states as input and return a list of `(P, V)` pairs as fnined in the
 MCTS oracle interface.
 
 """
@@ -37,7 +37,7 @@ MCTS oracle interface.
     forward_normalized(network::AbstractNetwork, states, actions_mask)
 
 Evaluate a batch of vectorized states. This function is a wrapper
-on [`forward`](@ref) that puts a zero weight on invalid actions.
+on <`forward`>(@ref) that puts a zero weight on invalid actions.
 
 # Arguments
 

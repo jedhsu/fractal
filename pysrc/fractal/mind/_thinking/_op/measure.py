@@ -7,11 +7,11 @@ Measure
 from .._thinking import Thinking
 
 
-class Measure(
+pub struct Measure(
     Thinking,
 ):
-    def __len__(self):
+    fn __len__(self):
         return len(self.thermodynamics)
 
-    def total_energy(self):
+    fn total_energy(self):
         pass

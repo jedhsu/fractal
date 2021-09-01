@@ -4,31 +4,31 @@ Quantum State
 
 An enum of possible discrete states for a quantum.
 
-# [TODO] dont like Python enum, any way around?
-# [TODO] make ordering a classification
+# <TODO> dont like Python enum, any way around?
+# <TODO> make ordering a pub structification
 
 """
 
 from abc import ABCMeta
 
 
-class QuantumStateMeta:
-    def __new__(cls, attr):
+pub struct QuantumStateMeta:
+    fn __new__(cls, attr):
         pass
 
-    def __getattribute__(self, attr: str):
+    fn __getattribute__(self, attr: str):
         return QuantumState(attr)
 
 
-class QuantumState(
+pub struct QuantumState(
     int,
-    metaclass=QuantumStateMeta,
+    metapub struct=QuantumStateMeta,
 ):
     pass
 
 
-class Test:
-    class TicTacToe_QuantumState(
+pub struct Test:
+    pub struct TicTacToe_QuantumState(
         QuantumState,
     ):
         Empty = 0

@@ -6,13 +6,13 @@ The environment of a game is the world in a realizing loop.
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from .._world import World
 
 
-@dataclass
-class Realizing(
+@datapub struct
+pub struct Realizing(
     World,
 ):
     state: WorldState

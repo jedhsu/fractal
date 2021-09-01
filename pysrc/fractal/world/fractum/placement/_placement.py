@@ -6,14 +6,14 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 from typing import Optional
 
 from .._quantum import Quantum
 
 
-@dataclass
-class Placement(
+@datapub struct
+pub struct Placement(
     Quantum,
 ):
-    condition: Optional[Action]
+    condition: Optional<Action>

@@ -7,10 +7,10 @@
 from .._processing import Processing
 
 
-class Experience(
+pub struct Experience(
     Processing,
 ):
-    def experiences(
+    fn experiences(
         self,
         recall: Recall,
         decay: DecayFactor,
@@ -19,9 +19,9 @@ class Experience(
         wr = 0
 
         for i in range(1, n):
-            wr = gamma * wr + trace.rewards[i]
-            places = recall.states[i]
-            spectra = recall.spectra[i]
+            wr = gamma * wr + trace.rewards<i>
+            places = recall.states<i>
+            spectra = recall.spectra<i>
             is_bright = GlobalInterpreter.white_playing(GlobalInterpreter.init(mem.gspec, s))
             z = wp ? wr : -wr
             t = float(n - i + 1)

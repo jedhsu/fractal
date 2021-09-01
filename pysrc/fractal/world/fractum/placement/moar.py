@@ -74,6 +74,3 @@ Return the action described by string `str` or `nothing` if `str` does not
 denote a valid action.
 """
 function parse_action end
-
-
-

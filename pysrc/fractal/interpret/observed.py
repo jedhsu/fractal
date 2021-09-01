@@ -4,8 +4,8 @@
 ##### Statistics for games with ternary rewards
 #####
 
-@dataclass
-class TernaryOutcomeStatistics:
+@datapub struct
+pub struct TernaryOutcomeStatistics:
   num_won: Int
   num_draw: Int
   num_lost: Int
@@ -21,4 +21,3 @@ end
 function TernaryOutcomeStatistics(report::Report.Evaluation)
   return TernaryOutcomeStatistics(report.rewards)
 end
-

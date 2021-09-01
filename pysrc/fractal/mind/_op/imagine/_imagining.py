@@ -10,11 +10,11 @@ across multiple threads and multiple machines.
 """
 
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Imagining:
+@datapub struct
+pub struct Imagining:
     pass
     # make_player :: MakePlayer
     # make_oracles :: Oracles

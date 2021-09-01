@@ -1,8 +1,8 @@
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Dynamics:
+@datapub struct
+pub struct Dynamics:
     weights: int
     matrix: int
     action: int

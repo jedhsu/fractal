@@ -1,12 +1,12 @@
 from numpy import true_divide
 
 
-class Environment:
-    def resize_memory(self, n):
+pub struct Environment:
+    fn resize_memory(self, n):
         exp = get_experience(self.memory)
         self.recall = Recall(env.gspec, n, exp)
 
-    def simple_memory_stats(self):
+    fn simple_memory_stats(self):
         mem = get_experience(env)
         nsamples = length(mem)
         ndistinct = length(merge_by_state(mem))

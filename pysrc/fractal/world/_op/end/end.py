@@ -1,5 +1,5 @@
 """
-World [End]
+World <End>
 ===========
 
 Define the conditions in which the world ends.
@@ -8,14 +8,14 @@ Define the conditions in which the world ends.
 
 from typing import Callable
 
-class End(
+pub struct End(
     World,
 ):
     pass
 
-class Test:
-    class TicTacToe_End:
-        def is_full(self):
+pub struct Test:
+    pub struct TicTacToe_End:
+        fn is_full(self):
             if 
-        def endings(self) -> set[WorldState]:
+        fn endings(self) -> set<WorldState>:
             return WorldState.full()

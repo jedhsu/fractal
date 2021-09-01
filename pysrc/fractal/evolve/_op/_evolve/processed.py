@@ -7,7 +7,7 @@ Memory report.
 """
 
 
-class Processed(
+pub struct Processed(
     Evolve,
 ):
     pass

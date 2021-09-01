@@ -8,11 +8,11 @@
 
 from fractal.world import Nature
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Processing:
+@datapub struct
+pub struct Processing:
     nature: Nature
-    ring: RingBuffer[Observation]
+    ring: RingBuffer<Observation>
     batch_size: int

@@ -5,10 +5,10 @@
 """
 
 
-class Smoothly(
+pub struct Smoothly(
     When,
 ):
-    def when_smoothly(self):
+    fn when_smoothly(self):
         pass
 
 

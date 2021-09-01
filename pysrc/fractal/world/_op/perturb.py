@@ -1,6 +1,6 @@
 
     @staticmethod
-    def sample_dirichlet_noise(
+    fn sample_dirichlet_noise(
         spacetime: Spacetime,
         alpha,
     ):

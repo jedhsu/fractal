@@ -5,7 +5,7 @@ Realizing - Initialize
 """
 
 
-class Initialize(
+pub struct Initialize(
     Realizing,
 ):
     pass

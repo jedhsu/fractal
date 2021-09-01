@@ -6,9 +6,9 @@ Memory analysis parameters.
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Interpretation:
+@datapub struct
+pub struct Interpretation:
     num_game_stages: int

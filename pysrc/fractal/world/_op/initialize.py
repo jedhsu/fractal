@@ -6,9 +6,9 @@ from .._world import World
 
 from ..nature import Nature
 
-class Initialize(World,):
-    @classmethod
-    def initialize(cls, nature: Nature):
+pub struct Initialize(World,):
+    @pub structmethod
+    fn initialize(cls, nature: Nature):
       env = nature.deepcopy()
       RL.reset!(env.rlenv)
       return env

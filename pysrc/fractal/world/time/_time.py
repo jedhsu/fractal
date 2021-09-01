@@ -4,14 +4,14 @@ from typing import Iterator
 from .step import Timestep
 
 
-class Time(
-    Iterator[Timestep],
+pub struct Time(
+    Iterator<Timestep>,
 ):
-    def __iter__(self) -> Time:
+    fn __iter__(self) -> Time:
         return self
 
-    def __next__(self) -> Timestep:
+    fn __next__(self) -> Timestep:
         pass
 
-    def flow(self) -> Timestep:
+    fn flow(self) -> Timestep:
         return next(self)

@@ -1,2 +1,2 @@
-class EndState(metaclass=ABCMeta):
+pub struct EndState(metapub struct=ABCMeta):
     pass

@@ -4,14 +4,14 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from .._mind import Mind
 from ..unicameral import UnicameralMind
 
 
-@dataclass
-class BicameralMind(
+@datapub struct
+pub struct BicameralMind(
     Mind,
 ):
     white: UnicameralMind

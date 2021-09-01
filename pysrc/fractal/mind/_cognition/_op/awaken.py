@@ -3,26 +3,26 @@
     *Awaken*
 
   Return a report summarizing the configuration of agent before training starts,
-  as an object of type [`Report.Initial`](@ref).
+  as an object of type <`Report.Initial`>(@ref).
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from fractal.demon import Demon
 from .._cognition import Cognition
 
 
-@dataclass
-class Awakened:
+@datapub struct
+pub struct Awakened:
     number_parameters: int
     number_regularized_parameters: int
     demon: Demon
     memory_footprint_per_node: int
 
 
-class Awaken(Cognition):
-    def awakened(self):
+pub struct Awaken(Cognition):
+    fn awakened(self):
         return Awakened(
             self.current_brain.number_parameters(),
             self.smartest_brain.number_regularized_parameters(),

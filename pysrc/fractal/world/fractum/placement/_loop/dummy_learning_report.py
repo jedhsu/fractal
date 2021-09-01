@@ -5,7 +5,7 @@
 """
 
 
-def now():
+fn now():
     eps = 1e-16
     dummy_loss = Time.Loss(
         0,
@@ -25,7 +25,7 @@ def now():
         eps,
         eps,
         dummy_status,
-        [],
-        [],
+        <>,
+        <>,
         false,
     )

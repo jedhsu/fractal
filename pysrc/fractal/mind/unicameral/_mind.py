@@ -5,7 +5,7 @@
 """
 
 
-class UnicameralMind(
+pub struct UnicameralMind(
     Mind,
 ):
     pass

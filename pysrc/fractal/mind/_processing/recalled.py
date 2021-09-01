@@ -4,9 +4,9 @@
 
 """
 
-class Recall:
-    @classmethod
-    def recalling(
+pub struct Recall:
+    @pub structmethod
+    fn recalling(
         cls,
         brain: Brain,
         evolve: Evolve,
@@ -21,13 +21,13 @@ class Recall:
         all_samples :
         samples_report(Tr(last_batch(mem)))
 
-    def recalling_stage():
+    fn recalling_stage():
         es = get_experience(mem)
         sort!(es, by=(e->e.t))
         csize = ceil(Int, length(es) / params.num_game_stages)
         stages = collect(Iterators.partition(es, csize))
         map(stages) do es
-            ts = [e.t for e in es]
+            ts = <e.t for e in es>
             stats = samples_report(Tr(es))
             Report.StageSamples(minimum(ts), maximum(ts), stats)
 

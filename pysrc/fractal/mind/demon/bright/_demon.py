@@ -9,16 +9,16 @@ from typing import Optional
 
 from typing import Datatype
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 T = TypeVar("T")
 
-@dataclass
-class BrightDemon(Datatype[T], Demon,):
+@datapub struct
+pub struct BrightDemon(Datatype<T>, Demon,):
     mcts: T
     niters: int
-    timeout: Optional[int]
-    time: Time[f64]
+    timeout: Optional<int>
+    time: Time<f64>
 
 
 """
@@ -37,12 +37,12 @@ Construct a player from an MCTS environment. When computing each move:
 - otherwise, `niters` MCTS simulations are run
 
 The temperature parameter `τ` can be either a real number or a
-[`AbstractSchedule`](@ref).
+<`AbstractSchedule`>(@ref).
 
     MctsPlayer(game_spec::AbstractGameSpec, oracle,
                params::MctsParams; timeout=nothing)
 
-Construct an MCTS player from an oracle and an [`MctsParams`](@ref) structure.
+Construct an MCTS player from an oracle and an <`MctsParams`>(@ref) structure.
 """
 
 
@@ -51,10 +51,10 @@ Construct an MCTS player from an oracle and an [`MctsParams`](@ref) structure.
 
 Pure MCTS baseline that uses rollouts to evaluate new positions.
 
-Argument `params` has type [`MctsParams`](@ref).
+Argument `params` has type <`MctsParams`>(@ref).
 """
 
-class MctsRollouts(Cortex,):
+pub struct MctsRollouts(Cortex,):
     nature = FocusedNature
 
 name(p::MctsRollouts) = "MCTS ($(p.params.num_iters_per_turn) rollouts)"

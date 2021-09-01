@@ -9,8 +9,8 @@ Compute
 """
 
 
-class Energy:
-    def temperature(
+pub struct Energy:
+    fn temperature(
         self,
         mind: Mind,
         world: WorldState,
@@ -25,10 +25,10 @@ class Energy:
         elif depth == 0:
             return GI.heuristic_value(game)
         else:
-            qs = [qvalue(player, game, a, depth) for a in GI.available_actions(game)]
+            qs = <qvalue(player, game, a, depth) for a in GI.available_actions(game)>
             return max(qs)
 
-    def energy(
+    fn energy(
         self,
         mind: Mind,
         world: WorldState,

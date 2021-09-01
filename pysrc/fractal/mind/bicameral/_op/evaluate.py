@@ -13,11 +13,11 @@ from fractal import Fractal
 from .._mind import Mind
 
 
-class Evaluate(
+pub struct Evaluate(
     Mind,
 ):
-    @classmethod
-    def thinking(
+    @pub structmethod
+    fn thinking(
         cls,
         nature: Nature,
         brain: Brain,

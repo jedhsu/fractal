@@ -1,8 +1,8 @@
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Reflection:
+@datapub struct
+pub struct Reflection:
     glimpse: Glimpse
     multiprocessing: Multiprocessing
     update_threshold: float

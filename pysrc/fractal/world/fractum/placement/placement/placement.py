@@ -6,13 +6,13 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from fractal.fractum import Spectrum
 
 
-@dataclass
-class Placement(
+@datapub struct
+pub struct Placement(
     Spectrum,
 ):
     pass

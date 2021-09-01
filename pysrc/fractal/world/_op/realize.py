@@ -9,7 +9,7 @@
 from .._world import World
 
 
-class Realize(
+pub struct Realize(
     World,
 ):
     pass

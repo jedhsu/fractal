@@ -8,10 +8,10 @@
 # mse_wmean(ŷ, y, w) = sum((ŷ .- y).^2 .* w) / sum(w)
 
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
-class Optimize:
-def losses(
+pub struct Optimize:
+fn losses(
     brain: Brain,
     regularization: Regularization,
     evolution: Evolution,
@@ -36,7 +36,7 @@ def losses(
     # return (L, Lp, Lv, Lreg, Linv)
 
 
-def wmean(
+fn wmean(
     x,
     w,
 ):

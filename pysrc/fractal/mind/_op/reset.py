@@ -3,15 +3,15 @@
     *Go*
 
   Reset the internal memory of a player (e.g. the MCTS tree).
-  The default implementation does nothing.
+  The fnault implementation does nothing.
 
 """
 
 from .._demon import Demon
 
 
-class Go(
+pub struct Go(
     Demon,
 ):
-    def reincarnate(self):
+    fn reincarnate(self):
         pass

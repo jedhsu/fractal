@@ -1,4 +1,4 @@
-class Analyze(
+pub struct Analyze(
     Demon,
 ):
     pass

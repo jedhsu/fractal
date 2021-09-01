@@ -7,5 +7,5 @@
 """
 
 
-class AtRewired:
+pub struct AtRewired:
     pass

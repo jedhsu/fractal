@@ -7,5 +7,5 @@
 """
 
 
-class Brain:
+pub struct Brain:
     pass

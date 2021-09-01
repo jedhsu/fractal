@@ -9,11 +9,11 @@
 """
 
 
-class Excite(
+pub struct Excite(
     Placement,
 ):
     @staticmethod
-    def excite(
+    fn excite(
         spectrum: Spectrum,
         energy: float,
     ):
@@ -24,7 +24,7 @@ class Excite(
                 eltype(spectrum),
                 length(spectrum),
             )
-            res[argmax(energy)] = 1
+            res<argmax(energy)> = 1
             return res
         else:
             res = spectrum ^ inv(energy)

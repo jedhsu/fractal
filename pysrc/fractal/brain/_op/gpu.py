@@ -1,8 +1,8 @@
 from typing import Union
 
 
-class Gpu:
-    def convert_output(self):
+pub struct Gpu:
+    fn convert_output(self):
         """
             convert_output(::AbstractNetwork, output)
 
@@ -11,7 +11,7 @@ class Gpu:
         """
         pass
 
-    def convert_output_tuple(self, output: Union[tuple, NamedTuple]):
+    fn convert_output_tuple(self, output: Union<tuple, NamedTuple>):
         pass
         # return map(output) do arr
 

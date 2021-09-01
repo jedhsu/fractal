@@ -9,11 +9,11 @@ Time-related operations for a realizing world.
 from ..realizing import Realizing
 
 
-class Flowing(
+pub struct Flowing(
     Realizing,
 ):
-    def at_dawn(self):
+    fn at_dawn(self):
         pass
 
-    def has_world_ended(self):
+    fn has_world_ended(self):
         pass

@@ -9,7 +9,7 @@
 """
 
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
 """
@@ -31,7 +31,7 @@ from dataclasses import dataclass
 """
 # Remarks
 
-+ See [`necessary_samples`](@ref) to make an informed choice for `sim.num_games`.
++ See <`necessary_samples`>(@ref) to make an informed choice for `sim.num_games`.
 
 # AlphaGo Zero Parameters
 

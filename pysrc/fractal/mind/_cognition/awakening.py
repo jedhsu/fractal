@@ -3,13 +3,13 @@
     *Awaken*
 
   Return a report summarizing the configuration of agent before training starts,
-  as an object of type [`Report.Initial`](@ref).
+  as an object of type <`Report.Initial`>(@ref).
 
 """
 
 
-class Awakening:
-    def initial_report(self):
+pub struct Awakening:
+    fn initial_report(self):
         num_network_parameters = Network.num_parameters(
             env.curnn,
         )

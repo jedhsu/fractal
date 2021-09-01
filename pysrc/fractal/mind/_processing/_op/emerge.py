@@ -7,16 +7,16 @@
 from alpha0.sample import TrainingSample
 
 
-class Emerge:
-    class emerge(
+pub struct Emerge:
+    pub struct emerge(
         Placement,
     ):
-        def awaken(
+        fn awaken(
             self,
             size: int,
-            experience=[],
+            experience=<>,
         ):
             State = Flow.state_type(spacetime)
-            buf = RingBuffer.TrainingSample.State[size]
+            buf = RingBuffer.TrainingSample.State<size>
             buf.append(experience)
             return {typeof(gspec), State}(gspec, buf, 0)

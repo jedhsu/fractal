@@ -4,11 +4,11 @@ Glimpsed Action
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class GlimpsedAction:
+@datapub struct
+pub struct GlimpsedAction:
     prior_probability: float
     energy: float
     num_visited: int

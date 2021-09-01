@@ -6,19 +6,19 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 from typing import Optional
 
 f64 = float
 
 
-@dataclass
-class Dueled:
+@datapub struct
+pub struct Dueled:
     legend: str
     avgr: f64
     redundancy: f64
-    rewards: Vector[f64]
-    baseline_rewards: Optional[f64]
+    rewards: Vector<f64>
+    baseline_rewards: Optional<f64>
     time: f64
 
 
@@ -45,8 +45,8 @@ class Dueled:
 """
 
 
-class Debate:
-    def debate(
+pub struct Debate:
+    fn debate(
         cls,
         physics: Physics,
         contender: Cortex,
@@ -59,11 +59,11 @@ class Debate:
             contender.clone(on_gpu=params.sim.use_gpu, test_mode=True),
         )
         simulator = Glimpsing(make_oracles, record_trace)
-        # white = Cortex(gspec, oracles[1], params.mcts)
-        # black = Cortex(gspec, oracles[2], params.mcts)
+        # white = Cortex(gspec, oracles<1>, params.mcts)
+        # black = Cortex(gspec, oracles<2>, params.mcts)
         # return Bicortex(white, black)
 
-        # def game_simulated():
+        # fn game_simulated():
         #     return Handlers.checkpoint_game_played(handler)
 
         # samples = simulate( simulator, gspec, params.sim,
@@ -71,7 +71,7 @@ class Debate:
 
     # # Compare two versions of a neural network (params::ArenaParams)
     # # Works for both two-player and single-player games
-    # def converse(physics: Physics, left: Cortex, right: Cortex, params, handler,):
+    # fn converse(physics: Physics, left: Cortex, right: Cortex, params, handler,):
     # legend = "Most recent NN versus best NN so far"
     # if Flow.two_players(gspec):
     #     (rewards_c, red), t = pit_networks(gspec, contender, baseline, params, handler,)
@@ -82,7 +82,7 @@ class Debate:
     #     (rewards_b, red_b), tb = cortex.evaluate(gspec, baseline, params, handler,)
 
     #     avgr = mean(rewards_c) - mean(rewards_b)
-    #     red = mean([red_c, red_b])
+    #     red = mean(<red_c, red_b>)
     #     t = tc + tb
 
     #     return Evaluated(legend, avgr, red, rewards_c, rewards_b, t,)

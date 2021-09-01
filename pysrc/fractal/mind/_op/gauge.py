@@ -6,12 +6,12 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from .._demon import Demon
 
 
-@dataclass
-class Gauge(Demon):
+@datapub struct
+pub struct Gauge(Demon):
     baseline: Player
     simulation: SimulationParameters

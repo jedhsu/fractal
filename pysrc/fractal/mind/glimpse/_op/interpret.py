@@ -12,10 +12,10 @@ from math import sqrt
 from ..glimpsing import Glimpsing
 
 
-class Interpret(
+pub struct Interpret(
     Glimpsing,
 ):
-    def interpret(
+    fn interpret(
         self,
         flow: Flowing,
         eta: float,
@@ -40,7 +40,7 @@ class Interpret(
             eta,
         )
         action_id = argmax(scores)
-        action = actions[action_id]
+        action = actions<action_id>
 
         flow.flow(placement)
         wr = flow.white_energy()

@@ -35,7 +35,7 @@ from it (a rollout). Moreover, it puts a uniform prior on available actions.
 Therefore, it can be used to implement the "vanilla" MCTS algorithm.
 """
 
-class ShrewdDemon(Physics):
+pub struct ShrewdDemon(Physics):
     gspec :: GameSpec
     decay :: Float64
     RolloutOracle(gspec, γ=1.) = new{typeof(gspec)}(gspec, γ)
@@ -88,10 +88,10 @@ action was visited and ``τ`` the `temperature` parameter.
 
 It is typical to use a high value of the temperature parameter ``τ``
 during the first moves of a game to increase exploration and then switch to
-a small value. Therefore, `temperature` is am [`AbstractSchedule`](@ref).
+a small value. Therefore, `temperature` is am <`AbstractSchedule`>(@ref).
 
 For information on parameters `cpuct`, `dirichlet_noise_ϵ`,
-`dirichlet_noise_α` and `prior_temperature`, see [`MCTS.Env`](@ref).
+`dirichlet_noise_α` and `prior_temperature`, see <`MCTS.Env`>(@ref).
 
 # AlphaGo Zero Parameters
 
@@ -107,7 +107,7 @@ In the original AlphaGo Zero paper:
   of using ``α = 10/n`` with ``n`` the maximum number of possibles moves,
   which is ``19 × 19 + 1 = 362`` in the case of Go.
 """
-@kwdef struct MctsParams
+@kwfn struct MctsParams
   gamma :: Float64 = 1.
   cpuct :: Float64 = 1.
   num_iters_per_turn :: Int

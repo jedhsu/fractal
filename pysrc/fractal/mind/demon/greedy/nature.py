@@ -1,2 +1,2 @@
-class GreedyNature:
+pub struct GreedyNature:
     epsilon: int

@@ -7,7 +7,7 @@
 """
 
 
-class AtReflect(
+pub struct AtReflect(
     Event,
 ):
     pass

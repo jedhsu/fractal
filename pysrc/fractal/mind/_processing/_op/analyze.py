@@ -5,8 +5,8 @@
 """
 
 
-class Analyze(
+pub struct Analyze(
     Processing,
 ):
-    def merge_identicals(self):
+    fn merge_identicals(self):
         pass

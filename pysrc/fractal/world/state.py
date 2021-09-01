@@ -4,10 +4,10 @@ World State
 
 A type of world state described by fractums.
 
-# [TODO] clarify
+# <TODO> clarify
 
 """
 
 
-class WorldState:
+pub struct WorldState:
     pass

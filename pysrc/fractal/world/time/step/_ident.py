@@ -7,12 +7,12 @@ Timestep Ident
 from typing import Sequence
 
 
-class TimestepIdent(
-    tuple[int, ...],
+pub struct TimestepIdent(
+    tuple<int, ...>,
 ):
-    def __init__(
+    fn __init__(
         self,
-        ident: Sequence[int],
+        ident: Sequence<int>,
     ):
         super().__new__(
             tuple,

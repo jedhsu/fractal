@@ -4,7 +4,7 @@ Quantum, Actions
 
 Describes the rules of action of a quantum.
 
-A quantum can be defined to:
+A quantum can be fnined to:
 * move to a new position
 * switch states
 
@@ -18,30 +18,30 @@ from ...placement._placement import Placement
 from ..action import QuantumAction
 
 
-class Actions(
+pub struct Actions(
     Quantum,
 ):
     @abstractmethod
-    def actions(self) -> set[QuantumAction]:
+    fn actions(self) -> set<QuantumAction>:
         raise NotImplementedError
 
 
-class Test:
+pub struct Test:
     """
     In Tic-Tac-Toe, a block quantum is not allowed to move. It can only switch states
     conditional on the player selecting the action.
     """
 
-    class TicTacToeBlockActions(
+    pub struct TicTacToeBlockActions(
         QuantumAction,
     ):
-        def actions(
+        fn actions(
             self,
             action_space: type,
-        ) -> set[QuantumAction]:
+        ) -> set<QuantumAction>:
             actions = set()
 
-            # [TODO] explore changing this to type level
+            # <TODO> explore changing this to type level
             actions.add(
                 QuantumAction(
                     self.position,

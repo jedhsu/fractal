@@ -1,8 +1,8 @@
 from .._demon import NaiveDemon
 
 
-class Peer(NaiveDemon):
-    def think(
+pub struct Peer(NaiveDemon):
+    fn think(
         self,
         mind: Mind,
     ):

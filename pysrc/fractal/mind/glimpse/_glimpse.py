@@ -7,13 +7,13 @@ Parameters for MCTS.
 """
 
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 f64 = float
 
 
-@dataclass
-class Glimpse:
+@datapub struct
+pub struct Glimpse:
     decay: f64 = 1.0
     upper_confidence_threshold: f64 = 1.0
     epsilon_noise: f64

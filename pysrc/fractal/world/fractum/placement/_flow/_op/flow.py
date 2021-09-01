@@ -1,5 +1,5 @@
-class Flow:
-    def flow(self, place):
+pub struct Flow:
+    fn flow(self, place):
         r = 
 
 function GI.play!(env::Env, action)

@@ -1,5 +1,5 @@
-class Calculate:
-    def vectorize_place(self, state):
+pub struct Calculate:
+    fn vectorize_place(self, state):
         pass
 
 """

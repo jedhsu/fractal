@@ -8,4 +8,3 @@
 """
 
 function white_reward end
-

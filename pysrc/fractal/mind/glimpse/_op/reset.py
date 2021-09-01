@@ -9,8 +9,8 @@ Empty the MCTS tree.
 from ..glimpsing import Glimpsing
 
 
-class Reset(
+pub struct Reset(
     Glimpsing,
 ):
-    def reset(self):
+    fn reset(self):
         self.tree = dict()

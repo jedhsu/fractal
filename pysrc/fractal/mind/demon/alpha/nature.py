@@ -4,5 +4,5 @@
 
 """
 
-class BrightNature:
+pub struct BrightNature:
     mcts_params: MonteCarloTreeSearchParameters,

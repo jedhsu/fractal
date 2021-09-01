@@ -12,10 +12,10 @@ from .._imagining import Imagining
 from ..multiprocessing import Multiprocessing
 
 
-class Imagine(
+pub struct Imagine(
     Imagining,
 ):
-    def imagine(
+    fn imagine(
         self,
         world: World,
         multiprocessing: Multiprocessing,
@@ -25,7 +25,7 @@ class Imagine(
         This is simulate.
         """
 
-    def imagine_parallely(
+    fn imagine_parallely(
         self,
         world: World,
         multiprocessing: Multiprocessing,

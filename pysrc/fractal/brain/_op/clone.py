@@ -12,11 +12,11 @@ from .._brain import Brain
 from .gpu import Gpu
 
 
-class Clone(
+pub struct Clone(
     Gpu,
     Brain,
 ):
-    def clone(
+    fn clone(
         self,
         on_gpu: bool,
         test_mode: bool,

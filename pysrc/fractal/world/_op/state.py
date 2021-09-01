@@ -8,10 +8,10 @@
 from .._nature import Nature
 
 
-class Get(
+pub struct Get(
     Nature,
 ):
-    def state_type(self):
+    fn state_type(self):
         """
         Return the state type associated to a game.
 
@@ -21,7 +21,7 @@ class Get(
         """
         return type(current_state(init(game_spec)))
 
-    def state_dim(self):
+    fn state_dim(self):
         """
 
           *state-dimensions*
@@ -32,7 +32,7 @@ class Get(
         state = current_state(init(game_spec))
         return size(vectorize_state(game_spec, state))
 
-    def state_memsize(self):
+    fn state_memsize(self):
         """
         Return the memory footprint occupied by a state of the given game.
 

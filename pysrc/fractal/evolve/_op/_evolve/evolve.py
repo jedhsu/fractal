@@ -10,13 +10,13 @@ from .evolved import Evolved
 
 from ...evolving import Evolving
 
-# [TODO]
-class Evolve(
+# <TODO>
+pub struct Evolve(
     Evolving,
 ):
-    def evolve(
+    fn evolve(
         self,
-        observed: Iterator[Observed],
+        observed: Iterator<Observed>,
     ) -> Evolved:
         W, X, A, P, V = samples
         regws = Network.regularized_params(tr.network)

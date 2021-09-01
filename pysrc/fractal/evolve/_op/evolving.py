@@ -2,5 +2,5 @@
 Construct the evolving structure.
 """
 
-class Evolve(Evolving,):
-    def evolving(
+pub struct Evolve(Evolving,):
+    fn evolving(

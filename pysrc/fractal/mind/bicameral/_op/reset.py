@@ -7,9 +7,9 @@
 from .._mind import BicameralMind
 
 
-class Reset(
+pub struct Reset(
     BicameralMind,
 ):
-    def reset(self):
+    fn reset(self):
         self.white.reset()
         self.black.reset()

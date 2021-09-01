@@ -16,13 +16,13 @@ from abc import ABCMeta
 from typing import Iterator
 
 
-class WorldPlace(
+pub struct WorldPlace(
     World,
-    Iterator[WorldPosition],
-    metaclass=ABCMeta,
+    Iterator<WorldPosition>,
+    metapub struct=ABCMeta,
 ):
     pass
 
 
-class TicTacToe_ThreeConsecutiveWhites:
+pub struct TicTacToe_ThreeConsecutiveWhites:
     pass

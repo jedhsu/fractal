@@ -5,7 +5,7 @@
 """
 
 
-def mind_stream() -> Iterator[Batch]:
+fn mind_stream() -> Iterator<Batch>:
     batchsize = min(
         params.batch_size,
         length(W),

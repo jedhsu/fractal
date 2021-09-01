@@ -1,10 +1,10 @@
-class Evolve:
-    # def evolved:
+pub struct Evolve:
+    # fn evolved:
   # return Network.copy(tr.network, on_gpu=false, test_mode=true)
 
 # function batch_updates!(tr::Trainer, n)
 #   regws = Network.regularized_params(tr.network)
-#   L(batch...) = losses(tr.network, regws, tr.params, tr.Wmean, tr.Hp, batch)[1]
+#   L(batch...) = losses(tr.network, regws, tr.params, tr.Wmean, tr.Hp, batch)<1>
 #   data = Iterators.take(tr.batches_stream, n)
 #   ls = Vector{Float32}()
 #   Network.train!(tr.network, tr.params.optimiser, L, data, n) do i, l
@@ -18,8 +18,8 @@ class Evolve:
 #     ap = env.params.arena
 #     lp = env.params.learning
 
-#     checkpoints = Report.Checkpoint[]
-#     losses = Float32[]
+#     checkpoints = Report.Checkpoint<>
+#     losses = Float32<>
 
 #     tlossteval, ttrain = 0., 0., 0.
 #     experience = get_experience(env.memory)
@@ -37,20 +37,20 @@ class Evolve:
 
 #   # Compute the number of batches between each checkpoint
 
-#     def compute_batches_between_checkpoint():
+#     fn compute_batches_between_checkpoint():
 #         nbatches = lp.max_batches_per_checkpoint
 #         if !iszero(lp.min_checkpoints_per_epoch):
 #             ntotal = num_batches_total(trainer)
 #             nbatches = min(nbatches, ntotal ÷ lp.min_checkpoints_per_epoch)
     
-#     def loop_state_variables():
+#     fn loop_state_variables():
 #   # Loop state variables
 #         best_evalr = isnothing(ap) ? nothing : ap.update_threshold
 #         nn_replaced = false
 
 #   # for k in 1:lp.num_checkpoints
 #     Handlers.updates_started(handler, status)
-#     def evolving_for_batch():
+#     fn evolving_for_batch():
 #         dlosses, dttrain = evolving.batch_updates(batches))
 #     status, dtloss = @timed learning_status(trainer)
 #     Handlers.updates_finished(handler, status)
@@ -60,7 +60,7 @@ class Evolve:
 #     append!(losses, dlosses)
     
     
-#     def checkpoint_eval():
+#     fn checkpoint_eval():
 #     # Run a checkpoint evaluation if the arena parameter is provided
 #     if ap is None:
 #         env.curnn = get_trained_network(trainer)
@@ -75,7 +75,7 @@ class Evolve:
 
 #       # If eval is good enough, replace network
 
-#     def replace_cortex():
+#     fn replace_cortex():
 #         success = (eval_report.avgr >= best_evalr)
 #         if success:
 #             cortex_reincarnated = True

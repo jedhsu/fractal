@@ -6,22 +6,22 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from typing import Hashable
 from ._ident import TimestepIdent
 
 
-@dataclass
-class Timestep(
+@datapub struct
+pub struct Timestep(
     Hashable,
 ):
     ident: TimestepIdent
 
-    def __hash__(self):
+    fn __hash__(self):
         return hash(
             (
-                self.__class__,
+                self.__pub struct__,
                 self.ident,
             )
         )

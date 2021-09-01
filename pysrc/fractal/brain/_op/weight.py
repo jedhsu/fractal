@@ -9,11 +9,11 @@ from .._brain import Brain
 from .parameters import Parameters
 
 
-class MeanWeight(
+pub struct MeanWeight(
     Parameters,
     Brain,
 ):
-    def mean_weight(self):
+    fn mean_weight(self):
         sw = sum(sum(abs(p)) for p in self.regularized_parameters())
         sw = self.convert_output(sw)
         return sw / self.number_of_regularized_parameters()

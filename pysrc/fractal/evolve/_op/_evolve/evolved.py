@@ -4,20 +4,20 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from .optimized import Optimized
 
 
-@dataclass
-class Evolved(
+@datapub struct
+pub struct Evolved(
     Optimized,
 ):
     demon_entropy: float
     brain_entropy: float
 
 
-def evolution_status(
+fn evolution_status(
     tr: Trainer,
     samples,
 ):

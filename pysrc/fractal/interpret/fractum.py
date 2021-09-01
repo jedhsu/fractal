@@ -7,7 +7,7 @@
   Extends fractum with glimpsing information.
 
 """
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from fractal.fractum import Fractum
 
@@ -15,8 +15,8 @@ f64 = float
 Heat = int
 
 
-@dataclass
-class Interpretation(
+@datapub struct
+pub struct Interpretation(
     Fractum,
 ):
     energy: Heat

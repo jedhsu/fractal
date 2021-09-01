@@ -11,13 +11,13 @@
 from fractum import Fractum
 
 from abc import ABCMeta
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Demon(
+@datapub struct
+pub struct Demon(
     Fractum,
-    metaclass=ABCMeta,
+    metapub struct=ABCMeta,
 ):
     depth: int
     age: float

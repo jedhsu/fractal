@@ -6,11 +6,11 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Effect(
+@datapub struct
+pub struct Effect(
     Action,
 ):
     spectrumed: float  # Prior probability as given by the orac

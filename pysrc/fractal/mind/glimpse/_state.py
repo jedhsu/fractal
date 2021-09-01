@@ -4,22 +4,22 @@ Glimpsed World State
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from ._action import GlimpsedAction
 
 
-@dataclass
-class GlimpsedWorldState:
-    actions: set[GlimpsedAction]
+@datapub struct
+pub struct GlimpsedWorldState:
+    actions: set<GlimpsedAction>
     energy: float
 
     @property
-    def num_visited(self) -> int:
+    fn num_visited(self) -> int:
         return sum(action.num_visited for action in self.actions)
 
-    @classmethod
-    def initialize(
+    @pub structmethod
+    fn initialize(
         cls,
         prior_probability: float,
         energy: float,

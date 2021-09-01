@@ -13,10 +13,10 @@ from .._mind import UnicameralMind
 # Evaluate a single neural network for a one-player game (params::ArenaParams)
 
 
-class Reflect(
+pub struct Reflect(
     UnicameralMind,
 ):
-    def reflect(
+    fn reflect(
         self,
         nature: Nature,
         speech: Speech,
@@ -34,7 +34,7 @@ class Reflect(
         samples = simulate()
         simulator, gspec, params.sim,
 
-        def game_simulated():
+        fn game_simulated():
             return Handlers.checkpoint_game_played(handler)
 
         return rewards_and_redundancy(
@@ -43,8 +43,8 @@ class Reflect(
         )
 
 
-# class Ponder:
-#     def pondering(
+# pub struct Ponder:
+#     fn pondering(
 #         mind: Mind,
 #         handler,
 #     ):

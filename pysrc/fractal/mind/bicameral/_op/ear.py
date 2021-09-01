@@ -13,8 +13,8 @@
 
  """
 
-class Ear(Mind,):
-    def launch_inference_server(
+pub struct Ear(Mind,):
+    fn launch_inference_server(
         cortex1: Cortex,
         cortex2: Cortex,
         num_workers: int,

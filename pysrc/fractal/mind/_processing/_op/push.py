@@ -1,5 +1,5 @@
-class Push(
+pub struct Push(
     Processing,
 ):
-    def push(self):
+    fn push(self):
         pass

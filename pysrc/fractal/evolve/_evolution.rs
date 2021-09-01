@@ -7,11 +7,11 @@ the neural network is updated to fit the data in the memory buffer.
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 
-@dataclass
-class Evolution:
+@datapub struct
+pub struct Evolution:
     shall_use_gpu: bool
     shall_use_position_averaging: bool
 
@@ -30,7 +30,7 @@ class Evolution:
 
 """
   The neural network goes through `num_checkpoints` series of `n` updates using
-  batches of size `batch_size` drawn from memory, where `n` is defined as follows:
+  batches of size `batch_size` drawn from memory, where `n` is fnined as follows:
 
 ```
 n = min(max_batches_per_checkpoint, ntotal ÷ min_checkpoints_per_epoch)

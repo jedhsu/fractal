@@ -11,7 +11,7 @@ from fractal import Fractum
 from .._demon import Demon
 
 
-class Vision(
+pub struct Vision(
     Demon,
     Fractal,
 ):

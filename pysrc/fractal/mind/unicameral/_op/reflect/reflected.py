@@ -6,13 +6,13 @@ Metrics generated after the self-play phase of an iteration.
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 f64 = float
 
 
-@dataclass
-class Reflected:
+@datapub struct
+pub struct Reflected:
     sampling_frequency: f64
     average_exploration_depth: f64
     mcts_memory_footprint: int

@@ -6,12 +6,12 @@ Container for all parameters.
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 from fractal.evolve import Evolution
 
 
-@dataclass
-class Flow:
+@datapub struct
+pub struct Flow:
     reflection: Reflection
     interpretation: Interpretation
     evolution: Evolution
@@ -28,8 +28,8 @@ class Flow:
 
 The AlphaZero training process consists in `num_iters` iterations. Each
 iteration can be decomposed into a self-play phase
-(see [`SelfPlayParams`](@ref)) and a learning phase
-(see [`LearningParams`](@ref)).
+(see <`SelfPlayParams`>(@ref)) and a learning phase
+(see <`LearningParams`>(@ref)).
 
     `ternary_rewards`
       set to `true` if the rewards issued by the game environment always
@@ -47,7 +47,7 @@ iteration can be decomposed into a self-play phase
 
     `memory_analysis`
       parameters for the memory analysis step that is performed at each iteration
-      (see [`MemAnalysisParams`](@ref)), or `nothing` if no analysis is to be performed.
+      (see <`MemAnalysisParams`>(@ref)), or `nothing` if no analysis is to be performed.
 
 # AlphaGo Zero Parameters
 
@@ -57,6 +57,6 @@ In the original AlphaGo Zero paper:
   as an average game of Go lasts about 200 turns.
 """
 
-# for T in [MctsParams, SimParams, ArenaParams, SelfPlayParams, LearningParams, Params]
+# for T in <MctsParams, SimParams, ArenaParams, SelfPlayParams, LearningParams, Params>
 #   Util.generate_update_constructor(T) |> eval
 # end

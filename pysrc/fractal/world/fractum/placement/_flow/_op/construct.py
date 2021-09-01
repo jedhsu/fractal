@@ -1,6 +1,6 @@
-class 
+pub struct 
 
-def .init(spec::Spec):
+fn .init(spec::Spec):
   env = GI.clone(spec.env)
   RL.reset!(env.rlenv)
   return env

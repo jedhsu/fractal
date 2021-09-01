@@ -1,5 +1,5 @@
 """
-Thinking, [Think]
+Thinking, <Think>
 =================
 
 Add a new (policy, reward, state) quadruple.
@@ -9,10 +9,10 @@ Add a new (policy, reward, state) quadruple.
 from .._thinking import Thinking
 
 
-class Think(
+pub struct Think(
     Thinking,
 ):
-    def think(
+    fn think(
         self,
         state: WorldState,
         daemon: Daemon,
@@ -20,5 +20,5 @@ class Think(
     ):
         pass
 
-    def _validate(self):
+    fn _validate(self):
         pass

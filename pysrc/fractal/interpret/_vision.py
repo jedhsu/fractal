@@ -24,7 +24,7 @@ const RL = CommonRLInterface
 """
     Env(rlenv::CommonRLInterface.AbstractEnv; <kwargs>) <: AbstractGameEnv
 
-Wrap an environment implementing the interface defined in CommonRLInterface.jl into
+Wrap an environment implementing the interface fnined in CommonRLInterface.jl into
 an `AbstractGameEnv`.
 
 # Requirements
@@ -49,7 +49,7 @@ CommonRLInterface.jl and can be provided as keyword arguments:
   - `parse_action`
   - `read_state`
 
-If `f` is not provided, the default implementation calls
+If `f` is not provided, the fnault implementation calls
 `GI.f(::CommonRLInterface.AbstractEnv, ...)`.
 
 """

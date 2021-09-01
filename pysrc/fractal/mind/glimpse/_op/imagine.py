@@ -10,11 +10,11 @@ from .interpret import Interpret
 from ..glimpsing import Glimpsing
 
 
-class Imagine(
+pub struct Imagine(
     Interpret,
     Glimpsing,
 ):
-    def imagine(
+    fn imagine(
         self,
         flowing: Flowing,
         num_images: int,

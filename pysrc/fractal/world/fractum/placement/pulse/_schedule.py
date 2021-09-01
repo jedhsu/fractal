@@ -10,5 +10,5 @@
 """
 
 
-class At:
+pub struct At:
     pass

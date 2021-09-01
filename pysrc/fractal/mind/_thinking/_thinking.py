@@ -6,15 +6,15 @@ Collects all world states visited during a lifetime.
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from typing import Sequence
 
 
-@dataclass
-class Thinking(
+@datapub struct
+pub struct Thinking(
     WorldState,
 ):
-    states: Sequence[WorldState]
-    demons: Sequence[Demon]
-    thermodynamics: Sequence[Energy]
+    states: Sequence<WorldState>
+    demons: Sequence<Demon>
+    thermodynamics: Sequence<Energy>

@@ -4,7 +4,7 @@
 
 """
 
-# class Observeds:
+# pub struct Observeds:
 #     sample_weights: np.
 #     world_representations:
 

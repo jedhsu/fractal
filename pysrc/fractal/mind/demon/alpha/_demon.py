@@ -2,7 +2,7 @@
 
     *Alpha Demon*
 
-  Create an AlphaZero player from the current [training environment](@ref environment).
+  Create an AlphaZero player from the current <training environment>(@ref environment).
 
   Note that the returned player may be slow as it does not batch MCTS requests.
 
@@ -14,7 +14,7 @@ from alpha0.environment import Environment
 from alpha0.parameters import MonteCarloTreeSearch
 
 
-def AlphaDemon(
+fn AlphaDemon(
     env: Environment,
     mcts_params: MonteCarloTreeSearchParameters,
     gpu: Optional = None,

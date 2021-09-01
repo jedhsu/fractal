@@ -2,6 +2,6 @@
 State Meta
 ==========
 
-Metaclass utility for defining states using class definitions.
+Metapub struct utility for fnining states using pub struct fninitions.
 
 """

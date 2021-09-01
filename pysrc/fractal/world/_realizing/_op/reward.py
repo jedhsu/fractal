@@ -9,7 +9,7 @@
 from .._world import World
 
 
-class WhiteReward(
+pub struct WhiteReward(
     World,
 ):
     pass

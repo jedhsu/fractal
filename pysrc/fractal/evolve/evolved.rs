@@ -6,13 +6,13 @@ Report generated at the end of the learning phase of an iteration.
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 float = f64
 
 
-@dataclass
-class Evolved:
+@datapub struct
+pub struct Evolved {
     time_convert: f64
     time_loss: f64
     time_train: f64
@@ -22,6 +22,7 @@ class Evolved:
     losses: Vector[f32]
     checkpoints: Vector[Checkpoint]
     nn_replaced: Bool
+}
 
 
 """

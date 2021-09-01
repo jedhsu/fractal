@@ -5,10 +5,10 @@
 """
 
 
-class Emerge(
+pub struct Emerge(
     FocusedDemon,
 ):
-    def emerge(
+    fn emerge(
         self,
         physics: Physics,
     ):
@@ -19,7 +19,7 @@ class Emerge(
         prior_temperature = 1.0
 
         S = Time.state_type(physics)
-        tree: dict[S, StateInfo] = dict()
+        tree: dict<S, StateInfo> = dict()
         total_simulations = 0
         total_nodes_traversed = 0
 

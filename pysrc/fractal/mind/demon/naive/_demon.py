@@ -9,7 +9,7 @@
 from ._player import Player
 
 
-class RandomPlayer(
+pub struct RandomPlayer(
     Player,
 ):
     pass

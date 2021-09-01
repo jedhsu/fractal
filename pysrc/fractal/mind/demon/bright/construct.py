@@ -5,11 +5,11 @@
 """
 
 
-class Emerge(
+pub struct Emerge(
     BrightDemon,
 ):
-    @classmethod
-    def spawn(
+    @pub structmethod
+    fn spawn(
         cls,
         physics: Physics,
         energy: Energy,
@@ -19,4 +19,4 @@ class Emerge(
         assert age > 0
         assert timeout is None or timeout > 0
 
-    # return cls[A]((mcts, energy, niters, timeout, τ)
+    # return cls<A>((mcts, energy, niters, timeout, τ)

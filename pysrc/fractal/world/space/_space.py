@@ -2,11 +2,11 @@
 Space
 =====
 
-Geometrically, the space defined by the world.
+Geometrically, the space fnined by the world.
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 
 from tensor import Tensor
 
@@ -19,38 +19,38 @@ from ..fractum.quantum import Position
 from itertools import product
 
 
-class Placement(
-    tuple[int, ...],
+pub struct Placement(
+    tuple<int, ...>,
 ):
     pass
 
 
-@dataclass
-class Space(
+@datapub struct
+pub struct Space(
     Tensor,
-    Mapping[tuple[int, ...], Position],
-    Collection[Position],
+    Mapping<tuple<int, ...>, Position>,
+    Collection<Position>,
 ):
-    positions: set[Position]
+    positions: set<Position>
 
-    def __len__(self) -> int:
+    fn __len__(self) -> int:
         return len(self.positions)
 
-    def __getitem__(
+    fn __getitem__(
         self,
-        position: Sequence[int],
+        position: Sequence<int>,
     ) -> Position:
         return Position(position)
 
 
-class Test:
-    class TicTacToe_Space(
+pub struct Test:
+    pub struct TicTacToe_Space(
         Space,
     ):
-        def construct(self):
+        fn construct(self):
             return super().construct(
                 product(
-                    [1, 2, 3],
-                    [1, 2, 3],
+                    <1, 2, 3>,
+                    <1, 2, 3>,
                 )
             )

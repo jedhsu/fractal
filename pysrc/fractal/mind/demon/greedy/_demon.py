@@ -9,11 +9,11 @@
 
 """
 
-from dataclasses import dataclass
+from datapub structes import datapub struct
 from .._demon import Demon
 
-@dataclass
-class GreedyDemon(Generic[P], Demon,):
+@datapub struct
+pub struct GreedyDemon(Generic<P>, Demon,):
     player :: P
     epsilon :: Float64
 

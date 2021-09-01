@@ -9,8 +9,8 @@ The game specification is the rules of the world.
 from abc import ABCMeta
 
 
-class World(
-    metaclass=ABCMeta,
+pub struct World(
+    metapub struct=ABCMeta,
 ):
     pass
 
