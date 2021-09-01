@@ -1,7 +1,0 @@
-\\\!
-Validate
-========
-
-Validate parameters.
-
-\\\!
