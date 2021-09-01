@@ -14,9 +14,12 @@ pub struct Interpreted {
     steps_until_end: i32,
     //! The average number of moves remaining before the end of the game.
 
-    count: i32,
+    heat: Heat,
     //! The number of times the state `s` was recorded.
 }
+
+pub type Heat = i32;
+//! The number of times the state `s` was recorded.
 
 // \\\!
 

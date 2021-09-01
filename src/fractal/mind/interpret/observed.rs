@@ -1,13 +1,13 @@
 //! Statistics for games with ternary rewards
 
-pub struct TernaryOutcomeStatistics {
+pub struct Glimpsed {
     n_won: i16,
     n_draw: i16,
     n_lost: i16,
 }
 
-impl TernaryOutcomeStatistics {
-    fn from_rewards(rewards::AbstractVector{<:Number}) {
+impl Glimpsed {
+    fn from_passion(rewards::AbstractVector{<:Number}) {
         num_won  = count(==(1), rewards);
         num_draw = count(==(0), rewards);
         num_lost = count(==(-1), rewards);

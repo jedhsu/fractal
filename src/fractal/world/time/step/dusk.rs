@@ -1,12 +1,15 @@
 //! Report generated after a step.
 
 pub struct Dusk {
-    /// number of batches after which the checkpoint was computed
-    batch_id: i32,
-    /// evaluation report
+    thought_Count: i32,
+    //! number of batches after which the checkpoint was computed
+    
     evaluated: Evaluated,
-    /// learning status at the checkpoint, as an object of type
+    //! evaluation report
+
     evolved: Evolved,
-    /// true if the current best neural network was updated after the checkpoint
+    //! learning status at the checkpoint, as an object of type
+
     has_brain_refreshed: bool,
+    //! returns true if the current best neural network was updated after the checkpoint
 }

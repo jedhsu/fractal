@@ -9,15 +9,15 @@ pub struct Noise {
 }
 
 pub struct Glimpse {
-    const decay: f64 = 1.0,
+    const patience: f64 = 1.0,
     //! the reward discount factor
 
-    const upper_confidence_threshold: f64 = 1.0,
+    const skepticism: f64 = 1.0,
     //! exploration constant in the UCT formula
     
     const noise: Noise,
 
-    previous_health: f64,
+    const sanity_before: f64,
     //! temperature to apply to the oracle's output to get
     //! the prior probability vector used by MCTS.
 }

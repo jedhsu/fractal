@@ -4,7 +4,7 @@ pub trait Synthesize {
 
 impl Synthesize for Processing {
     fn synthesize(
-        &&self,
+        &self,
         nature: Nature,
         observed: Observed,
         // (symstate, aperm),

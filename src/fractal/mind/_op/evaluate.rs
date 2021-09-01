@@ -1,37 +1,23 @@
-\\\!
-Evaluate
-========
 
-Evaluate a single neural network for a one-player game.
+pub trait Evaluate {
+    fn evaluate(&self) {}
+    //! Evaluate a single brain for a unicameral mind.
+}
 
-\\\!
-
-from fractal.world import Nature
-from fractal.brain import Brain
-from fractal import Fractal
-
-from .._mind import Mind
-
-
-pub struct Evaluate(
-    Mind,
-):
-    @pub structmethod
-    fn evaluating(
-        cls,
-        nature: Nature,
-        brain: Brain,
-        evaluation: Evaluation,
-        handler: AtDusk,
-    ):
-        brains = brain.copy(
+impl Evaluate for Mind (
+    fn evaluate(&self) {
+        brain = &self.brain.clone(
             on_gpu=Fractal.Mind.Imagination.use_gpu,
             test_mode=true,
-        )
-        # simulator = Simulator(make_oracles, record_trace) do oracle
-        # simulator.MctsPlayer(gspec, oracle, params.mcts)
+        );
 
-        # samples = simulate()
+        imagination = Imagination(make_oracles, record_trace);
+        imagination.summon(nature: Nature, demon: Demon, foresight: Foresight);
+
+        visions = &self.imagination.imagine()
         # simulator, gspec, params.sim,
-        # game_simulated=(() -> Handlers.checkpoi32_game_played(handler))
-        # return rewards_and_redundancy(samples, gamma=params.mcts.gamma,)
+        imagined  =(() -> Checkpoints.imagined_the_future(&self.awareness))
+        return (imagined, skepticism=&self.imagination.skepticism,)
+        }
+    }
+}

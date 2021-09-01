@@ -1,18 +1,13 @@
-\\\!
+//! Memory buffer.
 
-    *Processing*
+pub type Complexity = i32;
 
-  Memory buffer.
+pub struct Processing {
+    nature: Nature,
 
-\\\!
+    ring: RingBuffer<Observation>,
 
-from fractal.world import Nature
+    complexity: Complexity,
+    // Batch size.
+}
 
-from datapub structes import datapub struct
-
-
-@datapub struct
-pub struct Processing:
-    nature: Nature
-    ring: RingBuffer<Observation>
-    batch_size: i32

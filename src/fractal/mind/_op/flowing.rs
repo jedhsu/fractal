@@ -8,7 +8,7 @@ where
 }
 
 impl<T> Flow<T> for World {
-    fn flow(&&self) {
+    fn flow(&self) {
         while &self.itc < &self.params.num_iters {
             &self.handle.iteration_started(handler);
             resize_memory!(env, env.params.mem_buffer_size<env.itc>);
@@ -22,3 +22,4 @@ impl<T> Flow<T> for World {
         &self.handle.training_finished(handler);
     }
 }
+

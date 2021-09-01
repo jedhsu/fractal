@@ -3,22 +3,22 @@
 //! the &self-play phase of an iteratio
 
 pub struct Glimpsed {
-    sampling_frequency: f64,
+    glimpsing_frequency: f64,
     //! Average number of samples generated per second.
 
-    average_exploration_depth: f64,
+    average_steps_ahead: f64,
     //!
 
-    mcts_memory_footpri32: i32,
+    estimated_dream_scale: i32,
     //! estimation of the maximal memory footpri32 of the
     //! MCTS tree during &self-play, as computed by
     //! <`MCTS.approximate_memory_footpri32`>(@ref)
     //! &self-play phase
     
-    memory_size: i32.
+    number_of_glimpsed: i32.
     //! number of samples in the memory buffer at the end of the
 
-    memory_num_distinct_boards: i32,
+    number_of_unique_realized: i32,
     //! number of distinct board positions in the
     //! memory buffer at the end of the &self-play phase
 }
@@ -27,8 +27,8 @@ pub struct Glimpsed {
 //     fn new(reali
 // }
 
-// # fn glimpsed(realization, _, player):
-// #     mem = MCTS.approximate_memory_footpri32(player.mcts)
-// #     edepth = MCTS.average_exploration_depth(player.mcts)
-// #     return (trace=trace, mem=mem, edepth=edepth,)
+# fn glimpsed(demon: Demon):
+#     mem = .estimated_memory_load(demon.glimpser())
+#     edepth = Foresight.average_exploration_depth(demon.glimpser())
+#     return (trace=trace, mem=mem, edepth=edepth,)
 
