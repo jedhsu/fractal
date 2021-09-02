@@ -1,10 +1,3 @@
-\\\!
-
-    *Dueled*
-
-  The outcome of a duel in the bicameral mind.
-
-\\\!
 
 from datapub structes import datapub struct
 from typing import Optional
@@ -16,37 +9,11 @@ pub struct Euphoria {
     extra: Vec<f64>,
 }
 
-pub struct Dueled {
-    emcee: str,
-    //! A string describing the evaluation.
-
-    contentment: f64,
-    //! Average of euphoria.
-
-    redundancy: f64,
-    //! The ratio of duplicate positions encountered during the
-    //! evaluation, not counting the initial position. If this number is too high,
-    //! you may want to increase the move selection temperature.
-
-    euphoria: Euphoria,
-    //! The sequence of rewards collected by the evaluated player.
-
-    duration: f64,
-    //! The accumulated computing time spent running the evaluation, in seconds.
-
-}
-
 
 \\\!
 # Two-player Games
 
 - `baseline_rewards` is `nothing`
-
-# Single-player Games
-
-- `rewards` is the sequence of rewards collected by the evaluated player
-- `baseline_rewards` is the sequence of rewards collected by the baseline player
-- `avgr` is equal to `mean(rewards) - mean(baseline_rewards)`
 
 # Common Fields
 
@@ -56,6 +23,7 @@ pub struct Dueled {
 pub trait Duel {
     fn duel(nature: Nature, challenger: Perspective, adversary: Perspective, theater: Theater, attention: Attention,) { }
 }
+
 pub struct Duel:
     fn duel(
         cls,

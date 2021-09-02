@@ -27,8 +27,9 @@ pub struct Glimpsed {
 //     fn new(reali
 // }
 
-# fn glimpsed(demon: Demon):
-#     mem = .estimated_memory_load(demon.glimpser())
-#     edepth = Foresight.average_exploration_depth(demon.glimpser())
-#     return (trace=trace, mem=mem, edepth=edepth,)
+fn glimpsed(demon: Demon) {
+    let mem = .estimated_memory_load(demon.glimpser());
+    let edepth = Foresight.average_exploration_depth(demon.glimpser());
+    (trace=trace, mem=mem, edepth=edepth,)
+}
 

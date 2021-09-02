@@ -19,6 +19,7 @@ pub struct Evolution {
     l2_regularization: float,
 
     rewards_renormalization: float,
+    //! All rewards are divided by `rewards_renormalization` before the MSE loss is computed.
 
     nonvalidity_penalty: float,
     //! The multiplicative constant of a loss term that corresponds to the average probability weight
@@ -57,7 +58,6 @@ the current network is evaluated against the best network so far
     `loss_computation_batch_size`
 
     `rewards_renormalization`
-      All rewards are divided by `rewards_renormalization` before the MSE loss is computed.
     
     `use_position_averaging`
 

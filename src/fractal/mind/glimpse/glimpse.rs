@@ -1,6 +1,6 @@
 //! A MCTS is Glimpse.
 //! 
-//! Parameters for MCTS.
+//! Parameters for the glimpse.
 
 pub struct Noise {
     /// parameters for the dirichlet exploration noise

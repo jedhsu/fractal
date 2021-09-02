@@ -1,23 +1,28 @@
-\\\!
+//! A samples collection is represented on the learning side as a (W, X, A, P, V)
+//! named-tuple. Each component is a `Float32` tensor whose last dimension corresponds
+//! to the sample index. Writing `n` the number of samples and `a` the total
+//! number of actions:
+//!
+//! Note that the weight of a sample is computed as an increasing
+//! function of its `n` field.
 
-    *Observeds*
 
-\\\!
 
-# pub struct Observeds:
-#     sample_weights: np.
-#     world_representations:
+pub struct Observeds {
+    architecture: Architecture,
+    //! W (size 1×n) contains the samples weights
 
-\\\!
-# A samples collection is represented on the learning side as a (W, X, A, P, V)
-# named-tuple. Each component is a `Float32` tensor whose last dimension corresponds
-# to the sample index. Writing `n` the number of samples and `a` the total
-# number of actions:
-# - W (size 1×n) contains the samples weights
-# - X (size …×n) contains the board representations
-# - A (size a×n) contains the action masks (values are either 0 or 1)
-# - P (size a×n) contains the recorded MCTS policies
-# - V (size 1×n) contains the recorded values
-# Note that the weight of a sample is computed as an increasing
-# function of its `n` field.
-\\\!
+    history: History,
+    //! X (size …×n) contains the board representations
+    
+    possibility: Possibility,
+    //! A (size a×n) contains the action masks (values are either 0 or 1)
+
+    shadow: Shadow,
+    //! Sequence of whispers form a shadow, which is what "influences the mind".
+    //!
+    //! P (size a×n) contains the recorded MCTS policies
+
+    //! path: Energy
+    //! V (size 1×n) contains the recorded values
+}

@@ -1,46 +1,39 @@
-\\\!
-Glimpsing - Compute
-===================
+//! Computations for the glimpse.
 
-\\\!
+pub trait Analyze {
+    fn confidence_ceiling(&self) -> f32;
 
-from ..glimpsing import Glimpsing
+    fn depth_of_analysis(&self) -> f32;
+    //! Return the average number of nodes that are traversed during an
+    //! MCTS simulation, not counting the root.
+}
 
-from math import sqrt
+impl Analyze for Glimpsing {
+    fn confidence_ceiling( &self) -> f32 {
+        assert!(epsilon == 0 or &self.estimated_time_remaining() == &self.state.actions.len());
+        let sqrt_num_visited = sqrt(glimpsed_state.num_visited);
 
-from .._state import GlimpsedWorldState
+        for i, action in enumerate(glimpsed_state.actions) {
+            let energy = action.energy / max(action.num_visited, 1)
 
-
-class Compute(
-    Glimpsing,
-):
-    @staticmethod
-    def upper_confidence_bounds(
-        glimpsed_state: GlimpsedWorldState,
-        cpuct,
-        epsilon,
-        eta,
-    ):
-        assert epsilon == 0 or len(eta) == len(glimpsed_state.actions)
-        sqrt_num_visited = sqrt(glimpsed_state.num_visited)
-        for i, action in enumerate(glimpsed_state.actions):
-            qvalue = action.energy / max(action.num_visited, 1)
-
-            if epsilon == 0:
-                probability = action.prior_probability
-            else:
+            if epsilon == 0 {
+                let probability = action.prior_probability;
+            } else if {
                 # [TODO] clean me functionally
-                probability = (1 - epsilon) * action.prior_probability + epsilon * eta[
+                let probability = (1 - epsilon) * action.prior_probability + epsilon * eta[
                     i
                 ]
+            }
 
             qvalue + cpuct * probability * sqrt_num_visited / (a.N + 1)
+        }
+    }
 
-    def depth_of_analysis(&self) -> float:
-        \\\!
-        Return the average number of nodes that are traversed during an
-        MCTS simulation, not counting the root.
-        \\\!
-        if &self.total_simulations == 0:
-            return 0
-        return &self.total_nodes_traversed / &self.total_simulations
+    fn depth_of_analysis(&self) -> f32 {
+        if &self.total_simulations == 0 {
+            return 0;
+        }
+
+        &self.total_nodes_traversed / &self.total_simulations
+    }
+}
