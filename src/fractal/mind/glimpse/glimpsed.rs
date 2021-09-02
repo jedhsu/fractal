@@ -1,6 +1,6 @@
 //!! Information gathered from a glimpse.
 //!
-//! the &self-play phase of an iteratio
+//! the &self-play phase of an iteration
 
 pub struct Glimpsed {
     glimpsing_frequency: f64,

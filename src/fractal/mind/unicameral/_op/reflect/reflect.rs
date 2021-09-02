@@ -2,8 +2,8 @@
 //!
 //! Evaluate a single neural network for a one-player game (params::ArenaParams)
 
-pub trait Ponder {
-    fn ponder(&self, nature: Nature) {}
+pub trait Reflect {
+    fn reflect(&self, nature: Nature) {}
 }
 
 // pub struct Ponder(
@@ -53,4 +53,3 @@ pub trait Ponder {
 // // #             simulator.oracle,
 // // #             params.mcts,
 // // #         )
-

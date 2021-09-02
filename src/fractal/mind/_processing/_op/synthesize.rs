@@ -9,6 +9,7 @@ impl Synthesize for Processing {
         observed: Observed,
         // (symstate, aperm),
     ) {
+        // TODO fuck the global interpreter
         let mask = GlobalInterpreter.actions_mask(
             GlobalInterpreter.init(gspec, sample.s),
         );

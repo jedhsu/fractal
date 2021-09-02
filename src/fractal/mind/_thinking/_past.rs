@@ -3,7 +3,7 @@
 pub struct Past {
     // WorldState,
     // ):
-    history: Vec<WorldState>,
-    demons: Vec<Demon>,
-    thermodynamics: Vec<Energy>,
+    history: Vec<State>,
+    daemon: Vec<Demon>,
+    work: Vec<Energy>,
 }

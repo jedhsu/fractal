@@ -1,17 +1,9 @@
-\\\!
-Measure
-=======
 
-\\\!
+pub struct Measure {
+    fn length(&self) {
+        return &self.thermodynamics.len()
+    }
 
-from .._thinking import Thinking
-
-
-pub struct Measure(
-    Thinking,
-):
-    fn __len__(&self):
-        return len(&self.thermodynamics)
-
-    fn total_energy(&self):
-        pass
+    fn total_energy(&self) {
+        }
+}

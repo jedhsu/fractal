@@ -1,10 +1,10 @@
+//! Evaluate a single neural network for a one-player game.
 
 pub trait Evaluate {
-    fn evaluate(&self) {}
-    //! Evaluate a single brain for a unicameral mind.
+    fn evaluate(&self) -> Evaluated;
 }
 
-impl Evaluate for Mind (
+impl Evaluate for Pondering {
     fn evaluate(&self) {
         brain = &self.brain.clone(
             on_gpu=Fractal.Mind.Imagination.use_gpu,
@@ -21,3 +21,17 @@ impl Evaluate for Mind (
         }
     }
 }
+
+//# Single-player Games
+
+//- `rewards` is the sequence of rewards collected by the evaluated player
+//- `baseline_rewards` is the sequence of rewards collected by the baseline player
+//- `avgr` is equal to `mean(rewards) - mean(baseline_rewards)`
+
+//pub trait Evaluate {
+//    fn evaluate(&self) {}
+//    //! Evaluate a single brain for a unicameral mind.
+//}
+
+//impl Evaluate for Mind (
+//}

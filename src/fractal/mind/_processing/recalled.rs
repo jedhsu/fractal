@@ -1,14 +1,14 @@
 pub trait Recall {
     fn recall(&self) {}
+    //! It is important to load the neural network in test mode so as to not
+    //! overwrite the batch norm statistics based on biased data.
+
 }
 
 impl Recall for Memory:
     fn recall(&self) {
-    //! It is important to load the neural network in test mode so as to not
-    //! overwrite the batch norm statistics based on biased data.
-
         Tr(samples) = Evolve.evolving(mem.gspec, nn, samples, learning_params, test_mode=true,)
-        all_samples = samples_report(Tr(get_experience(mem)))
+        let all_samples = samples_report(Tr(get_experience(mem)))
         latest_batch = isempty(last_batch(mem)) ?
         all_samples :
         samples_report(Tr(last_batch(mem)))

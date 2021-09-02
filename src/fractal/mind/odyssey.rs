@@ -1,7 +1,8 @@
-//! The AlphaZero training process consists in `num_iters` iterations. Each
-//! iteration can be decomposed i32o a &self-play phase
-//! (see <`SelfPlayParams`>(@ref)) and a learning phase
-//! (see <`LearningParams`>(@ref)).
+//! The AlphaZero training process consists in `num_iters` iterations.
+//!
+//! Each iteration can be decomposed into:
+//!     [1] imagining - a self-play phase (see <`SelfPlayParams`>(@ref))
+//!     [2] evolving - a learning phase (see <`LearningParams`>(@ref)).
 //!
 //! Container for all parameters.
 

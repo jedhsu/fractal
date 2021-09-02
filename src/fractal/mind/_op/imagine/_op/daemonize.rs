@@ -1,7 +1,0 @@
-\\\!
-Daemonize
-=========
-
-Batchification.
-
-\\\!

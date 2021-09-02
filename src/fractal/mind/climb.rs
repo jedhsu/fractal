@@ -4,7 +4,7 @@ pub trait Climb {
     fn reflect(&self) -> Reflected {}
 }
 
-pub struct Ponder:
+pub struct Ponder {
     # To be given as an argument to `Simulator`
     fn measure(&self, trace, _, player):
         mem = Vision.approximate_memory_footpri32(player.mcts)
@@ -21,13 +21,14 @@ pub struct Ponder:
         for x in results:
             push_trace!(env.memory, x.trace, params.mcts.gamma,)
 
-        speed = cur_batch_size(env.memory) / elapsed
-        edepth = mean(<x.edepth for x in results>)
-        mem_footpri32 = maximum(<x.mem for x in results>)
-        memsize, memdistinct = simple_memory_stats(env)
-        report = Report.SelfPlay( speed, edepth, mem_footpri32, memsize, memdistinct,)
-        Handlers.&self_play_finished(handler, report)
+        speed = cur_batch_size(env.memory) / elapsed;
+        edepth = mean(<x.edepth for x in results>);
+        mem_footpri32 = maximum(<x.mem for x in results>);
+        memsize, memdistinct = simple_memory_stats(env);
+        report = Report.SelfPlay( speed, edepth, mem_footpri32, memsize, memdistinct,);
+        Handlers.&self_play_finished(handler, report);
         return report
+}
 
 
 # fn memory_report(env::Env, handler,):

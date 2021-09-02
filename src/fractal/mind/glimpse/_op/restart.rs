@@ -1,4 +1,4 @@
-//! Reset by emptying the MCTS tree.
+//! Reset the glimpse by emptying the MCTS tree.
 
 pub trait Reset {
     fn reset(&self);
@@ -9,4 +9,3 @@ impl Reset for Glimpsing {
         &self.tree = dict()
     }
 }
-
