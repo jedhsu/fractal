@@ -1,3 +1,5 @@
+
+
 ## Fractal
 
 `fractal` is a developing spec for a reinforcement learning framework. Currently early prototyping.
@@ -8,63 +10,9 @@ My strategy to get this going is to architect its features around the well-known
 
 Goal at first is to use Python for clarity without caring about speed.
 
-## World
+### TODO - blurb on cpt
 
-The `World` defines the rules (specification) of the environment. The `Realizing(World)` holds the environment state.
-
-### World Rules
-
-A design goal is to make the data model for the rules of the game be dynamical
-This represents that certain "rules of the game" can change, and in fact might
-be the primary parameters of change for an unsupervised learner.
-
-### Fractum
-
-An environment state is a `Fractum`. It consists of
-- a `Quantum`, describing a position in world space and a discrete state.
-- a `Spectrum`, a probability distribution describing its quantum actions at the current timestep.
-
-#### Quantum
-
-A quantum describes a type of object in the world.
-
-A `QuantumAction` is a state change that the quantum can undergo at the current time-step. It can be either conditional,
-and/or stochastic.
-
-Quantum actions are divided into two types:
-- a `QuantumMotion` is a change of position in space.
-- a `QuantumTransition` is a transition of some internal discrete state.
-
-The set of `QuantumAction`s is the set of probabilistic actions that the quantum can experience at the current time-step.
-###### TODO
-This could be more clearly named.
-
-##### A few examples
-Tic-Tac-Toe
-- one type of Quantum, a Block.
-- the Block cannot move, i.e. there are no quantum motions in the world of Tic-Tac-Toe.
-- the Block has three discrete states: Empty, O, X
-- the Block can change discrete state if acted on by an agent action, there are quantum changes,
-  conditional on a higher-level action which directly corresponds to the quantum position.
-
-Space Invaders
-- three types of Quantums: a Ship, an Alien, and a Laser
-...
-
-
-
-
-
-Some examples:
-* 
-
-An environment state
-
-#### Spectrum
-
-#### Examples
-
-* In basic strategy games such as Tic-Tac-Toe, the actions
+Talk about architecture decisions and how they are motivated by that perspective. For example, the logic should be constructivist.
 
 ### Realizing
 
