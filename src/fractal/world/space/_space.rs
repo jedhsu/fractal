@@ -8,7 +8,6 @@ pub struct Placement(
     pass
 
 
-@datapub struct
 pub struct Space(
     Tensor,
     Mapping<tuple<i32, ...>, Position>,

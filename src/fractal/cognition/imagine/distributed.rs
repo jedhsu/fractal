@@ -1,12 +1,20 @@
+//! simulate_distributed(::Simulator, ::AbstractGameSpec, ::SimParams; <kwargs>)
+//!
+//! Identical to <`simulate`>(@ref) but splits the work across all available distributed
+//! workers, whose number is given by `Distributed.nworkers()`.
 
-\\\!
-    simulate_distributed(::Simulator, ::AbstractGameSpec, ::SimParams; <kwargs>)
 
-Identical to <`simulate`>(@ref) but splits the work across all available distributed
-workers, whose number is given by `Distributed.nworkers()`.
-\\\!
+pub trait Dream {
+    fn glimpse(&self, world: &Realizing);
 
-pub struct Vision:
+    fn spawn(&self);
+    //! Spawning a task to keep count of completed simulations
+
+    fn distribute(&self);
+}
+
+
+impl Dream {
     fn glimpse(
         &self,
         spacetime: Spacetime,
@@ -17,7 +25,6 @@ pub struct Vision:
         validate()
 
     fn spawn(&self): 
-        # Spawning a task to keep count of completed simulations
         chan = Distributed.RemoteChannel(()->Channel{Nothing}(1))
         Util.@tspawn_mainfor i in 1:p.num_games
             take!(chan)
@@ -44,8 +51,9 @@ pub struct Vision:
             if isinstance(r, Distributed.RemoteException):
                 showerror(stderr, r, catch_backtrace())
         return reduce(vcat, results)
+}
 
-# function compute_redundancy(states)
-#   unique = Set(states)
-#   return 1. - length(unique) / length(states)
-# end
+fn compute_redundancy(states) {
+    unique = Set(states);
+    1. - length(unique) / length(states);
+}

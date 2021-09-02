@@ -1,5 +1,3 @@
-//! Stamina
-//!
 //! Return an estimate of the memory footpri32 of the MCTS tree (in bytes).
 
 pub trait Stamina {

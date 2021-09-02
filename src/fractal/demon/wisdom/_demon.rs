@@ -9,6 +9,7 @@ pub struct Wisdom {
     timeout: Option<i32>,
     //!   - if `timeout` is provided, MCTS simulations are executed for `timeout` seconds
     //!     by groups of `niters`.
+
     time: Time<f64>,
 }
 

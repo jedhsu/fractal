@@ -1,7 +1,6 @@
 //! Parameters for parallel simulation.
 
-@datapub struct
-pub struct Fantasy:
+pub struct Dream {
     fantasia: i32,
 
     number_of_dreams: i32,
@@ -13,3 +12,4 @@ pub struct Fantasy:
 
     flip_probability: f64 = 0.0
     alternate_colors: bool = False
+}

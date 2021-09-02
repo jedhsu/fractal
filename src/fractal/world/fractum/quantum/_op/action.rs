@@ -15,10 +15,8 @@ pub struct Actions(
 
 
 pub struct Test:
-    \\\!
-    In Tic-Tac-Toe, a block quantum is not allowed to move. It can only switch states
-    conditional on the player selecting the action.
-    \\\!
+    //! In Tic-Tac-Toe, a block quantum is not allowed to move. It can only switch states
+    //! conditional on the player selecting the action.
 
     pub struct TicTacToeBlockActions(
         QuantumAction,
@@ -26,7 +24,7 @@ pub struct Test:
         fn actions(
             &self,
             action_space: type,
-        ) -> set<QuantumAction>:
+        ) -> set<QuantumAction> {
             actions = set()
 
             # <TODO> explore changing this to type level
@@ -37,4 +35,6 @@ pub struct Test:
                     condition=Action.place_circle(position),
                 )
             )
-            return actions
+            return actions }
+        }
+}

@@ -4,9 +4,8 @@
 //! same state can be merged, in which case the `π`, `z` and `t`
 //! fields are averaged together.
 
-pub type Whisper = Vec<f64>;
 
-pub struct Interpreted {
+pub struct Flashed {
     position: Position,
     //! `s::State` is the state
 

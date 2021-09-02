@@ -1,7 +1,7 @@
-//! Update the state of the glimpse with information.
+//! Evaluate the value of the searched futures.
 
 pub trait Interpret {
-    fn interpret(&self, realized: Realized, action: Action, energy: Energy) {};
+    fn interpret(&self, glimpsing: Glimpsing, action: Action, energy: Energy) {};
 }
 
 impl Interpret for Glimpsing {

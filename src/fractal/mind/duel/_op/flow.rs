@@ -21,18 +21,18 @@ impl Flow for Duel {
         legend = "Most recent NN versus best NN so far"
 
         if Flow.two_players(gspec) {
-            (rewards_c, red), t = pit_networks(gspec, contender, baseline, params, handler,)
+            let (rewards_c, red), t = pit_networks(gspec, contender, baseline, params, handler,)
                 avgr = mean(rewards_c)
                 rewards_b = nothing;
         } else {
-            (rewards_c, red_c), tc = cortex.evaluate(gspec, contender, params, handler,);
-                (rewards_b, red_b), tb = cortex.evaluate(gspec, baseline, params, handler,);
+            let (rewards_c, red_c), tc = contender.evaluate(nature, params, handler,);
+            let (rewards_b, red_b), tb = baseline.evaluate(nature, params, handler,);
 
-                avgr = mean(rewards_c) - mean(rewards_b);
-                red = mean(<red_c, red_b>);
-                let t = tc + tb;
+            let avgr = mean(rewards_c) - mean(rewards_b);
+            let red = mean(<red_c, red_b>);
+            let t = tc + tb;
 
-        return Dueled(legend, avgr, red, rewards_c, rewards_b, t,);
+            Dueled(legend, avgr, red, rewards_c, rewards_b, t,);
     }
     
     fn reset(&self) {

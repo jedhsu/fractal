@@ -1,15 +1,15 @@
-//! Computations for the glimpse.
+//! Inference from glimpse.
 
-pub trait Analyze {
-    fn confidence_ceiling(&self) -> f32;
+pub trait Infer {
+    fn upper_confidence_threshold(&self) -> f32;
 
-    fn depth_of_analysis(&self) -> f32;
+    fn depth(&self) -> f32;
     //! Return the average number of nodes that are traversed during an
     //! MCTS simulation, not counting the root.
 }
 
 impl Analyze for Glimpsing {
-    fn confidence_ceiling( &self) -> f32 {
+    fn upper_confidence_threshold(&self) -> f32 {
         assert!(epsilon == 0 or &self.estimated_time_remaining() == &self.state.actions.len());
         let sqrt_num_visited = sqrt(glimpsed_state.num_visited);
 

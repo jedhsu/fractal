@@ -1,22 +1,18 @@
-//! Imagine
-//!
-//! Run MCTS simulations from the current state.
+//! `Imagine` is An iteration of MCTS.
 
 pub trait Imagine {
-    fn imagine(&self, present: &Present, number_of_images: i32);
+    fn imagine(&self, world: &Realizing);
 }
 
-pub struct Imagine(
-    Interpret,
+impl Imagine for Glimpsing(
     Glimpsing,
 ):
     fn imagine(
         &self,
-        flowing: Flowing,
-        number_of_images: i32,
+        world: &Realizing,
     ) {
         gamma = flowing.perturb(&self.parameters.alpha_noise)
-        for _ in range(num_images):
+        for _ in range(&self.number_of_imagines):
             &self.num_imagined += 1
             &self.i32erpret(
                 flowing.clone(),

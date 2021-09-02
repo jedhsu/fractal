@@ -27,4 +27,3 @@
 //!   + In the original AlphaGo Zero paper, 400 games are played to
 //!     evaluate a network and the `update_threshold` parameter is
 //!     set to a value that corresponds to a 55% win rate.
-
