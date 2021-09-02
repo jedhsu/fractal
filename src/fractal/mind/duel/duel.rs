@@ -1,7 +1,6 @@
-//! Evaluating by pitting it against an adversary in a two-player game.
+//! A duel between two minds in a two-player game.
 
 pub struct Duel {
-    adversary: Agent,
-    imagination: Imagination,
+    mind: &Mind,
+    adversary: &Mind,
 }
-

@@ -1,7 +1,7 @@
 //! Spawn Ear
 //! *launch_inference_server*
 //!
-//! Start a server that processes inference requests for two cortexes.
+//! Start a server that processes inference requests for two minds.
 //!
 //! This is needed when pitting two players together that rely on distinct networks for
 //! example. The reason we do not spawn two separate servers in this case is that each
@@ -22,3 +22,4 @@ pub trait Listen {
     ) {
     }
 }
+
