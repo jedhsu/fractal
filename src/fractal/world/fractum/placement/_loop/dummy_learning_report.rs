@@ -1,9 +1,6 @@
-\\\!
-
-    *Now*
-
-\\\!
-
+pub trait Present {
+    fn present(&self) {}
+}
 
 fn now():
     eps = 1e-16

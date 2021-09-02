@@ -1,9 +1,9 @@
-
-    @staticmethod
+mod perturb {
     fn sample_dirichlet_noise(
-        spacetime: Spacetime,
-        alpha,
+        realizing: Realizing,
+        noise: Noise,
     ):
-        placements = game.available_placements()
+        actions = world.possible_actions()
         n = len(actions)
-        return rand(Dirichlet(n, alpha))
+        return rand(Dirichlet(n, noise))
+}

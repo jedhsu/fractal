@@ -1,3 +1,9 @@
+pub trait Climb {
+    fn measure();
+    fn imagine(&self) -> Imagined {}
+    fn reflect(&self) -> Reflected {}
+}
+
 pub struct Ponder:
     # To be given as an argument to `Simulator`
     fn measure(&self, trace, _, player):

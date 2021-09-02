@@ -1,20 +1,26 @@
-\\\!
-World
-=====
-
-The game specification is the rules of the world.
-
-\\\!
 
 from abc import ABCMeta
 
 
-pub struct World(
-    metapub struct=ABCMeta,
-):
-    pass
+// pub struct World(
+//     metapub struct=ABCMeta,
+// ):
+//     pass
 
 
-# mutable struct Spec{E, H} <: AbstractGameSpec
-#   env :: Env{E, H}
-# end
+// pub struct Nature {
+//     world: World
+// }
+
+impl World {
+    fn new(nature: Nature) {
+        world = nature.clone();
+        RL.reset!(env.rlenv);
+        env;
+    }
+
+    fn initialize(nature: Nature, state: Realizing) {
+        world = nature.world.clone();
+        world.mind.interpret(state)
+    }
+}

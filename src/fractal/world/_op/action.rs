@@ -1,13 +1,22 @@
 pub trait Action {
-    fn action_string(&&self) -> &str;
+
     fn parse_action(&&self) -> Action;
 }
 
-impl Action for World {
+impl Display for Action {
+    fn display(&&self) -> &str;
     /// Return a human-readable string representing provided action.
-    fn action_string(&&self) {}
 
+}
+
+impl Parse for Action {
+    fn action(&self)  -> Action;
     /// Return the action described by string `str` or `nothing` if `str` does not
     /// denote a valid action.
-    fn parse_action(&&self) {}
 }
+
+// impl Action for World {
+//     fn action_string(&&self) {}
+
+//     fn parse_action(&&self) {}
+// }

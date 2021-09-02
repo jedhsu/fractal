@@ -1,7 +1,7 @@
 //! Update a realizing world by applying a random symmetry
 
-trait Synthesize {
-    fn synthesize(&&self);
+pub trait Synthesize {
+    fn synthesize(&self);
 }
 
 impl Synthesize for Realizing {

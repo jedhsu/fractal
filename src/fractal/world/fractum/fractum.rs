@@ -1,20 +1,14 @@
 //! A fractum is a quantum enlightened with a spectrum,
 //! knowledge of where it is going.
 
-from abc import ABCMeta
-from dataclasses import dataclass
+pub struct Fractum {
+    position: Position,
+    quantum: Quantum,
+    spectrum: Spectrum,
+}
 
-from ._ident import FractumIdent
+impl Hash for Fractum {
+    // fn __hash__(&self) -> int:
+    //     return hash(&self.ident)
+}
 
-
-@dataclass
-class Fractum(
-    Quantum,
-    metaclass=ABCMeta,
-):
-    position: tuple[int, ...]
-    quantum: Quantum
-    spectrum: Spectrum
-
-    def __hash__(&self) -> int:
-        return hash(&self.ident)

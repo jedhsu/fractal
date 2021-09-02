@@ -1,17 +1,6 @@
-\\\!
+//! Realizing describes The state of the world at the present time.
 
-    *World*
-
-  Get world state.
-
-\\\!
-
-from abc import abstractmethod
-
-from .._world import World
-
-
-pub struct State(
+pub struct Realizing(
     World,
 ):
     @abstractmethod

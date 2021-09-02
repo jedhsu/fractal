@@ -33,44 +33,6 @@ GI.symmetries(spec::Spec, state) = spec.env.symmetries(spec.env.rlenv, state)
 
 GI.render(env::Env) = env.render(env.rlenv)
 
-GI.action_string(spec::Spec, a) = spec.env.action_string(spec.env.rlenv, a)
-
-GI.parse_action(spec::Spec, s) = spec.env.parse_action(spec.env.rlenv, s)
-
-GI.read_state(spec::Spec) = spec.env.read_state(spec.env.rlenv)
 
 end
 
-
-\\\!
-
-ARCH
-
-\\\!
-
-
-#####
-##### Interface for i32eractive exploratory tools
-#####
-
-\\\!
-    render(game::AbstractGameEnv)
-
-Pri32 the game state on the standard output.
-\\\!
-function render end
-
-\\\!
-    action_string(::AbstractGameSpec, action) :: String
-
-Return a human-readable string representing the provided action.
-\\\!
-function action_string end
-
-\\\!
-    parse_action(::AbstractGameSpec, str::String)
-
-Return the action described by string `str` or `nothing` if `str` does not
-denote a valid action.
-\\\!
-function parse_action end

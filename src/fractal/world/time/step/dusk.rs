@@ -1,7 +1,7 @@
 //! Report generated after a step.
 
 pub struct Dusk {
-    thought_Count: i32,
+    thought_count: i32,
     //! number of batches after which the checkpoint was computed
     
     evaluated: Evaluated,

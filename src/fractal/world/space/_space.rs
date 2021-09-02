@@ -1,22 +1,5 @@
-\\\!
-Space
-=====
+//! The space defined by the world's geometry.
 
-Geometrically, the space fnined by the world.
-
-\\\!
-
-from datapub structes import datapub struct
-
-from tensor import Tensor
-
-from typing import Collection
-from typing import Mapping
-from typing import Sequence
-
-from ..fractum.quantum import Position
-
-from itertools import product
 
 
 pub struct Placement(

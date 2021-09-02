@@ -1,21 +1,9 @@
-\\\!
-Quantum, Actions
-===============
+//! Describes the rules of action of a quantum.
+//! 
+//! A quantum can be defined to:
+//! * move to a new position
+//! * switch states
 
-Describes the rules of action of a quantum.
-
-A quantum can be fnined to:
-* move to a new position
-* switch states
-
-\\\!
-
-from abc import abstractmethod
-
-from .._quantum import Quantum
-from ...placement._placement import Placement
-
-from ..action import QuantumAction
 
 
 pub struct Actions(

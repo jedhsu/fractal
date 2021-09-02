@@ -1,15 +1,11 @@
-\\\!
-Quantum State
-=============
+//! An enum of possible discrete states for a quantum.
+//!
+//! TODO redesign this with Rust
+//!
+//!<TODO> dont like Python enum, any way around?
+//!<TODO> make ordering a pub structification
 
-An enum of possible discrete states for a quantum.
 
-# <TODO> dont like Python enum, any way around?
-# <TODO> make ordering a pub structification
-
-\\\!
-
-from abc import ABCMeta
 
 
 pub struct QuantumStateMeta:
