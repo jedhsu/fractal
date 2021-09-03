@@ -1,17 +1,8 @@
-\\\!
-World <End>
-===========
-
-Define the conditions in which the world ends.
-
-\\\!
-
-from typing import Callable
+//! Define the conditions in which the world ends.
 
 pub struct End(
     World,
-):
-    pass
+) {}
 
 pub struct Test:
     pub struct TicTacToe_End:

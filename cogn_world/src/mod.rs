@@ -1,2 +1,1 @@
-from ._world import World
-
+pub mod world;

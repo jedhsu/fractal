@@ -22,6 +22,12 @@ handles two core responsibilites
 
 ### World Rules
 
+Critically, rules are mutable. The mind can modify the rules as an action.
+
+Note as always how the rules describing these might be higher-level rules, etc...
+
+The self-referencing of rules embeds the notion of an ordered stack. (TODO generalize stack with self-referencing?)
+
 A design goal is to make the data model for the rules of the game be dynamical
 This represents that certain "rules of the game" can change, and in fact might
 be the primary parameters of change for an unsupervised learner.

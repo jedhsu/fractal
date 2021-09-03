@@ -9,14 +9,14 @@ pub struct Flashed {
     position: Position,
     //! `s::State` is the state
 
-    whisper: Whisper,
+    policy: Policy,
     //! `π::Vector{Float64}` is the recorded MCTS policy for this position
     
-    energy: Heat,
-    //! `z::Float64` is the discounted reward cumulated from state `s`
+    energy: Energy,
+    //! Energy is the discounted reward cumulated from state `s`.
 
-    time_until_death: i32,
-    //! `t::Float64` is the (average) number of moves remaining before the end of the game
+    expected_time_left: f64,
+    //! The estimated number of days remaining before the world ends.
 
     heat: i32,
     //! `n::Int` is the number of times the state `s` was recorded

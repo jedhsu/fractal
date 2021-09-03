@@ -1,5 +1,4 @@
-pub struct Memory {
-}
+pub struct Memory<T> where T: Sized = Inferred<T>
     // *Recall* (::MemoryBuffer) :: Vector{<:TrainingSample}
 
   // Return all samples in the memory buffer.
