@@ -1,9 +1,11 @@
-//! The environment of a game is the world in a realizing loop.
-//!
-//! Rename to present?
-
 
 pub struct Realizing {
-    state: State
-    time: Time
+    //! Contains the state of a world.
+    
+    state: State,
+    time: Time,
+}
+
+impl Flowing for World {
+    pub type = Realizing;
 }

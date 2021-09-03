@@ -1,11 +1,6 @@
-\\\!
+//! A neural network.
+//!
+//! Use tch-rs
 
-    *Brain*
+pub struct Brain {}
 
-  A neural network.
-
-\\\!
-
-
-pub struct Brain:
-    pass

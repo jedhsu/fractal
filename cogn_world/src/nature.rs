@@ -3,5 +3,5 @@
 pub trait Nature {
     fn initial_time() -> Time;
     fn initial_state() -> State;
-    fn has_world_ended() -> bool:
+    fn has_world_ended() -> bool;
 }

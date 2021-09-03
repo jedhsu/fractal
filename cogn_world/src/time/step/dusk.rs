@@ -1,15 +1,16 @@
 //! Report generated after a step.
 
-pub struct Dusk {
-    thought_count: i32,
-    //! number of batches after which the checkpoint was computed
+pub struct Dusk<Checkpoint> {
+    recognized: Recognized,
+    //! Report describing the cognition status.
     
-    evaluated: Evaluated,
-    //! evaluation report
-
     evolved: Evolved,
-    //! learning status at the checkpoint, as an object of type
+    //! Report describing the evolution status.
+
+    thought_count: i32,
+    //! Number of batches after which the checkpoint was computed
+
 
     has_brain_refreshed: bool,
-    //! returns true if the current best neural network was updated after the checkpoint
+    //! Asks whether the current best neural network was updated after the checkpoint.
 }

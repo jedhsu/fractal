@@ -4,15 +4,10 @@ pub struct Realizing(
     World,
 ):
     @abstractmethod
-    fn read_state(&self):
-        \\\!
-        Read a state from stdin.
-        \\\!
-        pass
+    unsafe fn from_stdin(&self):
+        //! Read a state from stdin.
 
     @abstractmethod
-    fn pri32_state(&self):
-        \\\!
-        Write a state to stdout.
-        \\\!
-        pass
+    unsafe fn into_stdout(&self) {
+        //!  Write a state to stdout.
+    }

@@ -2,24 +2,40 @@
 
 pub trait Evaluate {
     fn evaluate(&self, nature: Nature, mind: Unicameral, speech: Speech) {}
+
     fn evaluate_second();
     fn evaluate_minute();
     fn evaluate_hour();
     fn evaluate_day();
+
+    fn _forward(&self) {}
+    fn _backward(&self) {}
 }
 
 impl Evaluate for Brain {
     /// Evaluate a single neural network for a one-player game (params::ArenaParams)
     fn evaluate(&self, nature: Nature, mind: Unicameral, speech: Speech, handler,):
-        make_oracles = nnet.copy(net, on_gpu=params.sim.use_gpu, test_mode=true,)
+        let make_oracles = nnet.copy(net, on_gpu=params.sim.use_gpu, test_mode=true,)
 
         simulator = Simulator(make_oracles, record_trace)
         simulator.MctsPlayer(gspec, oracle, params.mcts)
 
-        samples = simulate()
+        let samples = simulate()
         simulator, gspec, params.sim,
         game_simulated=(() -> Handlers.checkpoi32_game_played(handler))
+
         return rewards_and_redundancy(samples, gamma=params.mcts.gamma,)
+
+    fn evaluate_batch(&self, batch,) {
+        //! Evaluates the neural network on a batch of states at once.
+        
+        let gspec = game_spec(nn);
+
+        X = Flux.batch((GI.vectorize_state(gspec, b) for b in batch))
+        A = Flux.batch((GI.actions_mask(GI.init(gspec, b)) for b in batch))
+        Xnet, Anet = convert_input_tuple(nn, (X, Float32.(A)))
+        P, V, _ = convert_output_tuple(nn, forward_normalized(nn, Xnet, Anet))
+        return <(P<A<:,i>,i>, V<1,i>) for i in eachindex(batch)>
 }
 
 pub struct Evaluate(Brain,):
@@ -28,13 +44,6 @@ pub struct Evaluate(Brain,):
     /// `Pinv` is a row vector of size `(1, batch_size)`
     /// that indicates the total probability weight put by the network
     /// on invalid actions for each sample.
-    fn evaluate_batch(&self, batch,):
-        gspec = game_spec(nn)
-        X = Flux.batch((GI.vectorize_state(gspec, b) for b in batch))
-        A = Flux.batch((GI.actions_mask(GI.init(gspec, b)) for b in batch))
-        Xnet, Anet = convert_input_tuple(nn, (X, Float32.(A)))
-        P, V, _ = convert_output_tuple(nn, forward_normalized(nn, Xnet, Anet))
-        return <(P<A<:,i>,i>, V<1,i>) for i in eachindex(batch)>
 
 
 

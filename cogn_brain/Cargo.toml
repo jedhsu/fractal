@@ -1,0 +1,10 @@
+[package]
+name = "cogn_brain"
+version = "0.1.0"
+authors = ["jedhsu@pm.me"]
+description = "The environment and its state."
+readme = "README.md"
+license = "Apache"
+
+[dependencies]
+tch = "0.5"

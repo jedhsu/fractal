@@ -3,7 +3,7 @@
 //!
 //! Ultimate goal is to allow this to be parametrizable by algo.
 
-// pub struct Regime(
+// pub trait Regime(
 //     World,
 //     Iterator<WorldPosition>,
 //     metapub struct=ABCMeta,
@@ -12,4 +12,3 @@
 
 // pub struct TicTacToe_ThreeConsecutiveWhites:
 //     pass
-

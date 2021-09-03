@@ -6,6 +6,18 @@ pub trait World: A where A: Rules {
     pub type world: Realizing
 }
 
+impl World {
+    fn two_players(&self) {
+        // GI.two_players(spec::Spec) = spec.env.two_players
+    }
+
+    fn actions(&self) {
+        // GI.actions(spec::Spec) = RL.actions(spec.env.rlenv)
+    }
+    
+    fn vecorize_state(&self) {
+        // spec.env.vectorize_state(spec.env.rlenv, state)
+    }
 
 // // pub struct Nature {
 // //     world: World

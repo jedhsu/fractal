@@ -20,7 +20,9 @@ Debate separating this.
 handles two core responsibilites
 1. defines the rules (specification) of the environment. The `Realizing(World)` holds the environment state.
 
-### World Rules
+### Rules
+
+A world is represnted by the set of rules that describes its spacetime.
 
 Critically, rules are mutable. The mind can modify the rules as an action.
 
