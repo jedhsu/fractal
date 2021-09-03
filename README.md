@@ -1,6 +1,83 @@
 
 
-## Fractal
+## cogn
+
+An experimental reinforcement learning framework designed from a perspective of [computational](https://ncatlab.org/nlab/show/computational+trilogy)
+[trinitarianism](https://existentialtype.wordpress.com/2011/03/27/the-holy-trinity/).
+
+### Motivation
+
+Cogn is motivated by the hypothesis that cognition is a physical a developed theory of cognition cannot be
+abstracted away from physics for it to possess a certain kind of meaning. TODO
+footnote on intuiniitionistic math.
+
+For both man and
+machine, cognition for both
+and machine is a physical process "embedded in the flow of time".
+
+Expand on this somewhere else on the physical process. Give thought experiment on the experience of
+math, and analogize.
+
+I believe that the ideas in computational trinitarianism are fundamental to this
+issue. 
+
+This means that it is critical to address thatk
+
+
+The flow of time cannot be abstracted away. In practice, this means that we
+must 
+
+Cogn is designed to implement the following two features to be first-class {
+
+    1. A physical model of space & time based on quantum mechanics. States are points in space.
+       
+    1. Extension of modifications of a neural network as a first-class action. This is
+       obvious. The degree
+
+    2. States are framed.
+
+
+#### Mutation
+
+    It is clear that we want the action space to include mutations of the
+    underlying neural network. The challenge is how to specify
+
+Yet the more I think about this, it is deeply relevant.
+
+To go from 'Train' to 'Evolve', I think the following must be solved {
+    
+}
+
+These 
+
+
+  
+
+
+
+### Motivation
+
+Pronounced as 'cognition'.
+
+### Features
+
+Cogn separates itself from existing explore the
+
+  +  Develop RL maturity in Rust, where it currently lags.
+
+  
+In the long-term, rather than to do it in Rust.
+
+
+
+###### TODO
+research a bit more on existing frameworks. gym, deepmind's something, rsrl, any
+else?
+
+### Architecture
+
+
+trilogy](, written in Rust.
 
 `fractal` is a developing spec for a reinforcement learning framework. Currently early prototyping.
 
@@ -32,17 +109,6 @@ For example, the `Evolving` type
   * which mutates the variables of `Evolving` as an effect
   * and returns an instance of `Evolved` as a result summarizing what happened.
 
-## Mind
-
-The `Mind` is the agent.
-
-Start with the following features:
-
-- `Unicameral`, for a one-person game.
-- `Bicameral` for a two-person game.
-
-To represent the learning step, the world is `Evolving`.
-
 ### Brain
 
 The `Brain` is the underlying neural network.
@@ -65,22 +131,6 @@ It is a design goal to have the optionality for the `Build` and `Architect` inte
 _actions of the game_. Then, the act of planning and strategizing is importantly considered
 as part of the game itself.
 
-### Demons
-
-The `Demon`s of the mind `Glimpse` and `Interpret` the future.
-
-Demons will be classified into the following types, to represent policies on how to select actions.
-
-- `Naive`: Random selection.
-- `Greedy`: Epsilon-greedy.
-- `Focused`: Min-max algorithm.
-- `Shrewd`: Monte Carlo tree search.
-- `Alpha`: The Alpha-zero algorithm.
-
-`Glimpsing` will run the event loop of tree search.
-
-`Interpreting` will run the event loop of constructing `Vision`s, updates of world state and evolutions of the mind based on glimpse.
-
 ###### TODO 
 
 - Is Alpha-zero algo in right abstraction layer?
@@ -98,6 +148,13 @@ Top-level data model that contains the world and the mind, including the `Traini
 - The folders `_op` contain the interfaces of a struct. This is a personal style preference for modularity.
 - The `_prefix` naming scheme of a file indicates association, rather than privacy.
 
-## Acknowledgments
+## References & Acknowledgments
 
-Thanks to Jonathan Laurent's [AlphaZero.jl](https://github.com/jonathan-laurent/AlphaZero.jl), which I'm using substantially as a reference.
+Harper.
+
+Corfield.
+
+
+Thanks to Jonathan Laurent's
+[AlphaZero.jl](https://github.com/jonathan-laurent/AlphaZero.jl), which I've
+been using heavily as a reference.
