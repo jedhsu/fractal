@@ -9,16 +9,19 @@ pub trait Integrate {
 }
 
 impl Integrate for Glimpse {
-    fn synthesize(&self):
+    fn synthesize(&self) {
       s = &self<1>.s
-      π = mean(e.π for e in samples)
-      z = mean(e.z for e in samples)
-      n = sum(e.n for e in samples)
-      t = mean(e.t for e in samples)
-      return eltype(samples)(s, π, z, t, n)
 
-    fn integrate(&self):
-        Sample = eltype(samples)
+      let policy = mean(e.policy for e in samples)
+      let z = mean(e.z for e in samples)
+      let n = sum(e.n for e in samples)
+      let t = mean(e.t for e in samples)
+      
+      eltype(samples)(s, π, z, t, n)
+    }
+
+    fn integrate(&self) {
+        let Sample = eltype(samples)
         State = sample_state_type(Sample)
         dict = Dict{State, Vector{Sample}}()
         sizehi32!(dict, length(samples))
@@ -30,4 +33,5 @@ impl Integrate for Glimpse {
             dict<s.s> = <s>
 
         return <merge_samples(ss) for ss in values(dict)>
+    }
 }

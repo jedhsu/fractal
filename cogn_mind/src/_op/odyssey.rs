@@ -14,7 +14,7 @@ impl Odyssey {
             batchsize,
             partial=false,
             shuffle=true,
-        )
+        );
 
         map(
             batches,

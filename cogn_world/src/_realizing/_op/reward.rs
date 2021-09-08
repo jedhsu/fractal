@@ -1,10 +1,4 @@
-\\\!
-
-    *Reward*
-
-  Intermediate reward of white.
-
-\\\!
+//! Intermediate reward of white.
 
 from .._world import World
 

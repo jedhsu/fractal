@@ -23,21 +23,23 @@ impl Interpret for Acumen {
             let action = world.possible_actions().random(); // TODO abstract this unform dist
             world.flow(action);
 
-            reward = &self.discount * reward + world.white_reward();
+            let reward = &self.discount * reward + world.white_reward();
         }
 
         reward
     }
     
-    // TODO do tomrw
-    fn evaluate (r::RolloutOracle)(state)
+    fn evaluate(r::RolloutOracle)(state) {
         game = GI.init(r.gspec, state)
 
-        wp = GI.white_playing(g)
-        n = length(GI.available_actions(g))
-        P = ones(n) ./ n
+        let wp = GI.white_playing(g);
+        let n = length(GI.available_actions(g));
+        let P = ones(n) ./ n;
 
-        wr = rollout!(g, r.gamma)
-        V = wp ? wr : -wr
+        let wr = rollout!(g, r.gamma);
+
+        let V = if wp { wr } else if {-wr};
+
         return P, V
+    }
 }

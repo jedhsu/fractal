@@ -1,5 +1,3 @@
-from .._brain import Brain
-
 pub trait Plasticity {
     fn parameters(&self);
     //! Return the collection of trainable parameters of a brain.

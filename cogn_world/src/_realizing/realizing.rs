@@ -7,5 +7,5 @@ pub struct Realizing {
 }
 
 impl Flowing for World {
-    pub type = Realizing;
+    pub type = Realizing; 
 }

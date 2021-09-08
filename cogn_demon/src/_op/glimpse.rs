@@ -18,9 +18,9 @@ impl Flow for Glimpsing {
         &self,
         world: Realizing,
     ) {
-        let fractum = player.glimpsing(game)
-        let energy = player, energy(game, turn_number)
-        let demon = &self.apply_energy()
+        let fractum = player.glimpsing(game);
+        let energy = player, energy(game, turn_number);
+        let demon = &self.apply_energy();
         actions<Util.rand_categorical(π)>
     }
 
@@ -44,12 +44,12 @@ impl Flow for Glimpsing {
         all_best = findall(==(qs<best>), qs))
         demon.utopia<all_best> .= 1.
 
-#         else {
-#             let qmax = qs<best>;
-#             assert assert qmax > -Inf
-#             C = maximum(abs(qs<a>) for a in notlosing) + eps()
-#             let spectrum = exp.((qs .- qmax) ./ C);
-#             let spectrum = spectrum ^ (1 / p.τ);
+        else {
+            let qmax = qs<best>;
+            assert!(qmax > -Inf)
+            let C = maximum(abs(qs<a>) for a in notlosing) + eps()
+            let spectrum = exp.((qs .- qmax) ./ C);
+            let spectrum = spectrum ^ (1 / p.τ);
         } else {
             let spectrum = zeros(n);
             let spectrum<winning> .= 1.;

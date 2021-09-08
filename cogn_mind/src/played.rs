@@ -6,6 +6,8 @@ pub struct Reward {
     extra: Vec<f64>,
 }
 
+// Note that this is defined as a rule!
+//
 pub struct Played {
     summary: str,
     //! A string describing the evaluation.

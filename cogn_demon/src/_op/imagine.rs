@@ -1,5 +1,4 @@
-//! `Imagine` is An iteration of MCTS.
-
+/// An iteration of Monte-Carlo Tree Search.
 pub trait Imagine {
     fn imagine(&self, world: &Realizing);
 }
@@ -12,11 +11,14 @@ impl Imagine for Glimpsing(
         world: &Realizing,
     ) {
         gamma = flowing.perturb(&self.parameters.alpha_noise)
-        for _ in range(&self.number_of_imagines):
-            &self.num_imagined += 1
+
+        for _ in 0..&self.number_of_imagines {
+            let &self.num_imagined += 1;
+
             &self.i32erpret(
                 flowing.clone(),
                 gamma=gamma,
             )
+        }
     }
 }

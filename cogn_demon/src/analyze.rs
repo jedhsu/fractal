@@ -3,5 +3,5 @@
 pub struct Analyze(
     Processing,
 ):
-    fn merge_identicals(&self):
-        pass
+    fn merge_identicals(&self) {
+    }

@@ -21,13 +21,14 @@ impl Reflect for Reflecting {
             test_mode=true,
         );
 
-        imagination = Imagination(make_oracles, record_trace);
+        let imagination = Imagination(make_oracles, record_trace);
         imagination.summon(nature: Nature, demon: Demon, foresight: Foresight);
 
-        visions = &self.imagination.imagine()
+        let visions = &self.imagination.imagine()
         # simulator, gspec, params.sim,
-        imagined  =(() -> Checkpoints.imagined_the_future(&self.awareness))
-        return (imagined, skepticism=&self.imagination.skepticism,)
+        let imagined  =(() -> Checkpoints.imagined_the_future(&self.awareness))
+        
+        (imagined, skepticism=&self.imagination.skepticism,)
         }
     }
 }

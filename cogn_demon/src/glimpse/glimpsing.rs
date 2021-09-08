@@ -1,9 +1,7 @@
 //! The environment state of a `Glimpse`.
-
-
 pub struct Glimpsing(
     Glimpse,
-):
+) {
     parameters: Glimpse,
     //! Glimpse parameters.
 

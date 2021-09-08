@@ -1,8 +1,8 @@
-//! Metrics from a single episode of glimpse.
-
+//! Describes the results of a Glimpse.
 pub struct Glimpsed {
     glimpsing_frequency: f64,
     //! Average number of samples generated per second.
+    //! TODO is this infer_frequency?
 
     average_steps_ahead: f64,
     //!

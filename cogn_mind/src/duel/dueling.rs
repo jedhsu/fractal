@@ -1,4 +1,4 @@
-//! Environment state for a duel.
+//! Contains the state for a duel.
 
 pub struct Dueling {
     white: Thinking,

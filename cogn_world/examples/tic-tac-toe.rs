@@ -1,4 +1,4 @@
-pub trait Symmetry: AbstractSymmetry {
+pub trait Symmetry {
     fn rotate(&self, x: i32, y: i32) -> (i32, i32);
     fn vflip(&self, x: i32, y: i32) -> (i32, i32);
     fn ap(&self, eval: Fn) -> Fn;
@@ -33,3 +33,15 @@ impl Symmetry for TicTacToe {
     // fn dihedral_symmetries():
     //     pass
 }
+
+pub struct Test:
+    pub struct TicTacToe_Space(
+        Space,
+    ):
+        fn construct(&self):
+            return super().construct(
+                product(
+                    <1, 2, 3>,
+                    <1, 2, 3>,
+                )
+            )

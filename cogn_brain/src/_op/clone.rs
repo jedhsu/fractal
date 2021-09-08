@@ -1,5 +1,3 @@
-//! A clone function that also handles CPU/GPU transfers.
-
 pub trait Clone {
     fn clone(&self, shall_use_gpu: bool, is_testing: bool);
 }

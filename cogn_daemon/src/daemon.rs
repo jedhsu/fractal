@@ -1,15 +1,9 @@
+//! BatchedOracle(reqc, preprocess=(x->x))
+//!
+//! When invoked on a state, this oracle sends a query to the server identified
+//! request channel `reqc`. This call is blocking until every other active worker a
+//! sends its query.
 
-
-"""
-    BatchedOracle(reqc, preprocess=(x->x))
-
-
-- When invoked on a state, this oracle sends a query to the server identified by
-  request channel `reqc`. This call is blocking until every other active worker also
-  sends its query.
-
-
-"""
 
 pub trait Daemon<T> where T: Demon {
     //! A demon which delegates its job to an inference server.

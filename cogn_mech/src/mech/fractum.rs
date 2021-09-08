@@ -2,11 +2,7 @@
 //!
 //! The name comes from the self-referential nature that this creates.
 
-pub struct Fractum {
-    position: Position,
-    quantum: Quantum,
-    spectrum: Spectrum,
-}
+pub trait Fractum: Datum + Spectrum {}
 
 impl Hash for Fractum {
     // fn __hash__(&self) -> int:

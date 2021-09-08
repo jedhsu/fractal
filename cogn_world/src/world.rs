@@ -3,7 +3,10 @@
 pub trait Realizing: Flowing {};
 
 pub trait World: A where A: Rules {
-    pub type world: Realizing
+    pub type world: Realizing;
+
+    fn reset(&self) -> Result<i32, i32>;
+    fn flow(&self, action: &Action) -> Result<i32, i32>;
 }
 
 impl World {
@@ -35,3 +38,6 @@ impl World {
 //         world.mind.interpret(state)
 //     }
 // }
+
+trait Vectorized {
+}

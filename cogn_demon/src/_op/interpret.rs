@@ -10,12 +10,13 @@ impl Interpret for Glimpsing {
         realized: WorldState,
         action: Action,
         energy: Energy,
-    ):
-        stats = worldstate.tree<state>.stats
-        astats = stats<action_id>
-        stats<action_id> = PlacementAnalysis(
+    ) {
+        let stats = worldstate.tree<state>.stats;
+        let astats = stats<action_id>;
+        let stats<action_id> = PlacementAnalysis {
             astats.P,
             astats.W + q,
             astats.N + 1,
-        )
+        }
+    }
 }

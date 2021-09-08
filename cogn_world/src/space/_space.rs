@@ -1,38 +1,52 @@
 //! The space defined by the world's geometry.
+//!
+//! There is one struct for each type of space, similar to how
+//! the Iterator is implemented in Rust.
+
+use serde::*
+use std::fmt;
+
+// pub struct Placement(
+//     tuple<i32, ...>,
+// ):
+//     pass
 
 
+// pub struct Space(
+//     Tensor,
+//     Mapping<tuple<i32, ...>, Position>,
+//     Collection<Position>,
+// ):
+//     positions: set<Position>
 
-pub struct Placement(
-    tuple<i32, ...>,
-):
-    pass
+//     fn __len__(&self) -> i32:
+//         return len(&self.positions)
+
+//     fn __getitem__(
+//         &self,
+//         position: Sequence<i32>,
+//     ) -> Position:
+//         return Position(position)
+
+pub struct Space<N, D> {
+    shape: Option<N>,
+    datatype: Option<D>,
+    seed: Option<i32>,
+}
 
 
-pub struct Space(
-    Tensor,
-    Mapping<tuple<i32, ...>, Position>,
-    Collection<Position>,
-):
-    positions: set<Position>
+trait Seed<N, D> where N: Datatype {
+    type N;
+    type D;
 
-    fn __len__(&self) -> i32:
-        return len(&self.positions)
-
-    fn __getitem__(
-        &self,
-        position: Sequence<i32>,
-    ) -> Position:
-        return Position(position)
+    fn contains(&self, _: &Self::D) -> bool;
+    fn seed(&self, _: &Self::D) -> N;
+    fn sample(&self) -> D;
+}
 
 
-pub struct Test:
-    pub struct TicTacToe_Space(
-        Space,
-    ):
-        fn construct(&self):
-            return super().construct(
-                product(
-                    <1, 2, 3>,
-                    <1, 2, 3>,
-                )
-            )
+impl Serialize for Space {
+}
+
+// trait Tuple2<A, B>: Space where A: Space, B: Space {
+// }

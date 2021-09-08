@@ -8,14 +8,6 @@ pub struct Smoothly(
         pass
 
 
-
-pub enum Schedule {
-    Constant,
-    Discrete,
-    Piecewise,
-    Cyclic,
-}
-
 impl Index for Constant<Schedule> {
     fn index(&self, n: i32) {
         s.value

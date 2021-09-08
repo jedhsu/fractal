@@ -2,6 +2,9 @@
 name = "cognate_world"
 version = "0.1.0"
 authors = ["jedhsu@pm.me"]
-description = "The environment and its state."
+description = "The environment and its rules."
 readme = "README.md"
 license = "Apache"
+
+[dependencies]
+serde = "1.0"

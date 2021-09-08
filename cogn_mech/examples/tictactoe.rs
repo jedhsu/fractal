@@ -1,7 +1,21 @@
-//! This should be macrogen'd ideally.
-
-pub enum Mark<T> where T: Quantum {
+pub struct Position {
+    state: PositionState,
 }
+
+pub enum PositionState {
+    White,
+    Black,
+    Empty,
+}
+
+impl Fractum for Position {
+    pub enum State {
+        White,
+        Black,
+        Empty,
+    }
+}
+
 
 pub struct Test:
     //! In Tic-Tac-Toe, a block quantum is not allowed to move. It can only switch states

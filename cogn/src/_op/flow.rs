@@ -17,9 +17,9 @@ impl<T> Flow<T> for Recognizing {
             // mrep, mperfs = Report.@timed memory_report(env, handler);
             // lrep, lperfs = Report.@timed learning_step!(env, handler);
             //
-            rep = Observed.construct(Glimpsed(), Recalled(), Evolved());
-            env.itc += 1;
-            &self.handle.iteration_finished(handler, rep);
+            let rep = Observed.construct(Glimpsed(), Recalled(), Evolved());
+            let env.itc += 1;
+            let &self.handle.iteration_finished(handler, rep);
         }
         &self.handle.training_finished(handler);
     }
