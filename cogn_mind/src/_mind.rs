@@ -1,4 +1,0 @@
-//! Mind
-
-pub struct Mind {}
-
