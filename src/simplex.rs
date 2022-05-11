@@ -1,7 +1,14 @@
 
 pub trait Light {
     /// The speed of light.
-    pub type C;
+    ///
+    /// It is "dimensionless" but it is really not, dimensions are not built fo constructive case
+    /// like this.
+    ///
+    /// Dimensions are all other els in vector field / self in vector field.
+    ///
+    /// The dimensions are blinks of not self / blink.
+    const _c_ = 299_729_458;
 }
 
 
@@ -72,15 +79,6 @@ pub struct PathLevel<N> {
 /// This could be 2 dimensions higher.
 pub struct Oscillation<N> {
 
-}
-
-/// At each categorical level, the n-simplex comprises the fundamental point.
-pub struct PathStack {
-    level0: Vec<Simplex0>,
-    level1: Vec<Simplex1>,
-    level2: Vec<Simplex2>,
-    level3: Vec<Simplex3>,
-    level4: Vec<Simplex4>,
 }
 
 pub struct Present {

@@ -1,0 +1,15 @@
+[package]
+name = "simplex"
+description = "Simplex modeling."
+
+version = "0.1.0"
+authors = ["jedhsu@pm.me"]
+readme = "README.md"
+license = "Apache"
+
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+num_traits = "0.2"
+seahash = "4.1"
